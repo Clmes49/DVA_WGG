@@ -142,3 +142,1921 @@ Runtime Error
 [0m09:26:51.338013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10656cad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10656fd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dfbe10>]}
 [0m09:26:51.338124 [debug] [MainThread]: Flushing usage events
 [0m09:26:52.084465 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:47:00.449732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108225a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0ef750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0ef890>]}
+
+
+============================== 10:47:00.452495 | 1645a2de-1444-4243-a945-ccc0069a1c4b ==============================
+[0m10:47:00.452495 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:47:00.452745 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt ls --resource-type source', 'fail_fast': 'False', 'profiles_dir': '/Users/user/.dbt', 'indirect_selection': 'eager', 'static_parser': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'no_print': 'None', 'empty': 'None', 'quiet': 'False', 'printer_width': '80', 'use_colors': 'True', 'debug': 'False', 'warn_error': 'None', 'target_path': 'None', 'log_format': 'default', 'log_path': '/Users/user/DVA_WGG/logs', 'cache_selected_only': 'False', 'log_cache_events': 'False'}
+[0m10:47:00.779310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1645a2de-1444-4243-a945-ccc0069a1c4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108905f30>]}
+[0m10:47:00.800556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1645a2de-1444-4243-a945-ccc0069a1c4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a14e030>]}
+[0m10:47:00.801121 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m10:47:00.842053 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m10:47:00.872178 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m10:47:00.872405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1645a2de-1444-4243-a945-ccc0069a1c4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae8db50>]}
+[0m10:47:02.718632 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.DVA_WGG.raw_vault
+- models.DVA_WGG.staging
+[0m10:47:02.722056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1645a2de-1444-4243-a945-ccc0069a1c4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1db4d0>]}
+[0m10:47:02.752370 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m10:47:02.753769 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m10:47:02.766099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1645a2de-1444-4243-a945-ccc0069a1c4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b2d92b0>]}
+[0m10:47:02.766267 [info ] [MainThread]: Found 14 sources, 1067 macros
+[0m10:47:02.766382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1645a2de-1444-4243-a945-ccc0069a1c4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b2572b0>]}
+[0m10:47:02.766695 [info ] [MainThread]: source:DVA_WGG.roadshow.kunde
+[0m10:47:02.766809 [info ] [MainThread]: source:DVA_WGG.roadshow.produkt
+[0m10:47:02.766891 [info ] [MainThread]: source:DVA_WGG.roadshow.rs_bestellung
+[0m10:47:02.766967 [info ] [MainThread]: source:DVA_WGG.roadshow.vereinspartner
+[0m10:47:02.767045 [info ] [MainThread]: source:DVA_WGG.webshop.bestellung
+[0m10:47:02.767117 [info ] [MainThread]: source:DVA_WGG.webshop.kategorie
+[0m10:47:02.767191 [info ] [MainThread]: source:DVA_WGG.webshop.kunde
+[0m10:47:02.767262 [info ] [MainThread]: source:DVA_WGG.webshop.lieferadresse
+[0m10:47:02.767335 [info ] [MainThread]: source:DVA_WGG.webshop.lieferdienst
+[0m10:47:02.767406 [info ] [MainThread]: source:DVA_WGG.webshop.lieferung
+[0m10:47:02.767477 [info ] [MainThread]: source:DVA_WGG.webshop.position
+[0m10:47:02.767553 [info ] [MainThread]: source:DVA_WGG.webshop.produkt
+[0m10:47:02.767623 [info ] [MainThread]: source:DVA_WGG.webshop.vereinspartner
+[0m10:47:02.767695 [info ] [MainThread]: source:DVA_WGG.webshop.wohnort
+[0m10:47:02.783686 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": true, "command_wall_clock_time": 2.3681796, "process_in_blocks": "0", "process_kernel_time": 0.140738, "process_mem_max_rss": "143245312", "process_out_blocks": "0", "process_user_time": 2.394205}
+[0m10:47:02.783959 [debug] [MainThread]: Command `dbt ls` succeeded at 10:47:02.783913 after 2.37 seconds
+[0m10:47:02.784117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095fa5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b195020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1950d0>]}
+[0m10:47:02.784261 [debug] [MainThread]: Flushing usage events
+[0m10:47:03.313028 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:29:43.655462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a4da90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a17750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a17890>]}
+
+
+============================== 11:29:43.658083 | 7de96c05-80dd-4cb6-8e5f-cb31c1831e5d ==============================
+[0m11:29:43.658083 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:29:43.658344 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'warn_error': 'None', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/Users/user/.dbt', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'static_parser': 'True', 'introspect': 'True', 'write_json': 'True', 'empty': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'log_format': 'default', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/Users/user/DVA_WGG/logs', 'target_path': 'None', 'version_check': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt run --select stg_roadshow_kunde'}
+[0m11:29:43.772338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7de96c05-80dd-4cb6-8e5f-cb31c1831e5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d2df30>]}
+[0m11:29:43.793038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7de96c05-80dd-4cb6-8e5f-cb31c1831e5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a75f20>]}
+[0m11:29:43.793606 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m11:29:43.829260 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m11:29:43.938535 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m11:29:43.938786 [debug] [MainThread]: Partial parsing: added file: DVA_WGG://models/staging/roadshow/stg_roadshow_kunde.sql
+[0m11:29:44.056222 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.DVA_WGG.raw_vault
+[0m11:29:44.060718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7de96c05-80dd-4cb6-8e5f-cb31c1831e5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106864550>]}
+[0m11:29:44.097253 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m11:29:44.098395 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m11:29:44.112098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7de96c05-80dd-4cb6-8e5f-cb31c1831e5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b03f20>]}
+[0m11:29:44.112271 [info ] [MainThread]: Found 1 model, 14 sources, 1067 macros
+[0m11:29:44.112390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7de96c05-80dd-4cb6-8e5f-cb31c1831e5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060c6eb0>]}
+[0m11:29:44.112926 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:29:44.113119 [debug] [MainThread]: Command end result
+[0m11:29:44.130737 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m11:29:44.131525 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m11:29:44.132683 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/user/DVA_WGG/target/run_results.json
+[0m11:29:44.134604 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.50946057, "process_in_blocks": "0", "process_kernel_time": 0.157554, "process_mem_max_rss": "144670720", "process_out_blocks": "0", "process_user_time": 0.753139}
+[0m11:29:44.134761 [debug] [MainThread]: Command `dbt run` succeeded at 11:29:44.134731 after 0.51 seconds
+[0m11:29:44.134883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ddc1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058225d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d2a090>]}
+[0m11:29:44.134992 [debug] [MainThread]: Flushing usage events
+[0m11:29:44.652952 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:30:23.129495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fd9a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fa3750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fa3890>]}
+
+
+============================== 11:30:23.131820 | 4accc6a6-872f-4637-a019-a00feda565ce ==============================
+[0m11:30:23.131820 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:30:23.132047 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'no_print': 'None', 'log_format': 'default', 'profiles_dir': '/Users/user/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'quiet': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'printer_width': '80', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt ls --resource-type model', 'indirect_selection': 'eager', 'target_path': 'None', 'log_cache_events': 'False', 'version_check': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'log_path': '/Users/user/DVA_WGG/logs', 'debug': 'False', 'static_parser': 'True'}
+[0m11:30:23.209759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4accc6a6-872f-4637-a019-a00feda565ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082b9f30>]}
+[0m11:30:23.230676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4accc6a6-872f-4637-a019-a00feda565ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109002030>]}
+[0m11:30:23.231722 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m11:30:23.264774 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m11:30:23.371647 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:30:23.371933 [debug] [MainThread]: Partial parsing: updated file: DVA_WGG://models/staging/roadshow/stg_roadshow_kunde.sql
+[0m11:30:23.467129 [error] [MainThread]: Encountered an error:
+Compilation Error in model stg_roadshow_kunde (models/staging/roadshow/stg_roadshow_kunde.sql)
+  'None' has no attribute 'keys'
+  
+  > in macro stage (macros/staging/stage.sql)
+  > called by model stg_roadshow_kunde (models/staging/roadshow/stg_roadshow_kunde.sql)
+[0m11:30:23.468976 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": false, "command_wall_clock_time": 0.36754417, "process_in_blocks": "0", "process_kernel_time": 0.133929, "process_mem_max_rss": "135380992", "process_out_blocks": "0", "process_user_time": 0.688921}
+[0m11:30:23.469154 [debug] [MainThread]: Command `dbt ls` failed at 11:30:23.469121 after 0.37 seconds
+[0m11:30:23.469289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dee550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dee150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2c86e0>]}
+[0m11:30:23.469407 [debug] [MainThread]: Flushing usage events
+[0m11:30:23.939728 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:31:59.121945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b45a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b0f750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b0f890>]}
+
+
+============================== 11:31:59.124673 | 0944b934-37b0-4240-92db-5631bd50ef84 ==============================
+[0m11:31:59.124673 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:31:59.124906 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'target_path': 'None', 'fail_fast': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/user/.dbt', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'invocation_command': 'dbt ls --resource-type model', 'log_format': 'default', 'cache_selected_only': 'False', 'quiet': 'False', 'log_path': '/Users/user/DVA_WGG/logs', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True'}
+[0m11:31:59.222775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0944b934-37b0-4240-92db-5631bd50ef84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e25f30>]}
+[0m11:31:59.244286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0944b934-37b0-4240-92db-5631bd50ef84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b6e030>]}
+[0m11:31:59.244853 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m11:31:59.279957 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m11:31:59.389706 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:31:59.389968 [debug] [MainThread]: Partial parsing: updated file: DVA_WGG://models/staging/roadshow/stg_roadshow_kunde.sql
+[0m11:31:59.483656 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m11:31:59.484276 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m11:31:59.515468 [debug] [MainThread]: source_model: source_data
+[0m11:31:59.515689 [debug] [MainThread]: source_model is not mapping and not none: source_data
+[0m11:31:59.516572 [debug] [MainThread]: source_relation: "postgres"."dv"."stg_roadshow_kunde"
+[0m11:31:59.559337 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m11:31:59.563515 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m11:31:59.572204 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.DVA_WGG.stg_roadshow_kunde' (models/staging/roadshow/stg_roadshow_kunde.sql) depends on a node named 'source_data' which was not found
+[0m11:31:59.574099 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": false, "command_wall_clock_time": 0.48191383, "process_in_blocks": "0", "process_kernel_time": 0.152742, "process_mem_max_rss": "142737408", "process_out_blocks": "0", "process_user_time": 0.765461}
+[0m11:31:59.574270 [debug] [MainThread]: Command `dbt ls` failed at 11:31:59.574238 after 0.48 seconds
+[0m11:31:59.574397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10842e150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10842e750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3e7a70>]}
+[0m11:31:59.574519 [debug] [MainThread]: Flushing usage events
+[0m11:32:00.122945 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:32:09.318012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10618da90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107157750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107157890>]}
+
+
+============================== 11:32:09.319703 | 744dcdfd-3ba0-44ae-a3e4-9d37220dffde ==============================
+[0m11:32:09.319703 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:32:09.319941 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'target_path': 'None', 'partial_parse': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'quiet': 'False', 'static_parser': 'True', 'version_check': 'True', 'log_path': '/Users/user/DVA_WGG/logs', 'log_cache_events': 'False', 'use_colors': 'True', 'introspect': 'True', 'warn_error': 'None', 'log_format': 'default', 'profiles_dir': '/Users/user/.dbt', 'fail_fast': 'False', 'debug': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'invocation_command': 'dbt compile --select stg_roadshow_kunde', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False'}
+[0m11:32:09.381270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '744dcdfd-3ba0-44ae-a3e4-9d37220dffde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10646df30>]}
+[0m11:32:09.401481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '744dcdfd-3ba0-44ae-a3e4-9d37220dffde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071b5f20>]}
+[0m11:32:09.401771 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m11:32:09.430016 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m11:32:09.476906 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:32:09.477199 [debug] [MainThread]: Partial parsing: updated file: DVA_WGG://models/staging/roadshow/stg_roadshow_kunde.sql
+[0m11:32:09.569070 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m11:32:09.569697 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m11:32:09.600809 [debug] [MainThread]: source_model: source_data
+[0m11:32:09.601003 [debug] [MainThread]: source_model is not mapping and not none: source_data
+[0m11:32:09.601875 [debug] [MainThread]: source_relation: "postgres"."dv"."stg_roadshow_kunde"
+[0m11:32:09.644503 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m11:32:09.648651 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m11:32:09.657216 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.DVA_WGG.stg_roadshow_kunde' (models/staging/roadshow/stg_roadshow_kunde.sql) depends on a node named 'source_data' which was not found
+[0m11:32:09.658410 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.36538228, "process_in_blocks": "0", "process_kernel_time": 0.106247, "process_mem_max_rss": "141803520", "process_out_blocks": "0", "process_user_time": 0.769361}
+[0m11:32:09.658568 [debug] [MainThread]: Command `dbt compile` failed at 11:32:09.658537 after 0.37 seconds
+[0m11:32:09.658713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fa2150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fa2750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10846fa70>]}
+[0m11:32:09.658842 [debug] [MainThread]: Flushing usage events
+[0m11:32:10.122875 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:32:26.769427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103dc9a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d93750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d93890>]}
+
+
+============================== 14:32:26.772244 | f2101802-cc9d-4637-9225-9ee89484022b ==============================
+[0m14:32:26.772244 [info ] [MainThread]: Running with dbt=1.11.7
+[0m14:32:26.772505 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'version_check': 'True', 'printer_width': '80', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt compile --select stg_roadshow_kunde', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'debug': 'False', 'quiet': 'False', 'introspect': 'True', 'write_json': 'True', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'profiles_dir': '/Users/user/.dbt', 'indirect_selection': 'eager', 'warn_error': 'None', 'cache_selected_only': 'False', 'log_path': '/Users/user/DVA_WGG/logs', 'static_parser': 'True', 'target_path': 'None', 'empty': 'False'}
+[0m14:32:26.871264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f2101802-cc9d-4637-9225-9ee89484022b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1040a9f30>]}
+[0m14:32:26.892088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f2101802-cc9d-4637-9225-9ee89484022b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104df1f20>]}
+[0m14:32:26.892691 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m14:32:26.925957 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m14:32:27.037718 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:32:27.038033 [debug] [MainThread]: Partial parsing: updated file: DVA_WGG://models/staging/roadshow/stg_roadshow_kunde.sql
+[0m14:32:27.133835 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:32:27.134451 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:32:27.164294 [debug] [MainThread]: source_model: source_data
+[0m14:32:27.164531 [debug] [MainThread]: source_model is not mapping and not none: source_data
+[0m14:32:27.165393 [debug] [MainThread]: source_relation: "postgres"."dv"."stg_roadshow_kunde"
+[0m14:32:27.207543 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m14:32:27.211621 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m14:32:27.220056 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.DVA_WGG.stg_roadshow_kunde' (models/staging/roadshow/stg_roadshow_kunde.sql) depends on a node named 'source_data' which was not found
+[0m14:32:27.222558 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.4851249, "process_in_blocks": "0", "process_kernel_time": 0.15378, "process_mem_max_rss": "142016512", "process_out_blocks": "0", "process_user_time": 0.75012}
+[0m14:32:27.222734 [debug] [MainThread]: Command `dbt compile` failed at 14:32:27.222697 after 0.49 seconds
+[0m14:32:27.222864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bde150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bde750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068d7a70>]}
+[0m14:32:27.222997 [debug] [MainThread]: Flushing usage events
+[0m14:32:27.746211 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:37:11.117140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e2da90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108df7750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108df7890>]}
+
+
+============================== 14:37:11.119812 | 874a6a98-1ec9-442e-90f1-e7efe31f4aa6 ==============================
+[0m14:37:11.119812 [info ] [MainThread]: Running with dbt=1.11.7
+[0m14:37:11.120054 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'printer_width': '80', 'debug': 'False', 'log_path': '/Users/user/DVA_WGG/logs', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'no_print': 'None', 'static_parser': 'True', 'quiet': 'False', 'empty': 'False', 'write_json': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'version_check': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt compile --select base_roadshow_kunde', 'use_colors': 'True', 'introspect': 'True', 'profiles_dir': '/Users/user/.dbt', 'fail_fast': 'False', 'target_path': 'None'}
+[0m14:37:11.219765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '874a6a98-1ec9-442e-90f1-e7efe31f4aa6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080f9f30>]}
+[0m14:37:11.238741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '874a6a98-1ec9-442e-90f1-e7efe31f4aa6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e55f20>]}
+[0m14:37:11.239267 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m14:37:11.274564 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m14:37:11.389053 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m14:37:11.389320 [debug] [MainThread]: Partial parsing: added file: DVA_WGG://models/staging/roadshow/base_roadshow_kunde.sql
+[0m14:37:11.389453 [debug] [MainThread]: Partial parsing: updated file: DVA_WGG://models/staging/roadshow/stg_roadshow_kunde.sql
+[0m14:37:11.484671 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:37:11.485264 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:37:11.514484 [debug] [MainThread]: source_model: source_data
+[0m14:37:11.514658 [debug] [MainThread]: source_model is not mapping and not none: source_data
+[0m14:37:11.515425 [debug] [MainThread]: source_relation: "postgres"."dv"."stg_roadshow_kunde"
+[0m14:37:11.560315 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m14:37:11.564353 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m14:37:11.568883 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.DVA_WGG.stg_roadshow_kunde' (models/staging/roadshow/stg_roadshow_kunde.sql) depends on a node named 'source_data' which was not found
+[0m14:37:11.571456 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.4829856, "process_in_blocks": "0", "process_kernel_time": 0.154025, "process_mem_max_rss": "143163392", "process_out_blocks": "0", "process_user_time": 0.745042}
+[0m14:37:11.571616 [debug] [MainThread]: Command `dbt compile` failed at 14:37:11.571584 after 0.48 seconds
+[0m14:37:11.571739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c42750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c42350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d972f0>]}
+[0m14:37:11.571859 [debug] [MainThread]: Flushing usage events
+[0m14:37:12.036279 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:37:42.305060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10637da90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bef750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bef890>]}
+
+
+============================== 14:37:42.307719 | ca93a0e2-753d-4551-8de0-a58f07befdca ==============================
+[0m14:37:42.307719 [info ] [MainThread]: Running with dbt=1.11.7
+[0m14:37:42.307986 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'static_parser': 'True', 'profiles_dir': '/Users/user/.dbt', 'invocation_command': 'dbt compile --select base_roadshow_kunde', 'debug': 'False', 'use_colors': 'True', 'version_check': 'True', 'partial_parse': 'True', 'printer_width': '80', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'introspect': 'True', 'log_path': '/Users/user/DVA_WGG/logs', 'empty': 'False', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'quiet': 'False', 'log_format': 'default', 'no_print': 'None', 'log_cache_events': 'False'}
+[0m14:37:42.388650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ca93a0e2-753d-4551-8de0-a58f07befdca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b05f30>]}
+[0m14:37:42.407661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ca93a0e2-753d-4551-8de0-a58f07befdca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c4df20>]}
+[0m14:37:42.408123 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m14:37:42.439794 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m14:37:42.544953 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m14:37:42.545227 [debug] [MainThread]: Partial parsing: added file: DVA_WGG://models/staging/roadshow/base_roadshow_kunde.sql
+[0m14:37:42.545367 [debug] [MainThread]: Partial parsing: updated file: DVA_WGG://models/staging/roadshow/stg_roadshow_kunde.sql
+[0m14:37:42.641612 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:37:42.642231 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:37:42.672246 [debug] [MainThread]: source_model: source_data
+[0m14:37:42.672419 [debug] [MainThread]: source_model is not mapping and not none: source_data
+[0m14:37:42.673179 [debug] [MainThread]: source_relation: "postgres"."dv"."stg_roadshow_kunde"
+[0m14:37:42.719074 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m14:37:42.722966 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m14:37:42.727345 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.DVA_WGG.stg_roadshow_kunde' (models/staging/roadshow/stg_roadshow_kunde.sql) depends on a node named 'source_data' which was not found
+[0m14:37:42.729253 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.45157045, "process_in_blocks": "0", "process_kernel_time": 0.128537, "process_mem_max_rss": "142376960", "process_out_blocks": "0", "process_user_time": 0.750519}
+[0m14:37:42.729408 [debug] [MainThread]: Command `dbt compile` failed at 14:37:42.729376 after 0.45 seconds
+[0m14:37:42.729534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109196750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109196350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092eb2f0>]}
+[0m14:37:42.729657 [debug] [MainThread]: Flushing usage events
+[0m14:37:43.206097 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:39:05.375276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044a5a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10546f750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10546f890>]}
+
+
+============================== 14:39:05.378015 | 2df9776a-e1c2-4abb-8a58-110f4e81124e ==============================
+[0m14:39:05.378015 [info ] [MainThread]: Running with dbt=1.11.7
+[0m14:39:05.378251 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'target_path': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'no_print': 'None', 'version_check': 'True', 'profiles_dir': '/Users/user/.dbt', 'invocation_command': 'dbt compile --select base_roadshow_kunde', 'write_json': 'True', 'log_cache_events': 'False', 'empty': 'False', 'indirect_selection': 'eager', 'log_path': '/Users/user/DVA_WGG/logs', 'static_parser': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'use_colors': 'True', 'log_format': 'default', 'quiet': 'False', 'debug': 'False', 'send_anonymous_usage_stats': 'True'}
+[0m14:39:05.474950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2df9776a-e1c2-4abb-8a58-110f4e81124e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104785f30>]}
+[0m14:39:05.494673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2df9776a-e1c2-4abb-8a58-110f4e81124e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054e9f20>]}
+[0m14:39:05.495341 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m14:39:05.533206 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m14:39:05.641183 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m14:39:05.641450 [debug] [MainThread]: Partial parsing: added file: DVA_WGG://models/staging/roadshow/base_roadshow_kunde.sql
+[0m14:39:05.641583 [debug] [MainThread]: Partial parsing: updated file: DVA_WGG://models/staging/roadshow/stg_roadshow_kunde.sql
+[0m14:39:05.742662 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:39:05.743385 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:39:05.772844 [debug] [MainThread]: source_model: base_roadshow_kunde
+[0m14:39:05.773025 [debug] [MainThread]: source_model is not mapping and not none: base_roadshow_kunde
+[0m14:39:05.773802 [debug] [MainThread]: source_relation: "postgres"."dv"."stg_roadshow_kunde"
+[0m14:39:05.815369 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m14:39:05.819375 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m14:39:05.842140 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.DVA_WGG.raw_vault
+[0m14:39:05.846505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2df9776a-e1c2-4abb-8a58-110f4e81124e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106604650>]}
+[0m14:39:05.884030 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m14:39:05.885167 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m14:39:05.898000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2df9776a-e1c2-4abb-8a58-110f4e81124e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10640fe30>]}
+[0m14:39:05.898170 [info ] [MainThread]: Found 2 models, 14 sources, 1067 macros
+[0m14:39:05.898290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2df9776a-e1c2-4abb-8a58-110f4e81124e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106773af0>]}
+[0m14:39:05.898850 [info ] [MainThread]: 
+[0m14:39:05.898968 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:39:05.899057 [info ] [MainThread]: 
+[0m14:39:05.899231 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:39:05.900491 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_dv'
+[0m14:39:05.931769 [debug] [ThreadPool]: Using postgres connection "list_postgres_dv"
+[0m14:39:05.931945 [debug] [ThreadPool]: On list_postgres_dv: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres_dv"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dv'
+  
+[0m14:39:05.932056 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:39:15.995089 [debug] [ThreadPool]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "bis-241-19-pg.postgres.database.azure.com" (20.52.55.146), port 5432 failed: timeout expired
+
+[0m14:39:26.004194 [debug] [ThreadPool]: Postgres adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres_dv"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dv'
+  
+[0m14:39:26.005762 [debug] [ThreadPool]: Postgres adapter: Rolling back transaction.
+[0m14:39:26.006317 [debug] [ThreadPool]: Postgres adapter: Error running SQL: macro list_relations_without_caching
+[0m14:39:26.006623 [debug] [ThreadPool]: Postgres adapter: Rolling back transaction.
+[0m14:39:26.006982 [debug] [ThreadPool]: On list_postgres_dv: No close available on handle
+[0m14:39:26.008019 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:39:26.008309 [debug] [MainThread]: Connection 'list_postgres_dv' was properly closed.
+[0m14:39:26.008838 [error] [MainThread]: Encountered an error:
+Database Error
+  connection to server at "bis-241-19-pg.postgres.database.azure.com" (20.52.55.146), port 5432 failed: timeout expired
+  
+[0m14:39:26.013485 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 20.667194, "process_in_blocks": "0", "process_kernel_time": 0.16919, "process_mem_max_rss": "155090944", "process_out_blocks": "0", "process_user_time": 0.845705}
+[0m14:39:26.014120 [debug] [MainThread]: Command `dbt compile` failed at 14:39:26.014019 after 20.67 seconds
+[0m14:39:26.014554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10699fba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10527e5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064df7d0>]}
+[0m14:39:26.014959 [debug] [MainThread]: Flushing usage events
+[0m14:39:26.581293 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:42:25.565445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12117da90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1228ef750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1228ef890>]}
+
+
+============================== 14:42:25.568011 | 13a2fc09-5002-499a-9a80-98e51c817725 ==============================
+[0m14:42:25.568011 [info ] [MainThread]: Running with dbt=1.11.7
+[0m14:42:25.568238 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'quiet': 'False', 'debug': 'False', 'empty': 'False', 'introspect': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/user/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'log_format': 'default', 'write_json': 'True', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'use_colors': 'True', 'invocation_command': 'dbt compile --select base_roadshow_kunde', 'version_check': 'True', 'partial_parse': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'log_path': '/Users/user/DVA_WGG/logs'}
+[0m14:42:25.665069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '13a2fc09-5002-499a-9a80-98e51c817725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121805f30>]}
+[0m14:42:25.684333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '13a2fc09-5002-499a-9a80-98e51c817725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12294df20>]}
+[0m14:42:25.684809 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m14:42:25.720043 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m14:42:25.830051 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:42:25.830231 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:42:25.830317 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:42:25.832239 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.DVA_WGG.raw_vault
+[0m14:42:25.842319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '13a2fc09-5002-499a-9a80-98e51c817725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123a0e250>]}
+[0m14:42:25.903271 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m14:42:25.904716 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m14:42:25.916624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '13a2fc09-5002-499a-9a80-98e51c817725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123b5d040>]}
+[0m14:42:25.916792 [info ] [MainThread]: Found 2 models, 14 sources, 1067 macros
+[0m14:42:25.916906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '13a2fc09-5002-499a-9a80-98e51c817725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122d866d0>]}
+[0m14:42:25.917478 [info ] [MainThread]: 
+[0m14:42:25.917593 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:42:25.917679 [info ] [MainThread]: 
+[0m14:42:25.917846 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:42:25.919069 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_dv'
+[0m14:42:25.940955 [debug] [ThreadPool]: Using postgres connection "list_postgres_dv"
+[0m14:42:25.941115 [debug] [ThreadPool]: On list_postgres_dv: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres_dv"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dv'
+  
+[0m14:42:25.941209 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:42:26.378005 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.437 seconds
+[0m14:42:26.380031 [debug] [ThreadPool]: On list_postgres_dv: ROLLBACK
+[0m14:42:26.400637 [debug] [ThreadPool]: On list_postgres_dv: Close
+[0m14:42:26.410397 [debug] [MainThread]: Using postgres connection "master"
+[0m14:42:26.411000 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m14:42:26.411356 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:42:26.682677 [debug] [MainThread]: SQL status: SELECT 0 in 0.271 seconds
+[0m14:42:26.683936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '13a2fc09-5002-499a-9a80-98e51c817725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1245cc460>]}
+[0m14:42:26.684336 [debug] [MainThread]: On master: ROLLBACK
+[0m14:42:26.698345 [debug] [MainThread]: On master: Close
+[0m14:42:26.705662 [debug] [Thread-1 (]: Began running node model.DVA_WGG.base_roadshow_kunde
+[0m14:42:26.705993 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_dv, now model.DVA_WGG.base_roadshow_kunde)
+[0m14:42:26.706223 [debug] [Thread-1 (]: Began compiling node model.DVA_WGG.base_roadshow_kunde
+[0m14:42:26.712416 [debug] [Thread-1 (]: Writing injected SQL for node "model.DVA_WGG.base_roadshow_kunde"
+[0m14:42:26.713276 [debug] [Thread-1 (]: Began executing node model.DVA_WGG.base_roadshow_kunde
+[0m14:42:26.713696 [debug] [Thread-1 (]: Finished running node model.DVA_WGG.base_roadshow_kunde
+[0m14:42:26.714467 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:42:26.714700 [debug] [MainThread]: Connection 'model.DVA_WGG.base_roadshow_kunde' was properly closed.
+[0m14:42:26.715070 [debug] [MainThread]: Command end result
+[0m14:42:26.741012 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m14:42:26.741819 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m14:42:26.744912 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/user/DVA_WGG/target/run_results.json
+[0m14:42:26.745053 [info ] [MainThread]: Compiled node 'base_roadshow_kunde' is:
+
+
+select
+    kundeid,
+    vereinspartnerid,
+    vorname,
+    name,
+    geschlecht,
+    geburtsdatum,
+    telefon,
+    mobil,
+    email,
+    kreditkarte,
+    gueltigbis,
+    kkfirma,
+    current_timestamp as ldts
+from "postgres"."roadshow"."kunde"
+[0m14:42:26.746980 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 1.2123493, "process_in_blocks": "0", "process_kernel_time": 0.170094, "process_mem_max_rss": "146276352", "process_out_blocks": "0", "process_user_time": 0.733694}
+[0m14:42:26.747160 [debug] [MainThread]: Command `dbt compile` succeeded at 14:42:26.747122 after 1.21 seconds
+[0m14:42:26.747297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1226fe5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1241f6360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1241f6410>]}
+[0m14:42:26.747425 [debug] [MainThread]: Flushing usage events
+[0m14:42:27.247438 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:43:24.961840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e25a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1119ef750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1119ef890>]}
+
+
+============================== 14:43:24.964521 | 22ce301a-5e72-4299-81d6-31d33f1c24c2 ==============================
+[0m14:43:24.964521 [info ] [MainThread]: Running with dbt=1.11.7
+[0m14:43:24.964763 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'printer_width': '80', 'static_parser': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'version_check': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'quiet': 'False', 'cache_selected_only': 'False', 'invocation_command': 'dbt compile --select stg_roadshow_kunde.sql', 'fail_fast': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'introspect': 'True', 'profiles_dir': '/Users/user/.dbt', 'log_format': 'default', 'empty': 'False', 'write_json': 'True', 'log_path': '/Users/user/DVA_WGG/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False'}
+[0m14:43:25.065623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '22ce301a-5e72-4299-81d6-31d33f1c24c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110805f30>]}
+[0m14:43:25.085528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '22ce301a-5e72-4299-81d6-31d33f1c24c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a4df20>]}
+[0m14:43:25.086068 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m14:43:25.117830 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m14:43:25.230619 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:43:25.230816 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:43:25.230906 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:43:25.232915 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.DVA_WGG.raw_vault
+[0m14:43:25.243303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '22ce301a-5e72-4299-81d6-31d33f1c24c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11230e250>]}
+[0m14:43:25.303124 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m14:43:25.304290 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m14:43:25.316069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '22ce301a-5e72-4299-81d6-31d33f1c24c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11245d040>]}
+[0m14:43:25.316247 [info ] [MainThread]: Found 2 models, 14 sources, 1067 macros
+[0m14:43:25.316363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '22ce301a-5e72-4299-81d6-31d33f1c24c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f7a6d0>]}
+[0m14:43:25.317034 [info ] [MainThread]: 
+[0m14:43:25.317149 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:43:25.317239 [info ] [MainThread]: 
+[0m14:43:25.317409 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:43:25.318624 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_dv'
+[0m14:43:25.337799 [debug] [ThreadPool]: Using postgres connection "list_postgres_dv"
+[0m14:43:25.337995 [debug] [ThreadPool]: On list_postgres_dv: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres_dv"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dv'
+  
+[0m14:43:25.338114 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:43:26.622915 [debug] [ThreadPool]: SQL status: SELECT 0 in 1.285 seconds
+[0m14:43:26.624582 [debug] [ThreadPool]: On list_postgres_dv: ROLLBACK
+[0m14:43:26.637769 [debug] [ThreadPool]: On list_postgres_dv: Close
+[0m14:43:26.643682 [debug] [MainThread]: Using postgres connection "master"
+[0m14:43:26.644108 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m14:43:26.644404 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:43:26.901999 [debug] [MainThread]: SQL status: SELECT 0 in 0.257 seconds
+[0m14:43:26.903900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '22ce301a-5e72-4299-81d6-31d33f1c24c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f08460>]}
+[0m14:43:26.904552 [debug] [MainThread]: On master: ROLLBACK
+[0m14:43:26.919105 [debug] [MainThread]: On master: Close
+[0m14:43:26.925392 [debug] [Thread-1 (]: Began running node model.DVA_WGG.stg_roadshow_kunde
+[0m14:43:26.926048 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_dv, now model.DVA_WGG.stg_roadshow_kunde)
+[0m14:43:26.926422 [debug] [Thread-1 (]: Began compiling node model.DVA_WGG.stg_roadshow_kunde
+[0m14:43:26.956247 [debug] [Thread-1 (]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:43:26.957375 [debug] [Thread-1 (]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:43:26.996572 [debug] [Thread-1 (]: source_model: base_roadshow_kunde
+[0m14:43:26.996793 [debug] [Thread-1 (]: source_model is not mapping and not none: base_roadshow_kunde
+[0m14:43:27.002140 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:43:27.002290 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_kunde"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_roadshow_kunde'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m14:43:27.002412 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:43:27.462743 [debug] [Thread-1 (]: SQL status: SELECT 0 in 0.460 seconds
+[0m14:43:27.467595 [debug] [Thread-1 (]: source_relation: "postgres"."dv"."base_roadshow_kunde"
+[0m14:43:27.493961 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:43:27.494315 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_kunde"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_roadshow_kunde'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m14:43:27.513788 [debug] [Thread-1 (]: SQL status: SELECT 0 in 0.019 seconds
+[0m14:43:27.556018 [debug] [Thread-1 (]: hash type in hash macro: VARCHAR
+[0m14:43:27.561064 [debug] [Thread-1 (]: hash type in hash macro: VARCHAR
+[0m14:43:27.565411 [debug] [Thread-1 (]: Writing injected SQL for node "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:43:27.565820 [debug] [Thread-1 (]: Began executing node model.DVA_WGG.stg_roadshow_kunde
+[0m14:43:27.565972 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: ROLLBACK
+[0m14:43:27.590397 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: Close
+[0m14:43:27.590812 [debug] [Thread-1 (]: Finished running node model.DVA_WGG.stg_roadshow_kunde
+[0m14:43:27.591348 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:43:27.591517 [debug] [MainThread]: Connection 'model.DVA_WGG.stg_roadshow_kunde' was properly closed.
+[0m14:43:27.591807 [debug] [MainThread]: Command end result
+[0m14:43:27.611967 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m14:43:27.612689 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m14:43:27.615352 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/user/DVA_WGG/target/run_results.json
+[0m14:43:27.615549 [info ] [MainThread]: Compiled node 'stg_roadshow_kunde' is:
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+--                                                                                      ( )  --
+--                                                                                     //    --
+--                                                                               ( )=( o )   --
+--  #####   #####     #    #       ####### ####### ######  ####### #######             \\    --
+-- #     # #     #   # #   #       #       #       #     # #       #                    ( )  --
+-- #       #        #   #  #       #       #       #     # #       #                         --
+--  #####  #       #     # #       #####   #####   ######  #####   #####                     --
+--       # #       ####### #       #       #       #   #   #       #                         --
+-- #     # #     # #     # #       #       #       #    #  #       #                         --
+--  #####   #####  #     # ####### ####### #       #     # ####### #######                   --
+-----------------------------------------------------------------------------------------------
+--                Generated by datavault4dbt by Scalefree International GmbH                 --
+--                   Source & Documentation: https://www.datavault4dbt.com                   --
+-----------------------------------------------------------------------------------------------
+
+WITH
+
+
+source_data AS (
+    SELECT *
+
+  FROM "postgres"."dv"."base_roadshow_kunde"
+
+  ),
+
+
+
+
+
+ldts_rsrc_data AS (
+
+  SELECT
+    CAST( ldts as TIMESTAMPTZ ) AS ldts,
+    CAST( 'ROADSHOW' as VARCHAR ) AS rsrc
+
+  FROM source_data),
+
+
+
+
+hashed_columns AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kundeid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_kunde_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(vereinspartnerid AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(vorname AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(name AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(geschlecht AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(geburtsdatum AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(telefon AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(mobil AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(email AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(kreditkarte AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(gueltigbis AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(kkfirma AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^||^^||^^||^^||^^||^^||^^||^^||^^||^^||^^'))), '00000000000000000000000000000000') AS hd_kunde_s
+
+    FROM ldts_rsrc_data
+  
+),
+
+unknown_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('0001-01-01 00:00:01', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'SYSTEM' as rsrc
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hd_kunde_s
+),
+
+
+error_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('8888-12-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'ERROR' as rsrc
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hd_kunde_s
+),
+
+
+ghost_records AS (
+    SELECT * FROM unknown_values
+    UNION ALL
+    SELECT * FROM error_values
+),
+columns_to_select AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        hk_kunde_h,
+        hd_kunde_s
+
+    FROM hashed_columns
+    UNION ALL
+    
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        hk_kunde_h,
+        hd_kunde_s
+
+    FROM ghost_records
+
+)
+
+SELECT * FROM columns_to_select
+[0m14:43:27.617660 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 2.6875017, "process_in_blocks": "0", "process_kernel_time": 0.172805, "process_mem_max_rss": "151175168", "process_out_blocks": "0", "process_user_time": 0.916367}
+[0m14:43:27.617834 [debug] [MainThread]: Command `dbt compile` succeeded at 14:43:27.617799 after 2.69 seconds
+[0m14:43:27.617965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116fe5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1127de990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1127de4c0>]}
+[0m14:43:27.618093 [debug] [MainThread]: Flushing usage events
+[0m14:43:28.045814 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:44:05.547207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108029a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ff3750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ff3890>]}
+
+
+============================== 14:44:05.550841 | 1c80d665-8285-4778-a08a-396bbf500865 ==============================
+[0m14:44:05.550841 [info ] [MainThread]: Running with dbt=1.11.7
+[0m14:44:05.551118 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'log_format': 'default', 'printer_width': '80', 'indirect_selection': 'eager', 'quiet': 'False', 'use_experimental_parser': 'False', 'use_colors': 'True', 'introspect': 'True', 'write_json': 'True', 'log_path': '/Users/user/DVA_WGG/logs', 'version_check': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt run --select stg_roadshow_kunde', 'partial_parse': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'warn_error': 'None', 'debug': 'False', 'static_parser': 'True', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/user/.dbt'}
+[0m14:44:05.648858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1c80d665-8285-4778-a08a-396bbf500865', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108309f30>]}
+[0m14:44:05.668563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1c80d665-8285-4778-a08a-396bbf500865', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109051f20>]}
+[0m14:44:05.669067 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m14:44:05.705764 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m14:44:05.813504 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:44:05.813709 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:44:05.813804 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:44:05.815737 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.DVA_WGG.raw_vault
+[0m14:44:05.825682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1c80d665-8285-4778-a08a-396bbf500865', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109fea450>]}
+[0m14:44:05.883242 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m14:44:05.884713 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m14:44:05.895870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1c80d665-8285-4778-a08a-396bbf500865', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090dfc50>]}
+[0m14:44:05.896050 [info ] [MainThread]: Found 2 models, 14 sources, 1067 macros
+[0m14:44:05.896178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1c80d665-8285-4778-a08a-396bbf500865', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097c57f0>]}
+[0m14:44:05.896753 [info ] [MainThread]: 
+[0m14:44:05.896868 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:44:05.896956 [info ] [MainThread]: 
+[0m14:44:05.897132 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:44:05.897437 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m14:44:05.916459 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m14:44:05.916613 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:44:05.916702 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:44:06.239293 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.322 seconds
+[0m14:44:06.242899 [debug] [ThreadPool]: On list_postgres: Close
+[0m14:44:06.245467 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now create_postgres_dv)
+[0m14:44:06.245995 [debug] [ThreadPool]: Creating schema "database: "postgres"
+schema: "dv"
+"
+[0m14:44:06.252700 [debug] [ThreadPool]: Using postgres connection "create_postgres_dv"
+[0m14:44:06.253080 [debug] [ThreadPool]: On create_postgres_dv: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "create_postgres_dv"} */
+create schema if not exists "dv"
+[0m14:44:06.253341 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:44:06.627290 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.374 seconds
+[0m14:44:06.629902 [debug] [ThreadPool]: On create_postgres_dv: COMMIT
+[0m14:44:06.630653 [debug] [ThreadPool]: Using postgres connection "create_postgres_dv"
+[0m14:44:06.631209 [debug] [ThreadPool]: On create_postgres_dv: COMMIT
+[0m14:44:06.647318 [debug] [ThreadPool]: SQL status: COMMIT in 0.016 seconds
+[0m14:44:06.647965 [debug] [ThreadPool]: On create_postgres_dv: Close
+[0m14:44:06.653007 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_postgres_dv, now list_postgres_dv)
+[0m14:44:06.659392 [debug] [ThreadPool]: Using postgres connection "list_postgres_dv"
+[0m14:44:06.659662 [debug] [ThreadPool]: On list_postgres_dv: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres_dv"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dv'
+  
+[0m14:44:06.659870 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:44:06.850375 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.190 seconds
+[0m14:44:06.853488 [debug] [ThreadPool]: On list_postgres_dv: ROLLBACK
+[0m14:44:06.910577 [debug] [ThreadPool]: On list_postgres_dv: Close
+[0m14:44:06.919578 [debug] [MainThread]: Using postgres connection "master"
+[0m14:44:06.920165 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m14:44:06.920554 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:44:07.362786 [debug] [MainThread]: SQL status: SELECT 0 in 0.442 seconds
+[0m14:44:07.364357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1c80d665-8285-4778-a08a-396bbf500865', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a55d8b0>]}
+[0m14:44:07.364872 [debug] [MainThread]: On master: ROLLBACK
+[0m14:44:07.378899 [debug] [MainThread]: On master: COMMIT
+[0m14:44:07.379401 [debug] [MainThread]: Using postgres connection "master"
+[0m14:44:07.379649 [debug] [MainThread]: On master: COMMIT
+[0m14:44:07.412944 [debug] [MainThread]: SQL status: COMMIT in 0.033 seconds
+[0m14:44:07.413869 [debug] [MainThread]: On master: Close
+[0m14:44:07.420551 [debug] [Thread-1 (]: Began running node model.DVA_WGG.stg_roadshow_kunde
+[0m14:44:07.421664 [info ] [Thread-1 (]: 1 of 1 START sql view model dv.stg_roadshow_kunde .............................. [RUN]
+[0m14:44:07.422464 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_dv, now model.DVA_WGG.stg_roadshow_kunde)
+[0m14:44:07.422898 [debug] [Thread-1 (]: Began compiling node model.DVA_WGG.stg_roadshow_kunde
+[0m14:44:07.453632 [debug] [Thread-1 (]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:44:07.454646 [debug] [Thread-1 (]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:44:07.493444 [debug] [Thread-1 (]: source_model: base_roadshow_kunde
+[0m14:44:07.493718 [debug] [Thread-1 (]: source_model is not mapping and not none: base_roadshow_kunde
+[0m14:44:07.499109 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:44:07.499264 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_kunde"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_roadshow_kunde'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m14:44:07.499385 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:44:07.687251 [debug] [Thread-1 (]: SQL status: SELECT 0 in 0.188 seconds
+[0m14:44:07.691570 [debug] [Thread-1 (]: source_relation: "postgres"."dv"."base_roadshow_kunde"
+[0m14:44:07.716274 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:44:07.716516 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_kunde"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_roadshow_kunde'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m14:44:07.731683 [debug] [Thread-1 (]: SQL status: SELECT 0 in 0.015 seconds
+[0m14:44:07.770678 [debug] [Thread-1 (]: hash type in hash macro: VARCHAR
+[0m14:44:07.775605 [debug] [Thread-1 (]: hash type in hash macro: VARCHAR
+[0m14:44:07.779812 [debug] [Thread-1 (]: Writing injected SQL for node "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:44:07.780183 [debug] [Thread-1 (]: Began executing node model.DVA_WGG.stg_roadshow_kunde
+[0m14:44:07.791147 [debug] [Thread-1 (]: Writing runtime sql for node "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:44:07.791603 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:44:07.791808 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_kunde"} */
+
+  create view "postgres"."dv"."stg_roadshow_kunde__dbt_tmp"
+    
+    
+  as (
+    
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+--                                                                                      ( )  --
+--                                                                                     //    --
+--                                                                               ( )=( o )   --
+--  #####   #####     #    #       ####### ####### ######  ####### #######             \\    --
+-- #     # #     #   # #   #       #       #       #     # #       #                    ( )  --
+-- #       #        #   #  #       #       #       #     # #       #                         --
+--  #####  #       #     # #       #####   #####   ######  #####   #####                     --
+--       # #       ####### #       #       #       #   #   #       #                         --
+-- #     # #     # #     # #       #       #       #    #  #       #                         --
+--  #####   #####  #     # ####### ####### #       #     # ####### #######                   --
+-----------------------------------------------------------------------------------------------
+--                Generated by datavault4dbt by Scalefree International GmbH                 --
+--                   Source & Documentation: https://www.datavault4dbt.com                   --
+-----------------------------------------------------------------------------------------------
+
+WITH
+
+
+source_data AS (
+    SELECT *
+
+  FROM "postgres"."dv"."base_roadshow_kunde"
+
+  ),
+
+
+
+
+
+ldts_rsrc_data AS (
+
+  SELECT
+    CAST( ldts as TIMESTAMPTZ ) AS ldts,
+    CAST( 'ROADSHOW' as VARCHAR ) AS rsrc
+
+  FROM source_data),
+
+
+
+
+hashed_columns AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kundeid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_kunde_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(vereinspartnerid AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(vorname AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(name AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(geschlecht AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(geburtsdatum AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(telefon AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(mobil AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(email AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(kreditkarte AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(gueltigbis AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(kkfirma AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^||^^||^^||^^||^^||^^||^^||^^||^^||^^||^^'))), '00000000000000000000000000000000') AS hd_kunde_s
+
+    FROM ldts_rsrc_data
+  
+),
+
+unknown_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('0001-01-01 00:00:01', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'SYSTEM' as rsrc
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hd_kunde_s
+),
+
+
+error_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('8888-12-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'ERROR' as rsrc
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hd_kunde_s
+),
+
+
+ghost_records AS (
+    SELECT * FROM unknown_values
+    UNION ALL
+    SELECT * FROM error_values
+),
+columns_to_select AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        hk_kunde_h,
+        hd_kunde_s
+
+    FROM hashed_columns
+    UNION ALL
+    
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        hk_kunde_h,
+        hd_kunde_s
+
+    FROM ghost_records
+
+)
+
+SELECT * FROM columns_to_select
+  );
+[0m14:44:07.834743 [debug] [Thread-1 (]: Postgres adapter: Postgres error: relation "dv.base_roadshow_kunde" does not exist
+LINE 63:   FROM "postgres"."dv"."base_roadshow_kunde"
+                ^
+
+[0m14:44:07.834916 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: ROLLBACK
+[0m14:44:07.856916 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: Close
+[0m14:44:07.862872 [debug] [Thread-1 (]: Database Error in model stg_roadshow_kunde (models/staging/roadshow/stg_roadshow_kunde.sql)
+  relation "dv.base_roadshow_kunde" does not exist
+  LINE 63:   FROM "postgres"."dv"."base_roadshow_kunde"
+                  ^
+  compiled code at target/run/DVA_WGG/models/staging/roadshow/stg_roadshow_kunde.sql
+[0m14:44:07.863869 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1c80d665-8285-4778-a08a-396bbf500865', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1f3f50>]}
+[0m14:44:07.864177 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model dv.stg_roadshow_kunde ..................... [[31mERROR[0m in 0.44s]
+[0m14:44:07.864422 [debug] [Thread-1 (]: Finished running node model.DVA_WGG.stg_roadshow_kunde
+[0m14:44:07.864643 [debug] [Thread-7 (]: Marking all children of 'model.DVA_WGG.stg_roadshow_kunde' to be skipped because of status 'error'.  Reason: Database Error in model stg_roadshow_kunde (models/staging/roadshow/stg_roadshow_kunde.sql)
+  relation "dv.base_roadshow_kunde" does not exist
+  LINE 63:   FROM "postgres"."dv"."base_roadshow_kunde"
+                  ^
+  compiled code at target/run/DVA_WGG/models/staging/roadshow/stg_roadshow_kunde.sql.
+[0m14:44:07.865476 [debug] [MainThread]: On master: COMMIT
+[0m14:44:07.865645 [debug] [MainThread]: Using postgres connection "master"
+[0m14:44:07.865763 [debug] [MainThread]: On master: COMMIT
+[0m14:44:07.865864 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:44:08.112116 [debug] [MainThread]: SQL status: COMMIT in 0.246 seconds
+[0m14:44:08.113262 [debug] [MainThread]: On master: Close
+[0m14:44:08.114923 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:44:08.115513 [debug] [MainThread]: Connection 'model.DVA_WGG.stg_roadshow_kunde' was properly closed.
+[0m14:44:08.116104 [info ] [MainThread]: 
+[0m14:44:08.116522 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.22 seconds (2.22s).
+[0m14:44:08.117405 [debug] [MainThread]: Command end result
+[0m14:44:08.160773 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m14:44:08.161867 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m14:44:08.165003 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/user/DVA_WGG/target/run_results.json
+[0m14:44:08.165167 [info ] [MainThread]: 
+[0m14:44:08.165341 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:44:08.165475 [info ] [MainThread]: 
+[0m14:44:08.165634 [error] [MainThread]: [31mFailure in model stg_roadshow_kunde (models/staging/roadshow/stg_roadshow_kunde.sql)[0m
+[0m14:44:08.165800 [error] [MainThread]:   Database Error in model stg_roadshow_kunde (models/staging/roadshow/stg_roadshow_kunde.sql)
+  relation "dv.base_roadshow_kunde" does not exist
+  LINE 63:   FROM "postgres"."dv"."base_roadshow_kunde"
+                  ^
+  compiled code at target/run/DVA_WGG/models/staging/roadshow/stg_roadshow_kunde.sql
+[0m14:44:08.165919 [info ] [MainThread]: 
+[0m14:44:08.166053 [info ] [MainThread]:   compiled code at target/compiled/DVA_WGG/models/staging/roadshow/stg_roadshow_kunde.sql
+[0m14:44:08.166158 [info ] [MainThread]: 
+[0m14:44:08.166282 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:44:08.168489 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.6497009, "process_in_blocks": "0", "process_kernel_time": 0.182195, "process_mem_max_rss": "151879680", "process_out_blocks": "0", "process_user_time": 0.993025}
+[0m14:44:08.168722 [debug] [MainThread]: Command `dbt run` failed at 14:44:08.168676 after 2.65 seconds
+[0m14:44:08.168893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a081230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065ef070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a177f70>]}
+[0m14:44:08.169050 [debug] [MainThread]: Flushing usage events
+[0m14:44:08.704745 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:45:34.812033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a7da90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100ef750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100ef890>]}
+
+
+============================== 14:45:34.814783 | 6dbe1b06-e071-4f79-90da-ccec7245ea2f ==============================
+[0m14:45:34.814783 [info ] [MainThread]: Running with dbt=1.11.7
+[0m14:45:34.815033 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'cache_selected_only': 'False', 'target_path': 'None', 'empty': 'False', 'profiles_dir': '/Users/user/.dbt', 'indirect_selection': 'eager', 'no_print': 'None', 'log_cache_events': 'False', 'version_check': 'True', 'introspect': 'True', 'log_format': 'default', 'log_path': '/Users/user/DVA_WGG/logs', 'write_json': 'True', 'partial_parse': 'True', 'printer_width': '80', 'debug': 'False', 'invocation_command': 'dbt run --select base_roadshow_kunde', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None'}
+[0m14:45:34.914330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6dbe1b06-e071-4f79-90da-ccec7245ea2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107005f30>]}
+[0m14:45:34.934592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6dbe1b06-e071-4f79-90da-ccec7245ea2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11014df20>]}
+[0m14:45:34.935256 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m14:45:34.968290 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m14:45:35.088294 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:45:35.088474 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:45:35.088559 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:45:35.090530 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.DVA_WGG.raw_vault
+[0m14:45:35.100684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6dbe1b06-e071-4f79-90da-ccec7245ea2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11130e450>]}
+[0m14:45:35.160117 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m14:45:35.161120 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m14:45:35.173447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6dbe1b06-e071-4f79-90da-ccec7245ea2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101dbc50>]}
+[0m14:45:35.173622 [info ] [MainThread]: Found 2 models, 14 sources, 1067 macros
+[0m14:45:35.173741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6dbe1b06-e071-4f79-90da-ccec7245ea2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1106f17f0>]}
+[0m14:45:35.174308 [info ] [MainThread]: 
+[0m14:45:35.174419 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:45:35.174507 [info ] [MainThread]: 
+[0m14:45:35.174673 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:45:35.174962 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m14:45:35.194645 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m14:45:35.194811 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:45:35.194902 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:45:35.528110 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.333 seconds
+[0m14:45:35.531794 [debug] [ThreadPool]: On list_postgres: Close
+[0m14:45:35.538160 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now list_postgres_dv)
+[0m14:45:35.545212 [debug] [ThreadPool]: Using postgres connection "list_postgres_dv"
+[0m14:45:35.545560 [debug] [ThreadPool]: On list_postgres_dv: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres_dv"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dv'
+  
+[0m14:45:35.545808 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:45:35.792862 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.247 seconds
+[0m14:45:35.796186 [debug] [ThreadPool]: On list_postgres_dv: ROLLBACK
+[0m14:45:35.816380 [debug] [ThreadPool]: On list_postgres_dv: Close
+[0m14:45:35.825630 [debug] [MainThread]: Using postgres connection "master"
+[0m14:45:35.826156 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m14:45:35.826550 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:45:36.047461 [debug] [MainThread]: SQL status: SELECT 0 in 0.221 seconds
+[0m14:45:36.051368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6dbe1b06-e071-4f79-90da-ccec7245ea2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111e08d50>]}
+[0m14:45:36.052397 [debug] [MainThread]: On master: ROLLBACK
+[0m14:45:36.065408 [debug] [MainThread]: On master: COMMIT
+[0m14:45:36.066070 [debug] [MainThread]: Using postgres connection "master"
+[0m14:45:36.066585 [debug] [MainThread]: On master: COMMIT
+[0m14:45:36.123832 [debug] [MainThread]: SQL status: COMMIT in 0.057 seconds
+[0m14:45:36.124820 [debug] [MainThread]: On master: Close
+[0m14:45:36.130772 [debug] [Thread-1 (]: Began running node model.DVA_WGG.base_roadshow_kunde
+[0m14:45:36.131505 [info ] [Thread-1 (]: 1 of 1 START sql view model dv.base_roadshow_kunde ............................. [RUN]
+[0m14:45:36.132009 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_dv, now model.DVA_WGG.base_roadshow_kunde)
+[0m14:45:36.132354 [debug] [Thread-1 (]: Began compiling node model.DVA_WGG.base_roadshow_kunde
+[0m14:45:36.141892 [debug] [Thread-1 (]: Writing injected SQL for node "model.DVA_WGG.base_roadshow_kunde"
+[0m14:45:36.143462 [debug] [Thread-1 (]: Began executing node model.DVA_WGG.base_roadshow_kunde
+[0m14:45:36.167641 [debug] [Thread-1 (]: Writing runtime sql for node "model.DVA_WGG.base_roadshow_kunde"
+[0m14:45:36.168200 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_roadshow_kunde"
+[0m14:45:36.168411 [debug] [Thread-1 (]: On model.DVA_WGG.base_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_roadshow_kunde"} */
+
+  create view "postgres"."dv"."base_roadshow_kunde__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    kundeid,
+    vereinspartnerid,
+    vorname,
+    name,
+    geschlecht,
+    geburtsdatum,
+    telefon,
+    mobil,
+    email,
+    kreditkarte,
+    gueltigbis,
+    kkfirma,
+    current_timestamp as ldts
+from "postgres"."roadshow"."kunde"
+  );
+[0m14:45:36.168600 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:45:36.419742 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.251 seconds
+[0m14:45:36.431338 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_roadshow_kunde"
+[0m14:45:36.431843 [debug] [Thread-1 (]: On model.DVA_WGG.base_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_roadshow_kunde"} */
+alter table "postgres"."dv"."base_roadshow_kunde__dbt_tmp" rename to "base_roadshow_kunde"
+[0m14:45:36.447074 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.015 seconds
+[0m14:45:36.464352 [debug] [Thread-1 (]: On model.DVA_WGG.base_roadshow_kunde: COMMIT
+[0m14:45:36.464855 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_roadshow_kunde"
+[0m14:45:36.465171 [debug] [Thread-1 (]: On model.DVA_WGG.base_roadshow_kunde: COMMIT
+[0m14:45:36.517024 [debug] [Thread-1 (]: SQL status: COMMIT in 0.051 seconds
+[0m14:45:36.527538 [debug] [Thread-1 (]: Applying DROP to: "postgres"."dv"."base_roadshow_kunde__dbt_backup"
+[0m14:45:36.532979 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_roadshow_kunde"
+[0m14:45:36.533480 [debug] [Thread-1 (]: On model.DVA_WGG.base_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_roadshow_kunde"} */
+drop view if exists "postgres"."dv"."base_roadshow_kunde__dbt_backup" cascade
+[0m14:45:36.549423 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.016 seconds
+[0m14:45:36.551588 [debug] [Thread-1 (]: On model.DVA_WGG.base_roadshow_kunde: Close
+[0m14:45:36.553273 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6dbe1b06-e071-4f79-90da-ccec7245ea2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111aba990>]}
+[0m14:45:36.553711 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dv.base_roadshow_kunde ........................ [[32mCREATE VIEW[0m in 0.42s]
+[0m14:45:36.554046 [debug] [Thread-1 (]: Finished running node model.DVA_WGG.base_roadshow_kunde
+[0m14:45:36.555035 [debug] [MainThread]: On master: COMMIT
+[0m14:45:36.555286 [debug] [MainThread]: Using postgres connection "master"
+[0m14:45:36.555465 [debug] [MainThread]: On master: COMMIT
+[0m14:45:36.555619 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:45:36.729688 [debug] [MainThread]: SQL status: COMMIT in 0.174 seconds
+[0m14:45:36.730831 [debug] [MainThread]: On master: Close
+[0m14:45:36.732153 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:45:36.732499 [debug] [MainThread]: Connection 'model.DVA_WGG.base_roadshow_kunde' was properly closed.
+[0m14:45:36.732850 [info ] [MainThread]: 
+[0m14:45:36.733159 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.56 seconds (1.56s).
+[0m14:45:36.733935 [debug] [MainThread]: Command end result
+[0m14:45:36.779571 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m14:45:36.780584 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m14:45:36.783562 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/user/DVA_WGG/target/run_results.json
+[0m14:45:36.783732 [info ] [MainThread]: 
+[0m14:45:36.783910 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:45:36.784036 [info ] [MainThread]: 
+[0m14:45:36.784167 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:45:36.786333 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.0031629, "process_in_blocks": "0", "process_kernel_time": 0.174883, "process_mem_max_rss": "148127744", "process_out_blocks": "0", "process_user_time": 0.899742}
+[0m14:45:36.786516 [debug] [MainThread]: Command `dbt run` succeeded at 14:45:36.786479 after 2.00 seconds
+[0m14:45:36.786662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c66db0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e28370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111381630>]}
+[0m14:45:36.786804 [debug] [MainThread]: Flushing usage events
+[0m14:45:37.270360 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:45:40.997289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c59a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c23750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c23890>]}
+
+
+============================== 14:45:40.999641 | 3ac3b755-195a-4beb-ae21-94a9f8edec22 ==============================
+[0m14:45:40.999641 [info ] [MainThread]: Running with dbt=1.11.7
+[0m14:45:40.999878 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/user/.dbt', 'introspect': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select stg_roadshow_kunde', 'target_path': 'None', 'warn_error': 'None', 'log_path': '/Users/user/DVA_WGG/logs', 'use_experimental_parser': 'False', 'write_json': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'static_parser': 'True', 'printer_width': '80', 'debug': 'False', 'log_cache_events': 'False', 'log_format': 'default', 'empty': 'False', 'no_print': 'None'}
+[0m14:45:41.064100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3ac3b755-195a-4beb-ae21-94a9f8edec22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f39f30>]}
+[0m14:45:41.083604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3ac3b755-195a-4beb-ae21-94a9f8edec22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c81f20>]}
+[0m14:45:41.084614 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m14:45:41.114486 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m14:45:41.218339 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:45:41.218527 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:45:41.218614 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:45:41.220520 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.DVA_WGG.raw_vault
+[0m14:45:41.230840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3ac3b755-195a-4beb-ae21-94a9f8edec22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a6e450>]}
+[0m14:45:41.288926 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m14:45:41.289752 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m14:45:41.300385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3ac3b755-195a-4beb-ae21-94a9f8edec22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d0fc50>]}
+[0m14:45:41.300543 [info ] [MainThread]: Found 2 models, 14 sources, 1067 macros
+[0m14:45:41.300661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ac3b755-195a-4beb-ae21-94a9f8edec22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072d17f0>]}
+[0m14:45:41.301227 [info ] [MainThread]: 
+[0m14:45:41.301338 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:45:41.301425 [info ] [MainThread]: 
+[0m14:45:41.301596 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:45:41.301894 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m14:45:41.319829 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m14:45:41.319997 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:45:41.320100 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:45:41.679423 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.359 seconds
+[0m14:45:41.681182 [debug] [ThreadPool]: On list_postgres: Close
+[0m14:45:41.686304 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now list_postgres_dv)
+[0m14:45:41.693148 [debug] [ThreadPool]: Using postgres connection "list_postgres_dv"
+[0m14:45:41.694044 [debug] [ThreadPool]: On list_postgres_dv: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres_dv"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dv'
+  
+[0m14:45:41.694373 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:45:41.915169 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.220 seconds
+[0m14:45:41.918647 [debug] [ThreadPool]: On list_postgres_dv: ROLLBACK
+[0m14:45:41.940653 [debug] [ThreadPool]: On list_postgres_dv: Close
+[0m14:45:41.950420 [debug] [MainThread]: Using postgres connection "master"
+[0m14:45:41.951034 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m14:45:41.951454 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:45:42.244342 [debug] [MainThread]: SQL status: SELECT 1 in 0.293 seconds
+[0m14:45:42.247179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ac3b755-195a-4beb-ae21-94a9f8edec22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fe0ef0>]}
+[0m14:45:42.247841 [debug] [MainThread]: On master: ROLLBACK
+[0m14:45:42.276561 [debug] [MainThread]: On master: COMMIT
+[0m14:45:42.277229 [debug] [MainThread]: Using postgres connection "master"
+[0m14:45:42.277604 [debug] [MainThread]: On master: COMMIT
+[0m14:45:42.312095 [debug] [MainThread]: SQL status: COMMIT in 0.034 seconds
+[0m14:45:42.313168 [debug] [MainThread]: On master: Close
+[0m14:45:42.319367 [debug] [Thread-1 (]: Began running node model.DVA_WGG.stg_roadshow_kunde
+[0m14:45:42.320197 [info ] [Thread-1 (]: 1 of 1 START sql view model dv.stg_roadshow_kunde .............................. [RUN]
+[0m14:45:42.320759 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_dv, now model.DVA_WGG.stg_roadshow_kunde)
+[0m14:45:42.321144 [debug] [Thread-1 (]: Began compiling node model.DVA_WGG.stg_roadshow_kunde
+[0m14:45:42.350782 [debug] [Thread-1 (]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:45:42.352215 [debug] [Thread-1 (]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m14:45:42.391667 [debug] [Thread-1 (]: source_model: base_roadshow_kunde
+[0m14:45:42.391926 [debug] [Thread-1 (]: source_model is not mapping and not none: base_roadshow_kunde
+[0m14:45:42.397364 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:45:42.397513 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_kunde"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_roadshow_kunde'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m14:45:42.397634 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:45:42.695468 [debug] [Thread-1 (]: SQL status: SELECT 13 in 0.298 seconds
+[0m14:45:42.700189 [debug] [Thread-1 (]: source_relation: "postgres"."dv"."base_roadshow_kunde"
+[0m14:45:42.732025 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:45:42.732361 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_kunde"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_roadshow_kunde'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m14:45:42.756138 [debug] [Thread-1 (]: SQL status: SELECT 13 in 0.024 seconds
+[0m14:45:42.802183 [debug] [Thread-1 (]: hash type in hash macro: VARCHAR
+[0m14:45:42.807196 [debug] [Thread-1 (]: hash type in hash macro: VARCHAR
+[0m14:45:42.830334 [debug] [Thread-1 (]: Writing injected SQL for node "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:45:42.831384 [debug] [Thread-1 (]: Began executing node model.DVA_WGG.stg_roadshow_kunde
+[0m14:45:42.842037 [debug] [Thread-1 (]: Writing runtime sql for node "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:45:42.842308 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:45:42.842516 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_kunde"} */
+
+  create view "postgres"."dv"."stg_roadshow_kunde__dbt_tmp"
+    
+    
+  as (
+    
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+--                                                                                      ( )  --
+--                                                                                     //    --
+--                                                                               ( )=( o )   --
+--  #####   #####     #    #       ####### ####### ######  ####### #######             \\    --
+-- #     # #     #   # #   #       #       #       #     # #       #                    ( )  --
+-- #       #        #   #  #       #       #       #     # #       #                         --
+--  #####  #       #     # #       #####   #####   ######  #####   #####                     --
+--       # #       ####### #       #       #       #   #   #       #                         --
+-- #     # #     # #     # #       #       #       #    #  #       #                         --
+--  #####   #####  #     # ####### ####### #       #     # ####### #######                   --
+-----------------------------------------------------------------------------------------------
+--                Generated by datavault4dbt by Scalefree International GmbH                 --
+--                   Source & Documentation: https://www.datavault4dbt.com                   --
+-----------------------------------------------------------------------------------------------
+
+WITH
+
+
+source_data AS (
+    SELECT
+
+    
+        kundeid,
+        vereinspartnerid,
+        vorname,
+        name,
+        geschlecht,
+        geburtsdatum,
+        telefon,
+        mobil,
+        email,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+        ldts
+
+  FROM "postgres"."dv"."base_roadshow_kunde"
+
+  ),
+
+
+
+
+
+ldts_rsrc_data AS (
+
+  SELECT
+    CAST( ldts as TIMESTAMPTZ ) AS ldts,
+    CAST( 'ROADSHOW' as VARCHAR ) AS rsrc,
+      
+        kundeid,
+        vereinspartnerid,
+        vorname,
+        name,
+        geschlecht,
+        geburtsdatum,
+        telefon,
+        mobil,
+        email,
+        kreditkarte,
+        gueltigbis,
+        kkfirma
+    
+
+  FROM source_data),
+
+
+
+
+hashed_columns AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        kundeid,
+        vereinspartnerid,
+        vorname,
+        name,
+        geschlecht,
+        geburtsdatum,
+        telefon,
+        mobil,
+        email,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kundeid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_kunde_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(vereinspartnerid AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(vorname AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(name AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(geschlecht AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(geburtsdatum AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(telefon AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(mobil AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(email AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(kreditkarte AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(gueltigbis AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(kkfirma AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^||^^||^^||^^||^^||^^||^^||^^||^^||^^||^^'))), '00000000000000000000000000000000') AS hd_kunde_s
+
+    FROM ldts_rsrc_data
+  
+),
+
+unknown_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('0001-01-01 00:00:01', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'SYSTEM' as rsrc
+        , '(unknown)' as kundeid
+        , '(unknown)' as vereinspartnerid
+        , '(unknown)' as vorname
+        , '(unknown)' as name
+        , '(unknown)' as geschlecht
+        ,TO_DATE('0001-01-01', 'YYYY-MM-DD' ) as geburtsdatum
+        , '(unknown)' as telefon
+        , '(unknown)' as mobil
+        , '(unknown)' as email
+        , '(unknown)' as kreditkarte
+        , '(unknown)' as gueltigbis
+        , '(unknown)' as kkfirma
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hd_kunde_s
+),
+
+
+error_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('8888-12-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'ERROR' as rsrc
+        , '(error)' as kundeid
+        , '(error)' as vereinspartnerid
+        , '(error)' as vorname
+        , '(error)' as name
+        , '(error)' as geschlecht
+        ,TO_DATE('8888-12-31', 'YYYY-MM-DD' ) as geburtsdatum
+        , '(error)' as telefon
+        , '(error)' as mobil
+        , '(error)' as email
+        , '(error)' as kreditkarte
+        , '(error)' as gueltigbis
+        , '(error)' as kkfirma
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hd_kunde_s
+),
+
+
+ghost_records AS (
+    SELECT * FROM unknown_values
+    UNION ALL
+    SELECT * FROM error_values
+),
+columns_to_select AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        kundeid,
+        vereinspartnerid,
+        vorname,
+        name,
+        geschlecht,
+        geburtsdatum,
+        telefon,
+        mobil,
+        email,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+        hk_kunde_h,
+        hd_kunde_s
+
+    FROM hashed_columns
+    UNION ALL
+    
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        kundeid,
+        vereinspartnerid,
+        vorname,
+        name,
+        geschlecht,
+        geburtsdatum,
+        telefon,
+        mobil,
+        email,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+        hk_kunde_h,
+        hd_kunde_s
+
+    FROM ghost_records
+
+)
+
+SELECT * FROM columns_to_select
+  );
+[0m14:45:42.865775 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.023 seconds
+[0m14:45:42.867994 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:45:42.868117 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_kunde"} */
+alter table "postgres"."dv"."stg_roadshow_kunde__dbt_tmp" rename to "stg_roadshow_kunde"
+[0m14:45:42.886350 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.018 seconds
+[0m14:45:42.892152 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: COMMIT
+[0m14:45:42.892282 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:45:42.892391 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: COMMIT
+[0m14:45:42.908489 [debug] [Thread-1 (]: SQL status: COMMIT in 0.016 seconds
+[0m14:45:42.910997 [debug] [Thread-1 (]: Applying DROP to: "postgres"."dv"."stg_roadshow_kunde__dbt_backup"
+[0m14:45:42.913499 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_kunde"
+[0m14:45:42.913647 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_kunde"} */
+drop view if exists "postgres"."dv"."stg_roadshow_kunde__dbt_backup" cascade
+[0m14:45:42.936300 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.022 seconds
+[0m14:45:42.937445 [debug] [Thread-1 (]: On model.DVA_WGG.stg_roadshow_kunde: Close
+[0m14:45:42.938503 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3ac3b755-195a-4beb-ae21-94a9f8edec22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c72bd0>]}
+[0m14:45:42.938784 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dv.stg_roadshow_kunde ......................... [[32mCREATE VIEW[0m in 0.62s]
+[0m14:45:42.939010 [debug] [Thread-1 (]: Finished running node model.DVA_WGG.stg_roadshow_kunde
+[0m14:45:42.939600 [debug] [MainThread]: On master: COMMIT
+[0m14:45:42.939748 [debug] [MainThread]: Using postgres connection "master"
+[0m14:45:42.939854 [debug] [MainThread]: On master: COMMIT
+[0m14:45:42.939948 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:45:43.155823 [debug] [MainThread]: SQL status: COMMIT in 0.216 seconds
+[0m14:45:43.157044 [debug] [MainThread]: On master: Close
+[0m14:45:43.158801 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:45:43.159382 [debug] [MainThread]: Connection 'model.DVA_WGG.stg_roadshow_kunde' was properly closed.
+[0m14:45:43.159914 [info ] [MainThread]: 
+[0m14:45:43.160235 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.86 seconds (1.86s).
+[0m14:45:43.160959 [debug] [MainThread]: Command end result
+[0m14:45:43.202025 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/user/DVA_WGG/target/manifest.json
+[0m14:45:43.203047 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/user/DVA_WGG/target/semantic_manifest.json
+[0m14:45:43.206037 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/user/DVA_WGG/target/run_results.json
+[0m14:45:43.206187 [info ] [MainThread]: 
+[0m14:45:43.206357 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:45:43.206486 [info ] [MainThread]: 
+[0m14:45:43.206633 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:45:43.208472 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.2362041, "process_in_blocks": "0", "process_kernel_time": 0.136883, "process_mem_max_rss": "154124288", "process_out_blocks": "0", "process_user_time": 0.999875}
+[0m14:45:43.208714 [debug] [MainThread]: Command `dbt run` succeeded at 14:45:43.208668 after 2.24 seconds
+[0m14:45:43.208885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b03cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080a2cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080a2f30>]}
+[0m14:45:43.209045 [debug] [MainThread]: Flushing usage events
+[0m14:45:44.018267 [debug] [MainThread]: An error was encountered while trying to flush usage events
