@@ -1,0 +1,63 @@
+{
+    "path_count": 421,
+    "parsed_path_count": 421,
+    "static_analysis_path_count": 0,
+    "static_analysis_parsed_path_count": 0,
+    "is_partial_parse_enabled": true,
+    "is_static_analysis_enabled": true,
+    "read_files_elapsed": 0.07919116702396423,
+    "load_macros_elapsed": 1.6525937499245629,
+    "parse_project_elapsed": 0.059720959048718214,
+    "patch_sources_elapsed": 0.010600125067867339,
+    "process_manifest_elapsed": 0.02188858308363706,
+    "load_all_elapsed": 1.8550151250092313,
+    "projects": [
+        {
+            "project_name": "DVA_WGG",
+            "elapsed": 0.03586066700518131,
+            "parsers": [
+                {
+                    "parser": "test",
+                    "elapsed": 0.03140745894052088,
+                    "parsed_path_count": 1
+                }
+            ],
+            "parsed_path_count": 1
+        },
+        {
+            "project_name": "dbt_postgres",
+            "elapsed": 0.002638581907376647,
+            "parsers": [],
+            "parsed_path_count": 0
+        },
+        {
+            "project_name": "dbt",
+            "elapsed": 0.002073500072583556,
+            "parsers": [
+                {
+                    "parser": "doc",
+                    "elapsed": 9.950005915015936e-05,
+                    "parsed_path_count": 1
+                }
+            ],
+            "parsed_path_count": 1
+        },
+        {
+            "project_name": "datavault4dbt",
+            "elapsed": 0.019102665944956243,
+            "parsers": [
+                {
+                    "parser": "doc",
+                    "elapsed": 0.00043400004506111145,
+                    "parsed_path_count": 1
+                },
+                {
+                    "parser": "test",
+                    "elapsed": 0.01652595796622336,
+                    "parsed_path_count": 5
+                }
+            ],
+            "parsed_path_count": 6
+        }
+    ]
+}
