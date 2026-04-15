@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: roadshow
+    schema: roadshow
+    description: "Bestellungen aus dem Roadshow"
+    tables:
+      - name: kunde
+      - name: produkt  
+      - name: rs_bestellung
+      - name: vereinspartner
+  - name: webshop
+    schema: webshop
+    description: "Online Bestellungen"
+    tables: 
+      - name: bestellung
+      - name: kategorie
+      - name: kunde
+      - name: lieferadresse
+      - name: lieferdienst
+      - name: lieferung
+      - name: position
+      - name: produkt
+      - name: vereinspartner
+      - name: wohnort
+
