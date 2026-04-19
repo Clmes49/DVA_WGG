@@ -1,8 +1,9 @@
-{{ config(materialized='view') }}
+
 
 select
-    LieferAdrID,
-    KundeID,
+    kundeid,
+    Von,
+    Bis,
     Strasse,
     Hausnummer,
     Adresszusatz,
@@ -10,4 +11,4 @@ select
     Ort,
     Land,
     current_timestamp as ldts
-from {{ source('webshop', 'lieferadresse') }}
+from "postgres"."webshop"."wohnort"

@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+
 
 select
     LieferAdrID,
@@ -10,4 +10,4 @@ select
     Ort,
     Land,
     current_timestamp as ldts
-from {{ source('webshop', 'lieferadresse') }}
+from "postgres"."webshop"."lieferadresse"

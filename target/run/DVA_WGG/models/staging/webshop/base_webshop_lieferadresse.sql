@@ -1,4 +1,9 @@
-{{ config(materialized='view') }}
+
+  create view "postgres"."dv"."base_webshop_lieferadresse__dbt_tmp"
+    
+    
+  as (
+    
 
 select
     LieferAdrID,
@@ -10,4 +15,5 @@ select
     Ort,
     Land,
     current_timestamp as ldts
-from {{ source('webshop', 'lieferadresse') }}
+from "postgres"."webshop"."lieferadresse"
+  );
