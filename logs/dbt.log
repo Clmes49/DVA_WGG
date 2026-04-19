@@ -2060,3 +2060,68 @@ drop view if exists "postgres"."dv"."stg_roadshow_kunde__dbt_backup" cascade
 [0m14:45:43.208885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b03cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080a2cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080a2f30>]}
 [0m14:45:43.209045 [debug] [MainThread]: Flushing usage events
 [0m14:45:44.018267 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:55:01.470371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC6471940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC71056D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC87CFD90>]}
+
+
+============================== 12:55:01.481178 | 4ecbe41e-84c5-4286-87ae-82c0dd088ae9 ==============================
+[0m12:55:01.481178 [info ] [MainThread]: Running with dbt=1.11.8
+[0m12:55:01.482297 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\cleme\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt build', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\cleme\\dev\\DVA_WGG\\logs'}
+[0m12:55:02.202564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4ecbe41e-84c5-4286-87ae-82c0dd088ae9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC6B4D350>]}
+[0m12:55:02.314238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4ecbe41e-84c5-4286-87ae-82c0dd088ae9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC87DB460>]}
+[0m12:55:02.317138 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m12:55:03.314931 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m12:55:03.490698 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m12:55:03.491516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4ecbe41e-84c5-4286-87ae-82c0dd088ae9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC90E9D50>]}
+[0m12:55:19.409403 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m12:55:19.413546 [debug] [MainThread]: ["postgres"."dv"."stg_roadshow_kunde"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m12:55:19.585877 [debug] [MainThread]: source_model: base_roadshow_kunde
+[0m12:55:19.586772 [debug] [MainThread]: source_model is not mapping and not none: base_roadshow_kunde
+[0m12:55:19.595110 [debug] [MainThread]: source_relation: "postgres"."dv"."stg_roadshow_kunde"
+[0m12:55:19.839219 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m12:55:19.859262 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m12:55:20.417236 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.DVA_WGG.raw_vault
+[0m12:55:20.433484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4ecbe41e-84c5-4286-87ae-82c0dd088ae9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC985E210>]}
+[0m12:55:20.649233 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\cleme\dev\DVA_WGG\target\manifest.json
+[0m12:55:20.658402 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\cleme\dev\DVA_WGG\target\semantic_manifest.json
+[0m12:55:20.865508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4ecbe41e-84c5-4286-87ae-82c0dd088ae9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC91F52B0>]}
+[0m12:55:20.866263 [info ] [MainThread]: Found 2 models, 14 sources, 1067 macros
+[0m12:55:20.871638 [info ] [MainThread]: 
+[0m12:55:20.872591 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:55:20.873567 [info ] [MainThread]: 
+[0m12:55:20.874815 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m12:55:20.885922 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m12:55:26.203753 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m12:55:26.204366 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m12:55:26.204872 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:55:28.531633 [debug] [ThreadPool]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "bis-241-19-pg.postgres.database.azure.com" (20.52.55.146), port 5432 failed: FATAL:  password authentication failed for user "sqladmin"
+connection to server at "bis-241-19-pg.postgres.database.azure.com" (20.52.55.146), port 5432 failed: FATAL:  no pg_hba.conf entry for host "145.254.101.98", user "sqladmin", database "postgres", no encryption
+
+[0m12:55:30.770035 [debug] [ThreadPool]: Postgres adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m12:55:30.770909 [debug] [ThreadPool]: Postgres adapter: Rolling back transaction.
+[0m12:55:30.771765 [debug] [ThreadPool]: Postgres adapter: Error running SQL: macro list_schemas
+[0m12:55:30.772364 [debug] [ThreadPool]: Postgres adapter: Rolling back transaction.
+[0m12:55:30.772817 [debug] [ThreadPool]: On list_postgres: No close available on handle
+[0m12:55:30.774716 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:55:30.775155 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m12:55:30.775558 [info ] [MainThread]: 
+[0m12:55:30.776285 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 9.90 seconds (9.90s).
+[0m12:55:30.777400 [error] [MainThread]: Encountered an error:
+Database Error
+  connection to server at "bis-241-19-pg.postgres.database.azure.com" (20.52.55.146), port 5432 failed: FATAL:  password authentication failed for user "sqladmin"
+  connection to server at "bis-241-19-pg.postgres.database.azure.com" (20.52.55.146), port 5432 failed: FATAL:  no pg_hba.conf entry for host "145.254.101.98", user "sqladmin", database "postgres", no encryption
+  
+[0m12:55:30.779418 [debug] [MainThread]: Command `dbt build` failed at 12:55:30.779206 after 29.59 seconds
+[0m12:55:30.780070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC91C5F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC7616E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC9133290>]}
+[0m12:55:30.780573 [debug] [MainThread]: Flushing usage events
+[0m12:55:32.474304 [debug] [MainThread]: An error was encountered while trying to flush usage events
