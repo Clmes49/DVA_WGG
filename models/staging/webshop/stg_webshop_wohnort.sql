@@ -6,7 +6,7 @@ ldts: "ldts"
 rsrc: "!WEBSHOP"
 
 hashed_columns:
-  # Gleicher Hub-Hash wie bei Kunde (für Zuordnung)
+  # Gleicher HK wie bei Kunde
   hk_kunde_h:
     - "kundeid"
 
