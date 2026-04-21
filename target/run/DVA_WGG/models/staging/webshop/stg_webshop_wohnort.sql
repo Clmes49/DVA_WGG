@@ -120,7 +120,7 @@ hashed_columns AS (
     COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
         COALESCE((
 
-            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kunde_id AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kundeid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
 
         ), '^^')
         ), '\n', '') 

@@ -18688,3 +18688,2368 @@ HINT:  Perhaps you meant to reference the column "ldts_rsrc_data.kundeid".
 [0m13:53:01.628241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000153CBAA76B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000153CB2696D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000153CB26A510>]}
 [0m13:53:01.628872 [debug] [MainThread]: Flushing usage events
 [0m13:53:03.259012 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:57:52.779614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8BACD400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8C731450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8DDE7D90>]}
+
+
+============================== 13:57:52.787056 | 7ad18789-1e3b-4f1d-8535-90c47000778e ==============================
+[0m13:57:52.787056 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:57:52.788435 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\cleme\\.dbt', 'invocation_command': 'dbt build --select staging', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\cleme\\dev\\DVA_WGG\\logs'}
+[0m13:57:53.102443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8C164FC0>]}
+[0m13:57:53.200687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8DE0A140>]}
+[0m13:57:53.203190 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m13:57:53.837801 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:57:54.309984 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m13:57:54.310951 [debug] [MainThread]: Partial parsing: updated file: DVA_WGG://models\staging\webshop\stg_webshop_wohnort.sql
+[0m13:57:54.311536 [debug] [MainThread]: Partial parsing: updated file: DVA_WGG://models\staging\webshop\stg_webshop_kunde.sql
+[0m13:57:54.711734 [debug] [MainThread]: ["postgres"."dv"."stg_webshop_wohnort"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m13:57:54.714287 [debug] [MainThread]: ["postgres"."dv"."stg_webshop_wohnort"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m13:57:54.848124 [debug] [MainThread]: source_model: base_webshop_wohnort
+[0m13:57:54.848936 [debug] [MainThread]: source_model is not mapping and not none: base_webshop_wohnort
+[0m13:57:54.853018 [debug] [MainThread]: source_relation: "postgres"."dv"."stg_webshop_wohnort"
+[0m13:57:55.027555 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m13:57:55.044330 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m13:57:55.083557 [debug] [MainThread]: ["postgres"."dv"."stg_webshop_kunde"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m13:57:55.086521 [debug] [MainThread]: ["postgres"."dv"."stg_webshop_kunde"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m13:57:55.087477 [debug] [MainThread]: source_model: base_webshop_kunde
+[0m13:57:55.087899 [debug] [MainThread]: source_model is not mapping and not none: base_webshop_kunde
+[0m13:57:55.088466 [debug] [MainThread]: source_relation: "postgres"."dv"."stg_webshop_kunde"
+[0m13:57:55.094037 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m13:57:55.096113 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m13:57:55.098079 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m13:57:55.100551 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m13:57:55.106301 [debug] [MainThread]: hash type in hash macro: VARCHAR
+[0m13:57:55.197786 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.DVA_WGG.raw_vault
+[0m13:57:55.218233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8ED5A250>]}
+[0m13:57:55.399624 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\cleme\dev\DVA_WGG\target\manifest.json
+[0m13:57:55.404805 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\cleme\dev\DVA_WGG\target\semantic_manifest.json
+[0m13:57:55.458500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8DE9A3F0>]}
+[0m13:57:55.459246 [info ] [MainThread]: Found 22 models, 14 sources, 1067 macros
+[0m13:57:55.465103 [info ] [MainThread]: 
+[0m13:57:55.465888 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:57:55.466539 [info ] [MainThread]: 
+[0m13:57:55.467506 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m13:57:55.476630 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m13:57:55.663756 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m13:57:55.664467 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m13:57:55.664895 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:57:55.939259 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.274 seconds
+[0m13:57:55.941605 [debug] [ThreadPool]: On list_postgres: Close
+[0m13:57:55.947846 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_dv'
+[0m13:57:55.956684 [debug] [ThreadPool]: Using postgres connection "list_postgres_dv"
+[0m13:57:55.957165 [debug] [ThreadPool]: On list_postgres_dv: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "list_postgres_dv"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dv'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dv'
+  
+[0m13:57:55.957614 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:57:56.182873 [debug] [ThreadPool]: SQL status: SELECT 13 in 0.225 seconds
+[0m13:57:56.185747 [debug] [ThreadPool]: On list_postgres_dv: ROLLBACK
+[0m13:57:56.206492 [debug] [ThreadPool]: On list_postgres_dv: Close
+[0m13:57:56.220895 [debug] [MainThread]: Using postgres connection "master"
+[0m13:57:56.221611 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m13:57:56.222147 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:57:56.463745 [debug] [MainThread]: SQL status: SELECT 13 in 0.241 seconds
+[0m13:57:56.466886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E7F97F0>]}
+[0m13:57:56.467563 [debug] [MainThread]: On master: ROLLBACK
+[0m13:57:56.489523 [debug] [MainThread]: On master: COMMIT
+[0m13:57:56.490409 [debug] [MainThread]: Using postgres connection "master"
+[0m13:57:56.490846 [debug] [MainThread]: On master: COMMIT
+[0m13:57:56.533344 [debug] [MainThread]: SQL status: COMMIT in 0.042 seconds
+[0m13:57:56.534229 [debug] [MainThread]: On master: Close
+[0m13:57:56.544803 [debug] [Thread-1 (]: Began running node model.DVA_WGG.base_roadshow_kunde
+[0m13:57:56.545439 [debug] [Thread-3 (]: Began running node model.DVA_WGG.base_roadshow_rsbestellung
+[0m13:57:56.546099 [debug] [Thread-4 (]: Began running node model.DVA_WGG.base_roadshow_vereinspartner
+[0m13:57:56.547369 [debug] [Thread-2 (]: Began running node model.DVA_WGG.base_roadshow_produkt
+[0m13:57:56.546846 [info ] [Thread-1 (]: 1 of 21 START sql view model dv.base_roadshow_kunde ............................ [RUN]
+[0m13:57:56.548298 [info ] [Thread-3 (]: 3 of 21 START sql view model dv.base_roadshow_rsbestellung ..................... [RUN]
+[0m13:57:56.550540 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.DVA_WGG.base_roadshow_kunde'
+[0m13:57:56.548957 [info ] [Thread-4 (]: 4 of 21 START sql view model dv.base_roadshow_vereinspartner ................... [RUN]
+[0m13:57:56.551516 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.DVA_WGG.base_roadshow_rsbestellung'
+[0m13:57:56.549766 [info ] [Thread-2 (]: 2 of 21 START sql view model dv.base_roadshow_produkt .......................... [RUN]
+[0m13:57:56.552203 [debug] [Thread-1 (]: Began compiling node model.DVA_WGG.base_roadshow_kunde
+[0m13:57:56.552853 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.DVA_WGG.base_roadshow_vereinspartner'
+[0m13:57:56.553383 [debug] [Thread-3 (]: Began compiling node model.DVA_WGG.base_roadshow_rsbestellung
+[0m13:57:56.554031 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.DVA_WGG.base_roadshow_produkt'
+[0m13:57:56.567309 [debug] [Thread-1 (]: Writing injected SQL for node "model.DVA_WGG.base_roadshow_kunde"
+[0m13:57:56.568282 [debug] [Thread-4 (]: Began compiling node model.DVA_WGG.base_roadshow_vereinspartner
+[0m13:57:56.573276 [debug] [Thread-3 (]: Writing injected SQL for node "model.DVA_WGG.base_roadshow_rsbestellung"
+[0m13:57:56.574190 [debug] [Thread-2 (]: Began compiling node model.DVA_WGG.base_roadshow_produkt
+[0m13:57:56.579514 [debug] [Thread-4 (]: Writing injected SQL for node "model.DVA_WGG.base_roadshow_vereinspartner"
+[0m13:57:56.584639 [debug] [Thread-2 (]: Writing injected SQL for node "model.DVA_WGG.base_roadshow_produkt"
+[0m13:57:56.585834 [debug] [Thread-1 (]: Began executing node model.DVA_WGG.base_roadshow_kunde
+[0m13:57:56.596474 [debug] [Thread-3 (]: Began executing node model.DVA_WGG.base_roadshow_rsbestellung
+[0m13:57:56.660830 [debug] [Thread-1 (]: Writing runtime sql for node "model.DVA_WGG.base_roadshow_kunde"
+[0m13:57:56.661930 [debug] [Thread-4 (]: Began executing node model.DVA_WGG.base_roadshow_vereinspartner
+[0m13:57:56.665838 [debug] [Thread-3 (]: Writing runtime sql for node "model.DVA_WGG.base_roadshow_rsbestellung"
+[0m13:57:56.673803 [debug] [Thread-4 (]: Writing runtime sql for node "model.DVA_WGG.base_roadshow_vereinspartner"
+[0m13:57:56.674806 [debug] [Thread-2 (]: Began executing node model.DVA_WGG.base_roadshow_produkt
+[0m13:57:56.676117 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_roadshow_kunde"
+[0m13:57:56.683954 [debug] [Thread-2 (]: Writing runtime sql for node "model.DVA_WGG.base_roadshow_produkt"
+[0m13:57:56.686129 [debug] [Thread-1 (]: On model.DVA_WGG.base_roadshow_kunde: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_roadshow_kunde"} */
+
+  create view "postgres"."dv"."base_roadshow_kunde__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    kundeid,
+    vereinspartnerid,
+    vorname,
+    name,
+    geschlecht,
+    geburtsdatum,
+    telefon,
+    mobil,
+    email,
+    kreditkarte,
+    gueltigbis,
+    kkfirma,
+    current_timestamp as ldts
+from "postgres"."roadshow"."kunde"
+  );
+[0m13:57:56.687603 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:57:56.689046 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_roadshow_rsbestellung"
+[0m13:57:56.689872 [debug] [Thread-3 (]: On model.DVA_WGG.base_roadshow_rsbestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_roadshow_rsbestellung"} */
+
+  create view "postgres"."dv"."base_roadshow_rsbestellung__dbt_tmp"
+    
+    
+  as (
+    
+select
+   bestellungid,
+   kundeid,
+   vereinspartnerid,
+   kaufdatum,
+   kreditkarte,
+   gueltigbis,
+   kkfirma,
+   produktid,
+   menge,
+   preis,
+   rabatt,
+   current_timestamp as ldts
+from "postgres"."roadshow"."rs_bestellung"
+  );
+[0m13:57:56.690862 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.base_roadshow_vereinspartner"
+[0m13:57:56.691593 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_roadshow_produkt"
+[0m13:57:56.692163 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:57:56.693041 [debug] [Thread-4 (]: On model.DVA_WGG.base_roadshow_vereinspartner: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_roadshow_vereinspartner"} */
+
+  create view "postgres"."dv"."base_roadshow_vereinspartner__dbt_tmp"
+    
+    
+  as (
+    
+
+select 
+   vereinspartnerid,
+   kundeidverein,
+   rabatt1,
+   rabatt2,
+   rabatt3,
+   current_timestamp as ldts
+from "postgres"."roadshow"."vereinspartner"
+  );
+[0m13:57:56.694004 [debug] [Thread-2 (]: On model.DVA_WGG.base_roadshow_produkt: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_roadshow_produkt"} */
+
+  create view "postgres"."dv"."base_roadshow_produkt__dbt_tmp"
+    
+    
+  as (
+    
+select
+   produktid,
+   katid,
+   bezeichnung,
+   umfang,
+   typ,
+   preis,
+   pflanzort,
+   pflanzabstand,
+   current_timestamp as ldts
+from "postgres"."roadshow"."produkt"
+  );
+[0m13:57:56.695161 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:57:56.696542 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:57:56.911960 [debug] [Thread-1 (]: Postgres adapter: Postgres error: relation "roadshow.kunde" does not exist
+LINE 23: from "postgres"."roadshow"."kunde"
+              ^
+
+[0m13:57:56.913458 [debug] [Thread-1 (]: On model.DVA_WGG.base_roadshow_kunde: ROLLBACK
+[0m13:57:56.934450 [debug] [Thread-1 (]: On model.DVA_WGG.base_roadshow_kunde: Close
+[0m13:57:56.947901 [debug] [Thread-1 (]: Database Error in model base_roadshow_kunde (models\staging\roadshow\base_roadshow_kunde.sql)
+  relation "roadshow.kunde" does not exist
+  LINE 23: from "postgres"."roadshow"."kunde"
+                ^
+  compiled code at target\run\DVA_WGG\models\staging\roadshow\base_roadshow_kunde.sql
+[0m13:57:56.948713 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.256 seconds
+[0m13:57:56.951502 [debug] [Thread-4 (]: Postgres adapter: Postgres error: relation "roadshow.vereinspartner" does not exist
+LINE 16: from "postgres"."roadshow"."vereinspartner"
+              ^
+
+[0m13:57:56.955770 [debug] [Thread-4 (]: On model.DVA_WGG.base_roadshow_vereinspartner: ROLLBACK
+[0m13:57:56.966799 [debug] [Thread-2 (]: Postgres adapter: Postgres error: relation "roadshow.produkt" does not exist
+LINE 18: from "postgres"."roadshow"."produkt"
+              ^
+
+[0m13:57:56.971033 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_roadshow_rsbestellung"
+[0m13:57:56.971855 [debug] [Thread-2 (]: On model.DVA_WGG.base_roadshow_produkt: ROLLBACK
+[0m13:57:56.972800 [debug] [Thread-3 (]: On model.DVA_WGG.base_roadshow_rsbestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_roadshow_rsbestellung"} */
+alter table "postgres"."dv"."base_roadshow_rsbestellung" rename to "base_roadshow_rsbestellung__dbt_backup"
+[0m13:57:56.974071 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8FFA5710>]}
+[0m13:57:56.975155 [error] [Thread-1 (]: 1 of 21 ERROR creating sql view model dv.base_roadshow_kunde ................... [[31mERROR[0m in 0.40s]
+[0m13:57:56.976389 [debug] [Thread-1 (]: Finished running node model.DVA_WGG.base_roadshow_kunde
+[0m13:57:56.977033 [debug] [Thread-1 (]: Began running node model.DVA_WGG.base_webshop_bestellung
+[0m13:57:56.978543 [debug] [Thread-7 (]: Marking all children of 'model.DVA_WGG.base_roadshow_kunde' to be skipped because of status 'error'.  Reason: Database Error in model base_roadshow_kunde (models\staging\roadshow\base_roadshow_kunde.sql)
+  relation "roadshow.kunde" does not exist
+  LINE 23: from "postgres"."roadshow"."kunde"
+                ^
+  compiled code at target\run\DVA_WGG\models\staging\roadshow\base_roadshow_kunde.sql.
+[0m13:57:56.977694 [info ] [Thread-1 (]: 5 of 21 START sql view model dv.base_webshop_bestellung ........................ [RUN]
+[0m13:57:56.980477 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_roadshow_kunde, now model.DVA_WGG.base_webshop_bestellung)
+[0m13:57:56.981180 [debug] [Thread-1 (]: Began compiling node model.DVA_WGG.base_webshop_bestellung
+[0m13:57:56.986987 [debug] [Thread-1 (]: Writing injected SQL for node "model.DVA_WGG.base_webshop_bestellung"
+[0m13:57:56.990184 [debug] [Thread-4 (]: On model.DVA_WGG.base_roadshow_vereinspartner: Close
+[0m13:57:56.990824 [debug] [Thread-1 (]: Began executing node model.DVA_WGG.base_webshop_bestellung
+[0m13:57:56.998532 [debug] [Thread-2 (]: On model.DVA_WGG.base_roadshow_produkt: Close
+[0m13:57:56.999307 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.026 seconds
+[0m13:57:57.001996 [debug] [Thread-1 (]: Writing runtime sql for node "model.DVA_WGG.base_webshop_bestellung"
+[0m13:57:57.008042 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_roadshow_rsbestellung"
+[0m13:57:57.010938 [debug] [Thread-3 (]: On model.DVA_WGG.base_roadshow_rsbestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_roadshow_rsbestellung"} */
+alter table "postgres"."dv"."base_roadshow_rsbestellung__dbt_tmp" rename to "base_roadshow_rsbestellung"
+[0m13:57:57.018270 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_bestellung"
+[0m13:57:57.021816 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_bestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_bestellung"} */
+
+  create view "postgres"."dv"."base_webshop_bestellung__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    BestellungID,
+    KundeID,
+    AllgLieferAdrID,
+    Bestelldatum,
+    Wunschdatum,
+    Rabatt,
+    current_timestamp as ldts
+from "postgres"."webshop"."bestellung"
+  );
+[0m13:57:57.023087 [debug] [Thread-4 (]: Database Error in model base_roadshow_vereinspartner (models\staging\roadshow\base_roadshow_vereinspartner.sql)
+  relation "roadshow.vereinspartner" does not exist
+  LINE 16: from "postgres"."roadshow"."vereinspartner"
+                ^
+  compiled code at target\run\DVA_WGG\models\staging\roadshow\base_roadshow_vereinspartner.sql
+[0m13:57:57.024104 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:57:57.025509 [debug] [Thread-2 (]: Database Error in model base_roadshow_produkt (models\staging\roadshow\base_roadshow_produkt.sql)
+  relation "roadshow.produkt" does not exist
+  LINE 18: from "postgres"."roadshow"."produkt"
+                ^
+  compiled code at target\run\DVA_WGG\models\staging\roadshow\base_roadshow_produkt.sql
+[0m13:57:57.026440 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E7DB950>]}
+[0m13:57:57.027681 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D900C5390>]}
+[0m13:57:57.028980 [error] [Thread-4 (]: 4 of 21 ERROR creating sql view model dv.base_roadshow_vereinspartner .......... [[31mERROR[0m in 0.47s]
+[0m13:57:57.031744 [debug] [Thread-4 (]: Finished running node model.DVA_WGG.base_roadshow_vereinspartner
+[0m13:57:57.032464 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.021 seconds
+[0m13:57:57.033137 [debug] [Thread-4 (]: Began running node model.DVA_WGG.base_webshop_kategorie
+[0m13:57:57.030018 [error] [Thread-2 (]: 2 of 21 ERROR creating sql view model dv.base_roadshow_produkt ................. [[31mERROR[0m in 0.47s]
+[0m13:57:57.034255 [debug] [Thread-7 (]: Marking all children of 'model.DVA_WGG.base_roadshow_vereinspartner' to be skipped because of status 'error'.  Reason: Database Error in model base_roadshow_vereinspartner (models\staging\roadshow\base_roadshow_vereinspartner.sql)
+  relation "roadshow.vereinspartner" does not exist
+  LINE 16: from "postgres"."roadshow"."vereinspartner"
+                ^
+  compiled code at target\run\DVA_WGG\models\staging\roadshow\base_roadshow_vereinspartner.sql.
+[0m13:57:57.068630 [debug] [Thread-3 (]: On model.DVA_WGG.base_roadshow_rsbestellung: COMMIT
+[0m13:57:57.060312 [info ] [Thread-4 (]: 6 of 21 START sql view model dv.base_webshop_kategorie ......................... [RUN]
+[0m13:57:57.070350 [debug] [Thread-2 (]: Finished running node model.DVA_WGG.base_roadshow_produkt
+[0m13:57:57.071854 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_roadshow_rsbestellung"
+[0m13:57:57.072835 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_roadshow_vereinspartner, now model.DVA_WGG.base_webshop_kategorie)
+[0m13:57:57.073523 [debug] [Thread-2 (]: Began running node model.DVA_WGG.base_webshop_kunde
+[0m13:57:57.074245 [debug] [Thread-7 (]: Marking all children of 'model.DVA_WGG.base_roadshow_produkt' to be skipped because of status 'error'.  Reason: Database Error in model base_roadshow_produkt (models\staging\roadshow\base_roadshow_produkt.sql)
+  relation "roadshow.produkt" does not exist
+  LINE 18: from "postgres"."roadshow"."produkt"
+                ^
+  compiled code at target\run\DVA_WGG\models\staging\roadshow\base_roadshow_produkt.sql.
+[0m13:57:57.074784 [debug] [Thread-3 (]: On model.DVA_WGG.base_roadshow_rsbestellung: COMMIT
+[0m13:57:57.075651 [debug] [Thread-4 (]: Began compiling node model.DVA_WGG.base_webshop_kategorie
+[0m13:57:57.076608 [info ] [Thread-2 (]: 7 of 21 START sql view model dv.base_webshop_kunde ............................. [RUN]
+[0m13:57:57.083839 [debug] [Thread-4 (]: Writing injected SQL for node "model.DVA_WGG.base_webshop_kategorie"
+[0m13:57:57.084864 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_roadshow_produkt, now model.DVA_WGG.base_webshop_kunde)
+[0m13:57:57.085773 [debug] [Thread-2 (]: Began compiling node model.DVA_WGG.base_webshop_kunde
+[0m13:57:57.093086 [debug] [Thread-2 (]: Writing injected SQL for node "model.DVA_WGG.base_webshop_kunde"
+[0m13:57:57.094523 [debug] [Thread-4 (]: Began executing node model.DVA_WGG.base_webshop_kategorie
+[0m13:57:57.102617 [debug] [Thread-4 (]: Writing runtime sql for node "model.DVA_WGG.base_webshop_kategorie"
+[0m13:57:57.104629 [debug] [Thread-2 (]: Began executing node model.DVA_WGG.base_webshop_kunde
+[0m13:57:57.112048 [debug] [Thread-2 (]: Writing runtime sql for node "model.DVA_WGG.base_webshop_kunde"
+[0m13:57:57.113110 [debug] [Thread-3 (]: SQL status: COMMIT in 0.035 seconds
+[0m13:57:57.123337 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.base_webshop_kategorie"
+[0m13:57:57.126531 [debug] [Thread-3 (]: Applying DROP to: "postgres"."dv"."base_roadshow_rsbestellung__dbt_backup"
+[0m13:57:57.127333 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_kategorie: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_kategorie"} */
+
+  create view "postgres"."dv"."base_webshop_kategorie__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    KatID,
+    OberKatID,
+    Name,
+    current_timestamp as ldts
+from "postgres"."webshop"."kategorie"
+  );
+[0m13:57:57.134952 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_roadshow_rsbestellung"
+[0m13:57:57.135767 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m13:57:57.136440 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_kunde"
+[0m13:57:57.137046 [debug] [Thread-3 (]: On model.DVA_WGG.base_roadshow_rsbestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_roadshow_rsbestellung"} */
+drop view if exists "postgres"."dv"."base_roadshow_rsbestellung__dbt_backup" cascade
+[0m13:57:57.137860 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_kunde: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_kunde"} */
+
+  create view "postgres"."dv"."base_webshop_kunde__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    kundeid,
+    vereinspartnerid,
+    vorname,
+    name,
+    geschlecht,
+    geburtsdatum,
+    telefon,
+    mobil,
+    email,
+    kreditkarte,
+    gueltigbis,
+    kkfirma,
+    current_timestamp as ldts
+from "postgres"."webshop"."kunde"
+  );
+[0m13:57:57.138792 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:57:57.162545 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.024 seconds
+[0m13:57:57.167715 [debug] [Thread-3 (]: On model.DVA_WGG.base_roadshow_rsbestellung: Close
+[0m13:57:57.169295 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E965F90>]}
+[0m13:57:57.170299 [info ] [Thread-3 (]: 3 of 21 OK created sql view model dv.base_roadshow_rsbestellung ................ [[32mCREATE VIEW[0m in 0.62s]
+[0m13:57:57.171606 [debug] [Thread-3 (]: Finished running node model.DVA_WGG.base_roadshow_rsbestellung
+[0m13:57:57.172251 [debug] [Thread-3 (]: Began running node model.DVA_WGG.base_webshop_lieferadresse
+[0m13:57:57.173244 [info ] [Thread-3 (]: 8 of 21 START sql view model dv.base_webshop_lieferadresse ..................... [RUN]
+[0m13:57:57.174081 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_roadshow_rsbestellung, now model.DVA_WGG.base_webshop_lieferadresse)
+[0m13:57:57.174621 [debug] [Thread-3 (]: Began compiling node model.DVA_WGG.base_webshop_lieferadresse
+[0m13:57:57.179382 [debug] [Thread-3 (]: Writing injected SQL for node "model.DVA_WGG.base_webshop_lieferadresse"
+[0m13:57:57.182489 [debug] [Thread-3 (]: Began executing node model.DVA_WGG.base_webshop_lieferadresse
+[0m13:57:57.189314 [debug] [Thread-3 (]: Writing runtime sql for node "model.DVA_WGG.base_webshop_lieferadresse"
+[0m13:57:57.192118 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferadresse"
+[0m13:57:57.193105 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_lieferadresse: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_lieferadresse"} */
+
+  create view "postgres"."dv"."base_webshop_lieferadresse__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    LieferAdrID,
+    KundeID,
+    Strasse,
+    Hausnummer,
+    Adresszusatz,
+    Plz,
+    Ort,
+    Land,
+    current_timestamp as ldts
+from "postgres"."webshop"."lieferadresse"
+  );
+[0m13:57:57.193916 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:57:57.267163 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.243 seconds
+[0m13:57:57.274265 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_bestellung"
+[0m13:57:57.274962 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_bestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_bestellung"} */
+alter table "postgres"."dv"."base_webshop_bestellung" rename to "base_webshop_bestellung__dbt_backup"
+[0m13:57:57.300122 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.024 seconds
+[0m13:57:57.308957 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_bestellung"
+[0m13:57:57.309689 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_bestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_bestellung"} */
+alter table "postgres"."dv"."base_webshop_bestellung__dbt_tmp" rename to "base_webshop_bestellung"
+[0m13:57:57.335129 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.025 seconds
+[0m13:57:57.338058 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_bestellung: COMMIT
+[0m13:57:57.338645 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_bestellung"
+[0m13:57:57.339107 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_bestellung: COMMIT
+[0m13:57:57.363054 [debug] [Thread-1 (]: SQL status: COMMIT in 0.023 seconds
+[0m13:57:57.368374 [debug] [Thread-1 (]: Applying DROP to: "postgres"."dv"."base_webshop_bestellung__dbt_backup"
+[0m13:57:57.369400 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_bestellung"
+[0m13:57:57.369882 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_bestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_bestellung"} */
+drop view if exists "postgres"."dv"."base_webshop_bestellung__dbt_backup" cascade
+[0m13:57:57.375082 [debug] [Thread-4 (]: SQL status: CREATE VIEW in 0.239 seconds
+[0m13:57:57.381170 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.base_webshop_kategorie"
+[0m13:57:57.382073 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.243 seconds
+[0m13:57:57.382633 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_kategorie: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_kategorie"} */
+alter table "postgres"."dv"."base_webshop_kategorie" rename to "base_webshop_kategorie__dbt_backup"
+[0m13:57:57.387621 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_kunde"
+[0m13:57:57.388671 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_kunde: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_kunde"} */
+alter table "postgres"."dv"."base_webshop_kunde" rename to "base_webshop_kunde__dbt_backup"
+[0m13:57:57.393489 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.023 seconds
+[0m13:57:57.395650 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_bestellung: Close
+[0m13:57:57.396923 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D90316BD0>]}
+[0m13:57:57.397864 [info ] [Thread-1 (]: 5 of 21 OK created sql view model dv.base_webshop_bestellung ................... [[32mCREATE VIEW[0m in 0.42s]
+[0m13:57:57.398974 [debug] [Thread-1 (]: Finished running node model.DVA_WGG.base_webshop_bestellung
+[0m13:57:57.399549 [debug] [Thread-1 (]: Began running node model.DVA_WGG.base_webshop_lieferdienst
+[0m13:57:57.400541 [info ] [Thread-1 (]: 9 of 21 START sql view model dv.base_webshop_lieferdienst ...................... [RUN]
+[0m13:57:57.401439 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_webshop_bestellung, now model.DVA_WGG.base_webshop_lieferdienst)
+[0m13:57:57.401949 [debug] [Thread-1 (]: Began compiling node model.DVA_WGG.base_webshop_lieferdienst
+[0m13:57:57.406705 [debug] [Thread-1 (]: Writing injected SQL for node "model.DVA_WGG.base_webshop_lieferdienst"
+[0m13:57:57.408815 [debug] [Thread-1 (]: Began executing node model.DVA_WGG.base_webshop_lieferdienst
+[0m13:57:57.420703 [debug] [Thread-1 (]: Writing runtime sql for node "model.DVA_WGG.base_webshop_lieferdienst"
+[0m13:57:57.421754 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.228 seconds
+[0m13:57:57.422478 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.034 seconds
+[0m13:57:57.423193 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.034 seconds
+[0m13:57:57.429472 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferadresse"
+[0m13:57:57.434984 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.base_webshop_kategorie"
+[0m13:57:57.441000 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_kunde"
+[0m13:57:57.441924 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferdienst"
+[0m13:57:57.442690 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_lieferadresse: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_lieferadresse"} */
+alter table "postgres"."dv"."base_webshop_lieferadresse" rename to "base_webshop_lieferadresse__dbt_backup"
+[0m13:57:57.443606 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_kategorie: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_kategorie"} */
+alter table "postgres"."dv"."base_webshop_kategorie__dbt_tmp" rename to "base_webshop_kategorie"
+[0m13:57:57.444462 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_kunde: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_kunde"} */
+alter table "postgres"."dv"."base_webshop_kunde__dbt_tmp" rename to "base_webshop_kunde"
+[0m13:57:57.445382 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_lieferdienst: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_lieferdienst"} */
+
+  create view "postgres"."dv"."base_webshop_lieferdienst__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    LieferDienstID,
+    Name,
+    Telefon,
+    Fax,
+    Email,
+    Hausnummer,
+    Plz,
+    Ort,
+    Land,
+    current_timestamp as ldts
+from "postgres"."webshop"."lieferdienst"
+  );
+[0m13:57:57.446869 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:57:57.466836 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.021 seconds
+[0m13:57:57.467739 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.021 seconds
+[0m13:57:57.468761 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.022 seconds
+[0m13:57:57.489356 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferadresse"
+[0m13:57:57.492252 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_kunde: COMMIT
+[0m13:57:57.494732 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_kategorie: COMMIT
+[0m13:57:57.495644 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_lieferadresse: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_lieferadresse"} */
+alter table "postgres"."dv"."base_webshop_lieferadresse__dbt_tmp" rename to "base_webshop_lieferadresse"
+[0m13:57:57.496903 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_kunde"
+[0m13:57:57.497987 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.base_webshop_kategorie"
+[0m13:57:57.498886 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_kunde: COMMIT
+[0m13:57:57.499538 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_kategorie: COMMIT
+[0m13:57:57.520252 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.021 seconds
+[0m13:57:57.523208 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_lieferadresse: COMMIT
+[0m13:57:57.523790 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferadresse"
+[0m13:57:57.524302 [debug] [Thread-2 (]: SQL status: COMMIT in 0.024 seconds
+[0m13:57:57.524852 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_lieferadresse: COMMIT
+[0m13:57:57.530252 [debug] [Thread-2 (]: Applying DROP to: "postgres"."dv"."base_webshop_kunde__dbt_backup"
+[0m13:57:57.531133 [debug] [Thread-4 (]: SQL status: COMMIT in 0.031 seconds
+[0m13:57:57.532354 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_kunde"
+[0m13:57:57.536676 [debug] [Thread-4 (]: Applying DROP to: "postgres"."dv"."base_webshop_kategorie__dbt_backup"
+[0m13:57:57.537709 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_kunde: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_kunde"} */
+drop view if exists "postgres"."dv"."base_webshop_kunde__dbt_backup" cascade
+[0m13:57:57.538954 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.base_webshop_kategorie"
+[0m13:57:57.539649 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_kategorie: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_kategorie"} */
+drop view if exists "postgres"."dv"."base_webshop_kategorie__dbt_backup" cascade
+[0m13:57:57.554682 [debug] [Thread-3 (]: SQL status: COMMIT in 0.023 seconds
+[0m13:57:57.559786 [debug] [Thread-3 (]: Applying DROP to: "postgres"."dv"."base_webshop_lieferadresse__dbt_backup"
+[0m13:57:57.560784 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferadresse"
+[0m13:57:57.561384 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_lieferadresse: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_lieferadresse"} */
+drop view if exists "postgres"."dv"."base_webshop_lieferadresse__dbt_backup" cascade
+[0m13:57:57.562458 [debug] [Thread-4 (]: SQL status: DROP VIEW in 0.022 seconds
+[0m13:57:57.564980 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_kategorie: Close
+[0m13:57:57.565670 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.026 seconds
+[0m13:57:57.567562 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_kunde: Close
+[0m13:57:57.568323 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D9022A820>]}
+[0m13:57:57.569893 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E7F4470>]}
+[0m13:57:57.569298 [info ] [Thread-4 (]: 6 of 21 OK created sql view model dv.base_webshop_kategorie .................... [[32mCREATE VIEW[0m in 0.50s]
+[0m13:57:57.571755 [debug] [Thread-4 (]: Finished running node model.DVA_WGG.base_webshop_kategorie
+[0m13:57:57.570906 [info ] [Thread-2 (]: 7 of 21 OK created sql view model dv.base_webshop_kunde ........................ [[32mCREATE VIEW[0m in 0.49s]
+[0m13:57:57.572545 [debug] [Thread-4 (]: Began running node model.DVA_WGG.base_webshop_lieferung
+[0m13:57:57.573528 [debug] [Thread-2 (]: Finished running node model.DVA_WGG.base_webshop_kunde
+[0m13:57:57.574234 [info ] [Thread-4 (]: 10 of 21 START sql view model dv.base_webshop_lieferung ........................ [RUN]
+[0m13:57:57.575390 [debug] [Thread-2 (]: Began running node model.DVA_WGG.base_webshop_position
+[0m13:57:57.576166 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_webshop_kategorie, now model.DVA_WGG.base_webshop_lieferung)
+[0m13:57:57.577469 [debug] [Thread-4 (]: Began compiling node model.DVA_WGG.base_webshop_lieferung
+[0m13:57:57.576946 [info ] [Thread-2 (]: 11 of 21 START sql view model dv.base_webshop_position ......................... [RUN]
+[0m13:57:57.584602 [debug] [Thread-4 (]: Writing injected SQL for node "model.DVA_WGG.base_webshop_lieferung"
+[0m13:57:57.585508 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.024 seconds
+[0m13:57:57.586165 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_webshop_kunde, now model.DVA_WGG.base_webshop_position)
+[0m13:57:57.588881 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_lieferadresse: Close
+[0m13:57:57.589547 [debug] [Thread-2 (]: Began compiling node model.DVA_WGG.base_webshop_position
+[0m13:57:57.595145 [debug] [Thread-2 (]: Writing injected SQL for node "model.DVA_WGG.base_webshop_position"
+[0m13:57:57.596264 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E7F4230>]}
+[0m13:57:57.598526 [debug] [Thread-4 (]: Began executing node model.DVA_WGG.base_webshop_lieferung
+[0m13:57:57.606340 [debug] [Thread-4 (]: Writing runtime sql for node "model.DVA_WGG.base_webshop_lieferung"
+[0m13:57:57.597555 [info ] [Thread-3 (]: 8 of 21 OK created sql view model dv.base_webshop_lieferadresse ................ [[32mCREATE VIEW[0m in 0.42s]
+[0m13:57:57.607807 [debug] [Thread-3 (]: Finished running node model.DVA_WGG.base_webshop_lieferadresse
+[0m13:57:57.608475 [debug] [Thread-3 (]: Began running node model.DVA_WGG.base_webshop_produkt
+[0m13:57:57.609180 [debug] [Thread-2 (]: Began executing node model.DVA_WGG.base_webshop_position
+[0m13:57:57.609870 [info ] [Thread-3 (]: 12 of 21 START sql view model dv.base_webshop_produkt .......................... [RUN]
+[0m13:57:57.618367 [debug] [Thread-2 (]: Writing runtime sql for node "model.DVA_WGG.base_webshop_position"
+[0m13:57:57.619452 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_webshop_lieferadresse, now model.DVA_WGG.base_webshop_produkt)
+[0m13:57:57.620461 [debug] [Thread-3 (]: Began compiling node model.DVA_WGG.base_webshop_produkt
+[0m13:57:57.625894 [debug] [Thread-3 (]: Writing injected SQL for node "model.DVA_WGG.base_webshop_produkt"
+[0m13:57:57.626558 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferung"
+[0m13:57:57.627784 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_lieferung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_lieferung"} */
+
+  create view "postgres"."dv"."base_webshop_lieferung__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    BestellungID,
+    PosID,
+    LieferAdrID,
+    LieferDienstID,
+    Lieferdatum,
+    current_timestamp as ldts
+from "postgres"."webshop"."lieferung"
+  );
+[0m13:57:57.628463 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m13:57:57.629298 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_position"
+[0m13:57:57.629871 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_position: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_position"} */
+
+  create view "postgres"."dv"."base_webshop_position__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    BestellungID,
+    PosID,
+    ProduktID,
+    SpezLieferAdrID,
+    Menge,
+    Preis,
+    current_timestamp as ldts
+from "postgres"."webshop"."position"
+  );
+[0m13:57:57.631042 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:57:57.632187 [debug] [Thread-3 (]: Began executing node model.DVA_WGG.base_webshop_produkt
+[0m13:57:57.639301 [debug] [Thread-3 (]: Writing runtime sql for node "model.DVA_WGG.base_webshop_produkt"
+[0m13:57:57.641639 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_webshop_produkt"
+[0m13:57:57.642342 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_produkt: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_produkt"} */
+
+  create view "postgres"."dv"."base_webshop_produkt__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    ProduktID,
+    KatID,
+    Bezeichnung,
+    Umfang,
+    Typ,
+    Preis,
+    Pflanzort,
+    Pflanzabstand,
+    current_timestamp as ldts
+from "postgres"."webshop"."produkt"
+  );
+[0m13:57:57.642843 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:57:57.670568 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.223 seconds
+[0m13:57:57.677484 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferdienst"
+[0m13:57:57.678009 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_lieferdienst: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_lieferdienst"} */
+alter table "postgres"."dv"."base_webshop_lieferdienst" rename to "base_webshop_lieferdienst__dbt_backup"
+[0m13:57:57.699319 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.021 seconds
+[0m13:57:57.705922 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferdienst"
+[0m13:57:57.706441 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_lieferdienst: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_lieferdienst"} */
+alter table "postgres"."dv"."base_webshop_lieferdienst__dbt_tmp" rename to "base_webshop_lieferdienst"
+[0m13:57:57.732022 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.025 seconds
+[0m13:57:57.734791 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_lieferdienst: COMMIT
+[0m13:57:57.735352 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferdienst"
+[0m13:57:57.735814 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_lieferdienst: COMMIT
+[0m13:57:57.758005 [debug] [Thread-1 (]: SQL status: COMMIT in 0.021 seconds
+[0m13:57:57.762665 [debug] [Thread-1 (]: Applying DROP to: "postgres"."dv"."base_webshop_lieferdienst__dbt_backup"
+[0m13:57:57.763660 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferdienst"
+[0m13:57:57.764146 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_lieferdienst: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_lieferdienst"} */
+drop view if exists "postgres"."dv"."base_webshop_lieferdienst__dbt_backup" cascade
+[0m13:57:57.788480 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.023 seconds
+[0m13:57:57.791037 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_lieferdienst: Close
+[0m13:57:57.792357 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D9025B410>]}
+[0m13:57:57.793243 [info ] [Thread-1 (]: 9 of 21 OK created sql view model dv.base_webshop_lieferdienst ................. [[32mCREATE VIEW[0m in 0.39s]
+[0m13:57:57.794463 [debug] [Thread-1 (]: Finished running node model.DVA_WGG.base_webshop_lieferdienst
+[0m13:57:57.795038 [debug] [Thread-1 (]: Began running node model.DVA_WGG.base_webshop_vereinspartner
+[0m13:57:57.795804 [info ] [Thread-1 (]: 13 of 21 START sql view model dv.base_webshop_vereinspartner ................... [RUN]
+[0m13:57:57.796728 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_webshop_lieferdienst, now model.DVA_WGG.base_webshop_vereinspartner)
+[0m13:57:57.797427 [debug] [Thread-1 (]: Began compiling node model.DVA_WGG.base_webshop_vereinspartner
+[0m13:57:57.811501 [debug] [Thread-1 (]: Writing injected SQL for node "model.DVA_WGG.base_webshop_vereinspartner"
+[0m13:57:57.814440 [debug] [Thread-1 (]: Began executing node model.DVA_WGG.base_webshop_vereinspartner
+[0m13:57:57.822421 [debug] [Thread-1 (]: Writing runtime sql for node "model.DVA_WGG.base_webshop_vereinspartner"
+[0m13:57:57.825140 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_vereinspartner"
+[0m13:57:57.825757 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_vereinspartner: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_vereinspartner"} */
+
+  create view "postgres"."dv"."base_webshop_vereinspartner__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    VereinspartnerID,
+    KundeIDVerein,
+    Rabatt1,
+    Rabatt2,
+    Rabatt3,
+    current_timestamp as ldts
+from "postgres"."webshop"."vereinspartner"
+  );
+[0m13:57:57.826249 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:57:57.865742 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.234 seconds
+[0m13:57:57.872125 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_position"
+[0m13:57:57.873347 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_position: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_position"} */
+alter table "postgres"."dv"."base_webshop_position" rename to "base_webshop_position__dbt_backup"
+[0m13:57:57.875944 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.233 seconds
+[0m13:57:57.880714 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_webshop_produkt"
+[0m13:57:57.881252 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_produkt: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_produkt"} */
+alter table "postgres"."dv"."base_webshop_produkt" rename to "base_webshop_produkt__dbt_backup"
+[0m13:57:57.882379 [debug] [Thread-4 (]: SQL status: CREATE VIEW in 0.254 seconds
+[0m13:57:57.887500 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferung"
+[0m13:57:57.888052 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_lieferung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_lieferung"} */
+alter table "postgres"."dv"."base_webshop_lieferung" rename to "base_webshop_lieferung__dbt_backup"
+[0m13:57:57.893796 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.020 seconds
+[0m13:57:57.898061 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_position"
+[0m13:57:57.898904 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_position: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_position"} */
+alter table "postgres"."dv"."base_webshop_position__dbt_tmp" rename to "base_webshop_position"
+[0m13:57:57.900538 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.019 seconds
+[0m13:57:57.904690 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_webshop_produkt"
+[0m13:57:57.905184 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_produkt: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_produkt"} */
+alter table "postgres"."dv"."base_webshop_produkt__dbt_tmp" rename to "base_webshop_produkt"
+[0m13:57:57.907676 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.019 seconds
+[0m13:57:57.911731 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferung"
+[0m13:57:57.912221 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_lieferung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_lieferung"} */
+alter table "postgres"."dv"."base_webshop_lieferung__dbt_tmp" rename to "base_webshop_lieferung"
+[0m13:57:57.919748 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.020 seconds
+[0m13:57:57.922527 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_position: COMMIT
+[0m13:57:57.923042 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_position"
+[0m13:57:57.923505 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_position: COMMIT
+[0m13:57:57.924944 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.019 seconds
+[0m13:57:57.926814 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_produkt: COMMIT
+[0m13:57:57.927306 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_webshop_produkt"
+[0m13:57:57.927752 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_produkt: COMMIT
+[0m13:57:57.932684 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.020 seconds
+[0m13:57:57.935746 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_lieferung: COMMIT
+[0m13:57:57.936419 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferung"
+[0m13:57:57.936878 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_lieferung: COMMIT
+[0m13:57:57.947831 [debug] [Thread-2 (]: SQL status: COMMIT in 0.023 seconds
+[0m13:57:57.953355 [debug] [Thread-2 (]: Applying DROP to: "postgres"."dv"."base_webshop_position__dbt_backup"
+[0m13:57:57.953919 [debug] [Thread-3 (]: SQL status: COMMIT in 0.026 seconds
+[0m13:57:57.955096 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_position"
+[0m13:57:57.958422 [debug] [Thread-3 (]: Applying DROP to: "postgres"."dv"."base_webshop_produkt__dbt_backup"
+[0m13:57:57.959084 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_position: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_position"} */
+drop view if exists "postgres"."dv"."base_webshop_position__dbt_backup" cascade
+[0m13:57:57.959677 [debug] [Thread-4 (]: SQL status: COMMIT in 0.022 seconds
+[0m13:57:57.960561 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.base_webshop_produkt"
+[0m13:57:57.964172 [debug] [Thread-4 (]: Applying DROP to: "postgres"."dv"."base_webshop_lieferung__dbt_backup"
+[0m13:57:57.964738 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_produkt: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_produkt"} */
+drop view if exists "postgres"."dv"."base_webshop_produkt__dbt_backup" cascade
+[0m13:57:57.965719 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.base_webshop_lieferung"
+[0m13:57:57.966396 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_lieferung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_lieferung"} */
+drop view if exists "postgres"."dv"."base_webshop_lieferung__dbt_backup" cascade
+[0m13:57:57.985387 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.024 seconds
+[0m13:57:57.988129 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_position: Close
+[0m13:57:57.989429 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E7F4A10>]}
+[0m13:57:57.990992 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.025 seconds
+[0m13:57:57.990297 [info ] [Thread-2 (]: 11 of 21 OK created sql view model dv.base_webshop_position .................... [[32mCREATE VIEW[0m in 0.40s]
+[0m13:57:57.992280 [debug] [Thread-4 (]: SQL status: DROP VIEW in 0.025 seconds
+[0m13:57:57.993963 [debug] [Thread-3 (]: On model.DVA_WGG.base_webshop_produkt: Close
+[0m13:57:57.995066 [debug] [Thread-2 (]: Finished running node model.DVA_WGG.base_webshop_position
+[0m13:57:57.997644 [debug] [Thread-4 (]: On model.DVA_WGG.base_webshop_lieferung: Close
+[0m13:57:57.998979 [debug] [Thread-2 (]: Began running node model.DVA_WGG.base_webshop_wohnort
+[0m13:57:57.999767 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E7F4590>]}
+[0m13:57:58.000818 [info ] [Thread-2 (]: 14 of 21 START sql view model dv.base_webshop_wohnort .......................... [RUN]
+[0m13:57:58.002670 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_webshop_position, now model.DVA_WGG.base_webshop_wohnort)
+[0m13:57:58.003283 [debug] [Thread-2 (]: Began compiling node model.DVA_WGG.base_webshop_wohnort
+[0m13:57:58.001805 [info ] [Thread-3 (]: 12 of 21 OK created sql view model dv.base_webshop_produkt ..................... [[32mCREATE VIEW[0m in 0.38s]
+[0m13:57:58.004354 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E7F7DD0>]}
+[0m13:57:58.010041 [debug] [Thread-2 (]: Writing injected SQL for node "model.DVA_WGG.base_webshop_wohnort"
+[0m13:57:58.011437 [debug] [Thread-3 (]: Finished running node model.DVA_WGG.base_webshop_produkt
+[0m13:57:58.012346 [info ] [Thread-4 (]: 10 of 21 OK created sql view model dv.base_webshop_lieferung ................... [[32mCREATE VIEW[0m in 0.43s]
+[0m13:57:58.013193 [debug] [Thread-3 (]: Began running node model.DVA_WGG.stg_roadshow_kunde
+[0m13:57:58.016127 [debug] [Thread-4 (]: Finished running node model.DVA_WGG.base_webshop_lieferung
+[0m13:57:58.018320 [debug] [Thread-4 (]: Began running node model.DVA_WGG.stg_roadshow_vereinspartner
+[0m13:57:58.017452 [info ] [Thread-3 (]: 15 of 21 SKIP relation dv.stg_roadshow_kunde ................................... [[33mSKIP[0m]
+[0m13:57:58.019845 [info ] [Thread-4 (]: 16 of 21 SKIP relation dv.stg_roadshow_vereinspartner .......................... [[33mSKIP[0m]
+[0m13:57:58.021080 [debug] [Thread-2 (]: Began executing node model.DVA_WGG.base_webshop_wohnort
+[0m13:57:58.021855 [debug] [Thread-3 (]: Finished running node model.DVA_WGG.stg_roadshow_kunde
+[0m13:57:58.022711 [debug] [Thread-4 (]: Finished running node model.DVA_WGG.stg_roadshow_vereinspartner
+[0m13:57:58.031306 [debug] [Thread-2 (]: Writing runtime sql for node "model.DVA_WGG.base_webshop_wohnort"
+[0m13:57:58.032232 [debug] [Thread-3 (]: Began running node model.DVA_WGG.stg_roadshow_produkt
+[0m13:57:58.032896 [debug] [Thread-7 (]: Marking all children of 'model.DVA_WGG.stg_roadshow_kunde' to be skipped because of status 'skipped'. 
+[0m13:57:58.033747 [debug] [Thread-4 (]: Began running node model.DVA_WGG.stg_roadshow_rsbestellung
+[0m13:57:58.035529 [debug] [Thread-7 (]: Marking all children of 'model.DVA_WGG.stg_roadshow_vereinspartner' to be skipped because of status 'skipped'. 
+[0m13:57:58.034773 [info ] [Thread-3 (]: 17 of 21 SKIP relation dv.stg_roadshow_produkt ................................. [[33mSKIP[0m]
+[0m13:57:58.037225 [info ] [Thread-4 (]: 18 of 21 START sql view model dv.stg_roadshow_rsbestellung ..................... [RUN]
+[0m13:57:58.038394 [debug] [Thread-3 (]: Finished running node model.DVA_WGG.stg_roadshow_produkt
+[0m13:57:58.039490 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_wohnort"
+[0m13:57:58.040188 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_webshop_lieferung, now model.DVA_WGG.stg_roadshow_rsbestellung)
+[0m13:57:58.040825 [debug] [Thread-3 (]: Began running node model.DVA_WGG.stg_webshop_bestellung
+[0m13:57:58.041279 [debug] [Thread-7 (]: Marking all children of 'model.DVA_WGG.stg_roadshow_produkt' to be skipped because of status 'skipped'. 
+[0m13:57:58.041771 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_wohnort: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_wohnort"} */
+
+  create view "postgres"."dv"."base_webshop_wohnort__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    kundeid,
+    Von,
+    Bis,
+    Strasse,
+    Hausnummer,
+    Adresszusatz,
+    Plz,
+    Ort,
+    Land,
+    current_timestamp as ldts
+from "postgres"."webshop"."wohnort"
+  );
+[0m13:57:58.042315 [debug] [Thread-4 (]: Began compiling node model.DVA_WGG.stg_roadshow_rsbestellung
+[0m13:57:58.043038 [info ] [Thread-3 (]: 19 of 21 START sql view model dv.stg_webshop_bestellung ........................ [RUN]
+[0m13:57:58.043867 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:57:58.054395 [debug] [Thread-4 (]: ["postgres"."dv"."stg_roadshow_rsbestellung"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m13:57:58.055257 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_webshop_produkt, now model.DVA_WGG.stg_webshop_bestellung)
+[0m13:57:58.059044 [debug] [Thread-4 (]: ["postgres"."dv"."stg_roadshow_rsbestellung"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m13:57:58.059642 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.233 seconds
+[0m13:57:58.060214 [debug] [Thread-3 (]: Began compiling node model.DVA_WGG.stg_webshop_bestellung
+[0m13:57:58.062159 [debug] [Thread-4 (]: source_model: base_roadshow_rsbestellung
+[0m13:57:58.068742 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_vereinspartner"
+[0m13:57:58.076007 [debug] [Thread-3 (]: ["postgres"."dv"."stg_webshop_bestellung"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m13:57:58.078171 [debug] [Thread-4 (]: source_model is not mapping and not none: base_roadshow_rsbestellung
+[0m13:57:58.078861 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_vereinspartner: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_vereinspartner"} */
+alter table "postgres"."dv"."base_webshop_vereinspartner" rename to "base_webshop_vereinspartner__dbt_backup"
+[0m13:57:58.082673 [debug] [Thread-3 (]: ["postgres"."dv"."stg_webshop_bestellung"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m13:57:58.112028 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_rsbestellung"
+[0m13:57:58.113870 [debug] [Thread-3 (]: source_model: base_webshop_bestellung
+[0m13:57:58.114757 [debug] [Thread-4 (]: On model.DVA_WGG.stg_roadshow_rsbestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_rsbestellung"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_roadshow_rsbestellung'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m13:57:58.116148 [debug] [Thread-3 (]: source_model is not mapping and not none: base_webshop_bestellung
+[0m13:57:58.117003 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m13:57:58.120898 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.stg_webshop_bestellung"
+[0m13:57:58.121769 [debug] [Thread-3 (]: On model.DVA_WGG.stg_webshop_bestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_bestellung"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_webshop_bestellung'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m13:57:58.122290 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:57:58.130741 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.020 seconds
+[0m13:57:58.136236 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_vereinspartner"
+[0m13:57:58.136766 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_vereinspartner: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_vereinspartner"} */
+alter table "postgres"."dv"."base_webshop_vereinspartner__dbt_tmp" rename to "base_webshop_vereinspartner"
+[0m13:57:58.157489 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.020 seconds
+[0m13:57:58.160222 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_vereinspartner: COMMIT
+[0m13:57:58.160791 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_vereinspartner"
+[0m13:57:58.161251 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_vereinspartner: COMMIT
+[0m13:57:58.183830 [debug] [Thread-1 (]: SQL status: COMMIT in 0.022 seconds
+[0m13:57:58.189322 [debug] [Thread-1 (]: Applying DROP to: "postgres"."dv"."base_webshop_vereinspartner__dbt_backup"
+[0m13:57:58.190394 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.base_webshop_vereinspartner"
+[0m13:57:58.190900 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_vereinspartner: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_vereinspartner"} */
+drop view if exists "postgres"."dv"."base_webshop_vereinspartner__dbt_backup" cascade
+[0m13:57:58.214368 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.023 seconds
+[0m13:57:58.217254 [debug] [Thread-1 (]: On model.DVA_WGG.base_webshop_vereinspartner: Close
+[0m13:57:58.218955 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E7F7E90>]}
+[0m13:57:58.219917 [info ] [Thread-1 (]: 13 of 21 OK created sql view model dv.base_webshop_vereinspartner .............. [[32mCREATE VIEW[0m in 0.42s]
+[0m13:57:58.220950 [debug] [Thread-1 (]: Finished running node model.DVA_WGG.base_webshop_vereinspartner
+[0m13:57:58.221527 [debug] [Thread-1 (]: Began running node model.DVA_WGG.stg_webshop_kunde
+[0m13:57:58.222405 [info ] [Thread-1 (]: 20 of 21 START sql view model dv.stg_webshop_kunde ............................. [RUN]
+[0m13:57:58.223304 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_webshop_vereinspartner, now model.DVA_WGG.stg_webshop_kunde)
+[0m13:57:58.223918 [debug] [Thread-1 (]: Began compiling node model.DVA_WGG.stg_webshop_kunde
+[0m13:57:58.233114 [debug] [Thread-1 (]: ["postgres"."dv"."stg_webshop_kunde"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m13:57:58.238186 [debug] [Thread-1 (]: ["postgres"."dv"."stg_webshop_kunde"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m13:57:58.239759 [debug] [Thread-1 (]: source_model: base_webshop_kunde
+[0m13:57:58.240318 [debug] [Thread-1 (]: source_model is not mapping and not none: base_webshop_kunde
+[0m13:57:58.245364 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_webshop_kunde"
+[0m13:57:58.246029 [debug] [Thread-1 (]: On model.DVA_WGG.stg_webshop_kunde: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_kunde"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_webshop_kunde'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m13:57:58.246697 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:57:58.270849 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.227 seconds
+[0m13:57:58.278089 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_wohnort"
+[0m13:57:58.278689 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_wohnort: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_wohnort"} */
+alter table "postgres"."dv"."base_webshop_wohnort" rename to "base_webshop_wohnort__dbt_backup"
+[0m13:57:58.299456 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.020 seconds
+[0m13:57:58.307021 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_wohnort"
+[0m13:57:58.307726 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_wohnort: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_wohnort"} */
+alter table "postgres"."dv"."base_webshop_wohnort__dbt_tmp" rename to "base_webshop_wohnort"
+[0m13:57:58.327518 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.019 seconds
+[0m13:57:58.330708 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_wohnort: COMMIT
+[0m13:57:58.331252 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_wohnort"
+[0m13:57:58.331716 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_wohnort: COMMIT
+[0m13:57:58.354724 [debug] [Thread-4 (]: SQL status: SELECT 12 in 0.237 seconds
+[0m13:57:58.355712 [debug] [Thread-2 (]: SQL status: COMMIT in 0.023 seconds
+[0m13:57:58.361569 [debug] [Thread-4 (]: source_relation: "postgres"."dv"."base_roadshow_rsbestellung"
+[0m13:57:58.367219 [debug] [Thread-2 (]: Applying DROP to: "postgres"."dv"."base_webshop_wohnort__dbt_backup"
+[0m13:57:58.372707 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_rsbestellung"
+[0m13:57:58.367873 [debug] [Thread-3 (]: SQL status: SELECT 7 in 0.246 seconds
+[0m13:57:58.375017 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.base_webshop_wohnort"
+[0m13:57:58.375921 [debug] [Thread-4 (]: On model.DVA_WGG.stg_roadshow_rsbestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_rsbestellung"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_roadshow_rsbestellung'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m13:57:58.378634 [debug] [Thread-3 (]: source_relation: "postgres"."dv"."base_webshop_bestellung"
+[0m13:57:58.379500 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_wohnort: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.base_webshop_wohnort"} */
+drop view if exists "postgres"."dv"."base_webshop_wohnort__dbt_backup" cascade
+[0m13:57:58.384815 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.stg_webshop_bestellung"
+[0m13:57:58.385776 [debug] [Thread-3 (]: On model.DVA_WGG.stg_webshop_bestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_bestellung"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_webshop_bestellung'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m13:57:58.404295 [debug] [Thread-4 (]: SQL status: SELECT 12 in 0.024 seconds
+[0m13:57:58.416202 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.031 seconds
+[0m13:57:58.420542 [debug] [Thread-4 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.421275 [debug] [Thread-3 (]: SQL status: SELECT 7 in 0.035 seconds
+[0m13:57:58.424180 [debug] [Thread-2 (]: On model.DVA_WGG.base_webshop_wohnort: Close
+[0m13:57:58.427256 [debug] [Thread-4 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.438549 [debug] [Thread-3 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.441740 [debug] [Thread-4 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.442647 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D905CC830>]}
+[0m13:57:58.444987 [debug] [Thread-3 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.448170 [debug] [Thread-4 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.452582 [debug] [Thread-3 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.449675 [info ] [Thread-2 (]: 14 of 21 OK created sql view model dv.base_webshop_wohnort ..................... [[32mCREATE VIEW[0m in 0.44s]
+[0m13:57:58.455036 [debug] [Thread-4 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.457692 [debug] [Thread-3 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.459142 [debug] [Thread-2 (]: Finished running node model.DVA_WGG.base_webshop_wohnort
+[0m13:57:58.463098 [debug] [Thread-4 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.473819 [debug] [Thread-3 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.481873 [debug] [Thread-1 (]: SQL status: SELECT 13 in 0.235 seconds
+[0m13:57:58.507148 [debug] [Thread-2 (]: Began running node model.DVA_WGG.stg_webshop_wohnort
+[0m13:57:58.572650 [debug] [Thread-1 (]: source_relation: "postgres"."dv"."base_webshop_kunde"
+[0m13:57:58.598098 [debug] [Thread-4 (]: Writing injected SQL for node "model.DVA_WGG.stg_roadshow_rsbestellung"
+[0m13:57:58.623070 [debug] [Thread-3 (]: Writing injected SQL for node "model.DVA_WGG.stg_webshop_bestellung"
+[0m13:57:58.624358 [info ] [Thread-2 (]: 21 of 21 START sql view model dv.stg_webshop_wohnort ........................... [RUN]
+[0m13:57:58.630221 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_webshop_kunde"
+[0m13:57:58.632134 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.DVA_WGG.base_webshop_wohnort, now model.DVA_WGG.stg_webshop_wohnort)
+[0m13:57:58.633476 [debug] [Thread-1 (]: On model.DVA_WGG.stg_webshop_kunde: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_kunde"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_webshop_kunde'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m13:57:58.634587 [debug] [Thread-2 (]: Began compiling node model.DVA_WGG.stg_webshop_wohnort
+[0m13:57:58.640857 [debug] [Thread-3 (]: Began executing node model.DVA_WGG.stg_webshop_bestellung
+[0m13:57:58.642902 [debug] [Thread-2 (]: ["postgres"."dv"."stg_webshop_wohnort"] yaml-metadata given, but parameter 'include_source_columns' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m13:57:58.643787 [debug] [Thread-4 (]: Began executing node model.DVA_WGG.stg_roadshow_rsbestellung
+[0m13:57:58.650529 [debug] [Thread-3 (]: Writing runtime sql for node "model.DVA_WGG.stg_webshop_bestellung"
+[0m13:57:58.653042 [debug] [Thread-2 (]: ["postgres"."dv"."stg_webshop_wohnort"] yaml-metadata given, but parameter 'enable_ghost_records' not defined in there. Applying 'True' which is either a parameter passed separately or the default value.
+[0m13:57:58.659643 [debug] [Thread-4 (]: Writing runtime sql for node "model.DVA_WGG.stg_roadshow_rsbestellung"
+[0m13:57:58.660374 [debug] [Thread-1 (]: SQL status: SELECT 13 in 0.025 seconds
+[0m13:57:58.662098 [debug] [Thread-2 (]: source_model: base_webshop_wohnort
+[0m13:57:58.678124 [debug] [Thread-1 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.679355 [debug] [Thread-2 (]: source_model is not mapping and not none: base_webshop_wohnort
+[0m13:57:58.680890 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.stg_webshop_bestellung"
+[0m13:57:58.681597 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_rsbestellung"
+[0m13:57:58.684162 [debug] [Thread-1 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.689232 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.stg_webshop_wohnort"
+[0m13:57:58.690793 [debug] [Thread-3 (]: On model.DVA_WGG.stg_webshop_bestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_bestellung"} */
+
+  create view "postgres"."dv"."stg_webshop_bestellung__dbt_tmp"
+    
+    
+  as (
+    
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+--                                                                                      ( )  --
+--                                                                                     //    --
+--                                                                               ( )=( o )   --
+--  #####   #####     #    #       ####### ####### ######  ####### #######             \\    --
+-- #     # #     #   # #   #       #       #       #     # #       #                    ( )  --
+-- #       #        #   #  #       #       #       #     # #       #                         --
+--  #####  #       #     # #       #####   #####   ######  #####   #####                     --
+--       # #       ####### #       #       #       #   #   #       #                         --
+-- #     # #     # #     # #       #       #       #    #  #       #                         --
+--  #####   #####  #     # ####### ####### #       #     # ####### #######                   --
+-----------------------------------------------------------------------------------------------
+--                Generated by datavault4dbt by Scalefree International GmbH                 --
+--                   Source & Documentation: https://www.datavault4dbt.com                   --
+-----------------------------------------------------------------------------------------------
+
+WITH
+
+
+source_data AS (
+    SELECT
+
+    
+        bestellungid,
+        kundeid,
+        allglieferadrid,
+        bestelldatum,
+        wunschdatum,
+        rabatt,
+        ldts
+
+  FROM "postgres"."dv"."base_webshop_bestellung"
+
+  ),
+
+
+
+
+
+ldts_rsrc_data AS (
+
+  SELECT
+    CAST( ldts as TIMESTAMPTZ ) AS ldts,
+    CAST( 'WEBSHOP' as VARCHAR ) AS rsrc,
+      
+        bestellungid,
+        kundeid,
+        allglieferadrid,
+        bestelldatum,
+        wunschdatum,
+        rabatt
+    
+
+  FROM source_data),
+
+
+
+
+hashed_columns AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        bestellungid,
+        kundeid,
+        allglieferadrid,
+        bestelldatum,
+        wunschdatum,
+        rabatt,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(bestellungid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_bestellung_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kundeid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_kunde_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(allglieferadrid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_AllgLieferAdr_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(bestellungid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^'),'||',
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(allglieferadrid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^'),'||',
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kundeid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^||^^||^^'))), '00000000000000000000000000000000') AS hk_wsbestellung_l,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(bestelldatum AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(wunschdatum AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(rabatt AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^||^^||^^'))), '00000000000000000000000000000000') AS hd_wsbestellung_s
+
+    FROM ldts_rsrc_data
+  
+),
+
+unknown_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('0001-01-01 00:00:01', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'SYSTEM' as rsrc
+        , CAST(-1 as BIGINT) as bestellungid
+        , '(unknown)' as kundeid
+        , CAST(-1 as INTEGER) as allglieferadrid
+        ,TO_DATE('0001-01-01', 'YYYY-MM-DD' ) as bestelldatum
+        ,TO_DATE('0001-01-01', 'YYYY-MM-DD' ) as wunschdatum
+        , CAST(-1 as NUMERIC) as rabatt
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_bestellung_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_AllgLieferAdr_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_wsbestellung_l
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hd_wsbestellung_s
+),
+
+
+error_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('8888-12-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'ERROR' as rsrc
+        , CAST(-2 as BIGINT) as bestellungid
+        , '(error)' as kundeid
+        , CAST(-2 as INTEGER) as allglieferadrid
+        ,TO_DATE('8888-12-31', 'YYYY-MM-DD' ) as bestelldatum
+        ,TO_DATE('8888-12-31', 'YYYY-MM-DD' ) as wunschdatum
+        , CAST(-2 as NUMERIC) as rabatt
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_bestellung_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_AllgLieferAdr_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_wsbestellung_l
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hd_wsbestellung_s
+),
+
+
+ghost_records AS (
+    SELECT * FROM unknown_values
+    UNION ALL
+    SELECT * FROM error_values
+),
+columns_to_select AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        bestellungid,
+        kundeid,
+        allglieferadrid,
+        bestelldatum,
+        wunschdatum,
+        rabatt,
+        hk_bestellung_h,
+        hk_kunde_h,
+        hk_allglieferadr_h,
+        hk_wsbestellung_l,
+        hd_wsbestellung_s
+
+    FROM hashed_columns
+    UNION ALL
+    
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        bestellungid,
+        kundeid,
+        allglieferadrid,
+        bestelldatum,
+        wunschdatum,
+        rabatt,
+        hk_bestellung_h,
+        hk_kunde_h,
+        hk_allglieferadr_h,
+        hk_wsbestellung_l,
+        hd_wsbestellung_s
+
+    FROM ghost_records
+
+)
+
+SELECT * FROM columns_to_select
+  );
+[0m13:57:58.692328 [debug] [Thread-4 (]: On model.DVA_WGG.stg_roadshow_rsbestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_rsbestellung"} */
+
+  create view "postgres"."dv"."stg_roadshow_rsbestellung__dbt_tmp"
+    
+    
+  as (
+    
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+--                                                                                      ( )  --
+--                                                                                     //    --
+--                                                                               ( )=( o )   --
+--  #####   #####     #    #       ####### ####### ######  ####### #######             \\    --
+-- #     # #     #   # #   #       #       #       #     # #       #                    ( )  --
+-- #       #        #   #  #       #       #       #     # #       #                         --
+--  #####  #       #     # #       #####   #####   ######  #####   #####                     --
+--       # #       ####### #       #       #       #   #   #       #                         --
+-- #     # #     # #     # #       #       #       #    #  #       #                         --
+--  #####   #####  #     # ####### ####### #       #     # ####### #######                   --
+-----------------------------------------------------------------------------------------------
+--                Generated by datavault4dbt by Scalefree International GmbH                 --
+--                   Source & Documentation: https://www.datavault4dbt.com                   --
+-----------------------------------------------------------------------------------------------
+
+WITH
+
+
+source_data AS (
+    SELECT
+
+    
+        bestellungid,
+        kundeid,
+        vereinspartnerid,
+        kaufdatum,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+        produktid,
+        menge,
+        preis,
+        rabatt,
+        ldts
+
+  FROM "postgres"."dv"."base_roadshow_rsbestellung"
+
+  ),
+
+
+
+
+
+ldts_rsrc_data AS (
+
+  SELECT
+    CAST( ldts as TIMESTAMPTZ ) AS ldts,
+    CAST( 'ROADSHOW' as VARCHAR ) AS rsrc,
+      
+        bestellungid,
+        kundeid,
+        vereinspartnerid,
+        kaufdatum,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+        produktid,
+        menge,
+        preis,
+        rabatt
+    
+
+  FROM source_data),
+
+
+
+
+hashed_columns AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        bestellungid,
+        kundeid,
+        vereinspartnerid,
+        kaufdatum,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+        produktid,
+        menge,
+        preis,
+        rabatt,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(bestellungid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_bestellung_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(produktid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_produkt_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kundeid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_kunde_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(vereinspartnerid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_vereinspartner_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(bestellungid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^'),'||',
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(produktid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^'),'||',
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kundeid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^'),'||',
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(vereinspartnerid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^||^^||^^||^^'))), '00000000000000000000000000000000') AS hk_rsbestellung_l,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(kaufdatum AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(kreditkarte AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(gueltigbis AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(kkfirma AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(menge AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(preis AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(rabatt AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^||^^||^^||^^||^^||^^||^^'))), '00000000000000000000000000000000') AS hd_rsbestellung_s
+
+    FROM ldts_rsrc_data
+  
+),
+
+unknown_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('0001-01-01 00:00:01', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'SYSTEM' as rsrc
+        , '(unknown)' as bestellungid
+        , '(unknown)' as kundeid
+        , '(unknown)' as vereinspartnerid
+        ,TO_DATE('0001-01-01', 'YYYY-MM-DD' ) as kaufdatum
+        , '(unknown)' as kreditkarte
+        , '(unknown)' as gueltigbis
+        , '(unknown)' as kkfirma
+        , CAST(-1 as INTEGER) as produktid
+        , CAST(-1 as INTEGER) as menge
+        , CAST(-1 as NUMERIC) as preis
+        , CAST(-1 as NUMERIC) as rabatt
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_bestellung_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_produkt_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_vereinspartner_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_rsbestellung_l
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hd_rsbestellung_s
+),
+
+
+error_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('8888-12-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'ERROR' as rsrc
+        , '(error)' as bestellungid
+        , '(error)' as kundeid
+        , '(error)' as vereinspartnerid
+        ,TO_DATE('8888-12-31', 'YYYY-MM-DD' ) as kaufdatum
+        , '(error)' as kreditkarte
+        , '(error)' as gueltigbis
+        , '(error)' as kkfirma
+        , CAST(-2 as INTEGER) as produktid
+        , CAST(-2 as INTEGER) as menge
+        , CAST(-2 as NUMERIC) as preis
+        , CAST(-2 as NUMERIC) as rabatt
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_bestellung_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_produkt_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_vereinspartner_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_rsbestellung_l
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hd_rsbestellung_s
+),
+
+
+ghost_records AS (
+    SELECT * FROM unknown_values
+    UNION ALL
+    SELECT * FROM error_values
+),
+columns_to_select AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        bestellungid,
+        kundeid,
+        vereinspartnerid,
+        kaufdatum,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+        produktid,
+        menge,
+        preis,
+        rabatt,
+        hk_bestellung_h,
+        hk_produkt_h,
+        hk_kunde_h,
+        hk_vereinspartner_h,
+        hk_rsbestellung_l,
+        hd_rsbestellung_s
+
+    FROM hashed_columns
+    UNION ALL
+    
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        bestellungid,
+        kundeid,
+        vereinspartnerid,
+        kaufdatum,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+        produktid,
+        menge,
+        preis,
+        rabatt,
+        hk_bestellung_h,
+        hk_produkt_h,
+        hk_kunde_h,
+        hk_vereinspartner_h,
+        hk_rsbestellung_l,
+        hd_rsbestellung_s
+
+    FROM ghost_records
+
+)
+
+SELECT * FROM columns_to_select
+  );
+[0m13:57:58.695892 [debug] [Thread-1 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.697017 [debug] [Thread-2 (]: On model.DVA_WGG.stg_webshop_wohnort: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_wohnort"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_webshop_wohnort'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m13:57:58.701566 [debug] [Thread-1 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.702822 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:57:58.708918 [debug] [Thread-1 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.754640 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.056 seconds
+[0m13:57:58.759814 [debug] [Thread-1 (]: Writing injected SQL for node "model.DVA_WGG.stg_webshop_kunde"
+[0m13:57:58.760914 [debug] [Thread-4 (]: SQL status: CREATE VIEW in 0.062 seconds
+[0m13:57:58.767037 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.stg_webshop_bestellung"
+[0m13:57:58.773501 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_rsbestellung"
+[0m13:57:58.774421 [debug] [Thread-3 (]: On model.DVA_WGG.stg_webshop_bestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_bestellung"} */
+alter table "postgres"."dv"."stg_webshop_bestellung__dbt_tmp" rename to "stg_webshop_bestellung"
+[0m13:57:58.775615 [debug] [Thread-4 (]: On model.DVA_WGG.stg_roadshow_rsbestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_rsbestellung"} */
+alter table "postgres"."dv"."stg_roadshow_rsbestellung__dbt_tmp" rename to "stg_roadshow_rsbestellung"
+[0m13:57:58.776782 [debug] [Thread-1 (]: Began executing node model.DVA_WGG.stg_webshop_kunde
+[0m13:57:58.783805 [debug] [Thread-1 (]: Writing runtime sql for node "model.DVA_WGG.stg_webshop_kunde"
+[0m13:57:58.786163 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_webshop_kunde"
+[0m13:57:58.787067 [debug] [Thread-1 (]: On model.DVA_WGG.stg_webshop_kunde: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_kunde"} */
+
+  create view "postgres"."dv"."stg_webshop_kunde__dbt_tmp"
+    
+    
+  as (
+    
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+--                                                                                      ( )  --
+--                                                                                     //    --
+--                                                                               ( )=( o )   --
+--  #####   #####     #    #       ####### ####### ######  ####### #######             \\    --
+-- #     # #     #   # #   #       #       #       #     # #       #                    ( )  --
+-- #       #        #   #  #       #       #       #     # #       #                         --
+--  #####  #       #     # #       #####   #####   ######  #####   #####                     --
+--       # #       ####### #       #       #       #   #   #       #                         --
+-- #     # #     # #     # #       #       #       #    #  #       #                         --
+--  #####   #####  #     # ####### ####### #       #     # ####### #######                   --
+-----------------------------------------------------------------------------------------------
+--                Generated by datavault4dbt by Scalefree International GmbH                 --
+--                   Source & Documentation: https://www.datavault4dbt.com                   --
+-----------------------------------------------------------------------------------------------
+
+WITH
+
+
+source_data AS (
+    SELECT
+
+    
+        kundeid,
+        vereinspartnerid,
+        vorname,
+        name,
+        geschlecht,
+        geburtsdatum,
+        telefon,
+        mobil,
+        email,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+        ldts
+
+  FROM "postgres"."dv"."base_webshop_kunde"
+
+  ),
+
+
+
+
+
+ldts_rsrc_data AS (
+
+  SELECT
+    CAST( ldts as TIMESTAMPTZ ) AS ldts,
+    CAST( 'WEBSHOP' as VARCHAR ) AS rsrc,
+      
+        kundeid,
+        vereinspartnerid,
+        vorname,
+        name,
+        geschlecht,
+        geburtsdatum,
+        telefon,
+        mobil,
+        email,
+        kreditkarte,
+        gueltigbis,
+        kkfirma
+    
+
+  FROM source_data),
+
+
+
+
+hashed_columns AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        kundeid,
+        vereinspartnerid,
+        vorname,
+        name,
+        geschlecht,
+        geburtsdatum,
+        telefon,
+        mobil,
+        email,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kundeid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_kunde_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(vereinspartnerid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_vereinspartner_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kundeid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^'),'||',
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(vereinspartnerid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^||^^'))), '00000000000000000000000000000000') AS lk_kunde_vereinspartner,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(vorname AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(name AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(geschlecht AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(geburtsdatum AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(telefon AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(mobil AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(email AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^||^^||^^||^^||^^||^^||^^'))), '00000000000000000000000000000000') AS hd_kunde_s,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(kreditkarte AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(gueltigbis AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(kkfirma AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^||^^||^^'))), '00000000000000000000000000000000') AS hd_kunde_zahlung_s
+
+    FROM ldts_rsrc_data
+  
+),
+
+unknown_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('0001-01-01 00:00:01', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'SYSTEM' as rsrc
+        , '(unknown)' as kundeid
+        , '(unknown)' as vereinspartnerid
+        , '(unknown)' as vorname
+        , '(unknown)' as name
+        , '(unknown)' as geschlecht
+        ,TO_DATE('0001-01-01', 'YYYY-MM-DD' ) as geburtsdatum
+        , '(unknown)' as telefon
+        , '(unknown)' as mobil
+        , '(unknown)' as email
+        , '(unknown)' as kreditkarte
+        , '(unknown)' as gueltigbis
+        , '(unknown)' as kkfirma
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_vereinspartner_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as lk_kunde_vereinspartner
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hd_kunde_s
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hd_kunde_zahlung_s
+),
+
+
+error_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('8888-12-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'ERROR' as rsrc
+        , '(error)' as kundeid
+        , '(error)' as vereinspartnerid
+        , '(error)' as vorname
+        , '(error)' as name
+        , '(error)' as geschlecht
+        ,TO_DATE('8888-12-31', 'YYYY-MM-DD' ) as geburtsdatum
+        , '(error)' as telefon
+        , '(error)' as mobil
+        , '(error)' as email
+        , '(error)' as kreditkarte
+        , '(error)' as gueltigbis
+        , '(error)' as kkfirma
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_vereinspartner_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as lk_kunde_vereinspartner
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hd_kunde_s
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hd_kunde_zahlung_s
+),
+
+
+ghost_records AS (
+    SELECT * FROM unknown_values
+    UNION ALL
+    SELECT * FROM error_values
+),
+columns_to_select AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        kundeid,
+        vereinspartnerid,
+        vorname,
+        name,
+        geschlecht,
+        geburtsdatum,
+        telefon,
+        mobil,
+        email,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+        hk_kunde_h,
+        hk_vereinspartner_h,
+        lk_kunde_vereinspartner,
+        hd_kunde_s,
+        hd_kunde_zahlung_s
+
+    FROM hashed_columns
+    UNION ALL
+    
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        kundeid,
+        vereinspartnerid,
+        vorname,
+        name,
+        geschlecht,
+        geburtsdatum,
+        telefon,
+        mobil,
+        email,
+        kreditkarte,
+        gueltigbis,
+        kkfirma,
+        hk_kunde_h,
+        hk_vereinspartner_h,
+        lk_kunde_vereinspartner,
+        hd_kunde_s,
+        hd_kunde_zahlung_s
+
+    FROM ghost_records
+
+)
+
+SELECT * FROM columns_to_select
+  );
+[0m13:57:58.798292 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.021 seconds
+[0m13:57:58.799435 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.023 seconds
+[0m13:57:58.801750 [debug] [Thread-4 (]: On model.DVA_WGG.stg_roadshow_rsbestellung: COMMIT
+[0m13:57:58.803526 [debug] [Thread-3 (]: On model.DVA_WGG.stg_webshop_bestellung: COMMIT
+[0m13:57:58.804156 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_rsbestellung"
+[0m13:57:58.804830 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.stg_webshop_bestellung"
+[0m13:57:58.805672 [debug] [Thread-4 (]: On model.DVA_WGG.stg_roadshow_rsbestellung: COMMIT
+[0m13:57:58.806368 [debug] [Thread-3 (]: On model.DVA_WGG.stg_webshop_bestellung: COMMIT
+[0m13:57:58.816312 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.028 seconds
+[0m13:57:58.823809 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_webshop_kunde"
+[0m13:57:58.831011 [debug] [Thread-3 (]: SQL status: COMMIT in 0.024 seconds
+[0m13:57:58.832479 [debug] [Thread-4 (]: SQL status: COMMIT in 0.025 seconds
+[0m13:57:58.837464 [debug] [Thread-1 (]: On model.DVA_WGG.stg_webshop_kunde: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_kunde"} */
+alter table "postgres"."dv"."stg_webshop_kunde__dbt_tmp" rename to "stg_webshop_kunde"
+[0m13:57:58.843248 [debug] [Thread-3 (]: Applying DROP to: "postgres"."dv"."stg_webshop_bestellung__dbt_backup"
+[0m13:57:58.846622 [debug] [Thread-4 (]: Applying DROP to: "postgres"."dv"."stg_roadshow_rsbestellung__dbt_backup"
+[0m13:57:58.848371 [debug] [Thread-3 (]: Using postgres connection "model.DVA_WGG.stg_webshop_bestellung"
+[0m13:57:58.849714 [debug] [Thread-4 (]: Using postgres connection "model.DVA_WGG.stg_roadshow_rsbestellung"
+[0m13:57:58.850511 [debug] [Thread-3 (]: On model.DVA_WGG.stg_webshop_bestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_bestellung"} */
+drop view if exists "postgres"."dv"."stg_webshop_bestellung__dbt_backup" cascade
+[0m13:57:58.851313 [debug] [Thread-4 (]: On model.DVA_WGG.stg_roadshow_rsbestellung: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_roadshow_rsbestellung"} */
+drop view if exists "postgres"."dv"."stg_roadshow_rsbestellung__dbt_backup" cascade
+[0m13:57:58.869154 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.022 seconds
+[0m13:57:58.871750 [debug] [Thread-1 (]: On model.DVA_WGG.stg_webshop_kunde: COMMIT
+[0m13:57:58.872413 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_webshop_kunde"
+[0m13:57:58.872944 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.021 seconds
+[0m13:57:58.873485 [debug] [Thread-1 (]: On model.DVA_WGG.stg_webshop_kunde: COMMIT
+[0m13:57:58.874019 [debug] [Thread-4 (]: SQL status: DROP VIEW in 0.022 seconds
+[0m13:57:58.876430 [debug] [Thread-3 (]: On model.DVA_WGG.stg_webshop_bestellung: Close
+[0m13:57:58.878952 [debug] [Thread-4 (]: On model.DVA_WGG.stg_roadshow_rsbestellung: Close
+[0m13:57:58.881576 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D905CE8D0>]}
+[0m13:57:58.880774 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8FE8E0F0>]}
+[0m13:57:58.882737 [info ] [Thread-3 (]: 19 of 21 OK created sql view model dv.stg_webshop_bestellung ................... [[32mCREATE VIEW[0m in 0.83s]
+[0m13:57:58.884699 [debug] [Thread-3 (]: Finished running node model.DVA_WGG.stg_webshop_bestellung
+[0m13:57:58.883910 [info ] [Thread-4 (]: 18 of 21 OK created sql view model dv.stg_roadshow_rsbestellung ................ [[32mCREATE VIEW[0m in 0.84s]
+[0m13:57:58.885770 [debug] [Thread-4 (]: Finished running node model.DVA_WGG.stg_roadshow_rsbestellung
+[0m13:57:58.898973 [debug] [Thread-1 (]: SQL status: COMMIT in 0.022 seconds
+[0m13:57:58.906154 [debug] [Thread-1 (]: Applying DROP to: "postgres"."dv"."stg_webshop_kunde__dbt_backup"
+[0m13:57:58.908184 [debug] [Thread-1 (]: Using postgres connection "model.DVA_WGG.stg_webshop_kunde"
+[0m13:57:58.908803 [debug] [Thread-1 (]: On model.DVA_WGG.stg_webshop_kunde: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_kunde"} */
+drop view if exists "postgres"."dv"."stg_webshop_kunde__dbt_backup" cascade
+[0m13:57:58.930190 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.020 seconds
+[0m13:57:58.933745 [debug] [Thread-1 (]: On model.DVA_WGG.stg_webshop_kunde: Close
+[0m13:57:58.935377 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E7F7E90>]}
+[0m13:57:58.936431 [info ] [Thread-1 (]: 20 of 21 OK created sql view model dv.stg_webshop_kunde ........................ [[32mCREATE VIEW[0m in 0.71s]
+[0m13:57:58.937680 [debug] [Thread-1 (]: Finished running node model.DVA_WGG.stg_webshop_kunde
+[0m13:57:58.939951 [debug] [Thread-2 (]: SQL status: SELECT 10 in 0.237 seconds
+[0m13:57:58.942498 [debug] [Thread-2 (]: source_relation: "postgres"."dv"."base_webshop_wohnort"
+[0m13:57:58.948170 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.stg_webshop_wohnort"
+[0m13:57:58.948951 [debug] [Thread-2 (]: On model.DVA_WGG.stg_webshop_wohnort: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_wohnort"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'base_webshop_wohnort'
+        
+        and table_schema = 'dv'
+        
+      order by ordinal_position
+
+  
+[0m13:57:58.974125 [debug] [Thread-2 (]: SQL status: SELECT 10 in 0.024 seconds
+[0m13:57:58.989137 [debug] [Thread-2 (]: hash type in hash macro: VARCHAR
+[0m13:57:58.991871 [debug] [Thread-2 (]: hash type in hash macro: VARCHAR
+[0m13:57:59.031941 [debug] [Thread-2 (]: Writing injected SQL for node "model.DVA_WGG.stg_webshop_wohnort"
+[0m13:57:59.035156 [debug] [Thread-2 (]: Began executing node model.DVA_WGG.stg_webshop_wohnort
+[0m13:57:59.041207 [debug] [Thread-2 (]: Writing runtime sql for node "model.DVA_WGG.stg_webshop_wohnort"
+[0m13:57:59.043132 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.stg_webshop_wohnort"
+[0m13:57:59.043979 [debug] [Thread-2 (]: On model.DVA_WGG.stg_webshop_wohnort: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_wohnort"} */
+
+  create view "postgres"."dv"."stg_webshop_wohnort__dbt_tmp"
+    
+    
+  as (
+    
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+--                                                                                      ( )  --
+--                                                                                     //    --
+--                                                                               ( )=( o )   --
+--  #####   #####     #    #       ####### ####### ######  ####### #######             \\    --
+-- #     # #     #   # #   #       #       #       #     # #       #                    ( )  --
+-- #       #        #   #  #       #       #       #     # #       #                         --
+--  #####  #       #     # #       #####   #####   ######  #####   #####                     --
+--       # #       ####### #       #       #       #   #   #       #                         --
+-- #     # #     # #     # #       #       #       #    #  #       #                         --
+--  #####   #####  #     # ####### ####### #       #     # ####### #######                   --
+-----------------------------------------------------------------------------------------------
+--                Generated by datavault4dbt by Scalefree International GmbH                 --
+--                   Source & Documentation: https://www.datavault4dbt.com                   --
+-----------------------------------------------------------------------------------------------
+
+WITH
+
+
+source_data AS (
+    SELECT
+
+    
+        kundeid,
+        von,
+        bis,
+        strasse,
+        hausnummer,
+        adresszusatz,
+        plz,
+        ort,
+        land,
+        ldts
+
+  FROM "postgres"."dv"."base_webshop_wohnort"
+
+  ),
+
+
+
+
+
+ldts_rsrc_data AS (
+
+  SELECT
+    CAST( ldts as TIMESTAMPTZ ) AS ldts,
+    CAST( 'WEBSHOP' as VARCHAR ) AS rsrc,
+      
+        kundeid,
+        von,
+        bis,
+        strasse,
+        hausnummer,
+        adresszusatz,
+        plz,
+        ort,
+        land
+    
+
+  FROM source_data),
+
+
+
+
+hashed_columns AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        kundeid,
+        von,
+        bis,
+        strasse,
+        hausnummer,
+        adresszusatz,
+        plz,
+        ort,
+        land,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((
+
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kundeid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^'))), '00000000000000000000000000000000') AS hk_kunde_h,
+    COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(strasse AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(hausnummer AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(adresszusatz AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(plz AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(ort AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^'),'||',
+        COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(land AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
+
+        ), '^^')
+        ), '\n', '') 
+        , '\t', '') 
+        , '\v', '') 
+        , '\r', '') AS VARCHAR), '^^||^^||^^||^^||^^||^^'))), '00000000000000000000000000000000') AS hd_kunde_wohnort_s
+
+    FROM ldts_rsrc_data
+  
+),
+
+unknown_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('0001-01-01 00:00:01', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'SYSTEM' as rsrc
+        , '(unknown)' as kundeid
+        ,TO_DATE('0001-01-01', 'YYYY-MM-DD' ) as von
+        ,TO_DATE('0001-01-01', 'YYYY-MM-DD' ) as bis
+        , '(unknown)' as strasse
+        , '(unknown)' as hausnummer
+        , '(unknown)' as adresszusatz
+        , '(unknown)' as plz
+        , '(unknown)' as ort
+        , '(unknown)' as land
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hd_kunde_wohnort_s
+),
+
+
+error_values AS (
+
+    SELECT
+
+    CAST(TO_TIMESTAMP('8888-12-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS') AS TIMESTAMPTZ) as ldts
+    ,'ERROR' as rsrc
+        , '(error)' as kundeid
+        ,TO_DATE('8888-12-31', 'YYYY-MM-DD' ) as von
+        ,TO_DATE('8888-12-31', 'YYYY-MM-DD' ) as bis
+        , '(error)' as strasse
+        , '(error)' as hausnummer
+        , '(error)' as adresszusatz
+        , '(error)' as plz
+        , '(error)' as ort
+        , '(error)' as land
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_kunde_h
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hd_kunde_wohnort_s
+),
+
+
+ghost_records AS (
+    SELECT * FROM unknown_values
+    UNION ALL
+    SELECT * FROM error_values
+),
+columns_to_select AS (
+
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        kundeid,
+        von,
+        bis,
+        strasse,
+        hausnummer,
+        adresszusatz,
+        plz,
+        ort,
+        land,
+        hk_kunde_h,
+        hd_kunde_wohnort_s
+
+    FROM hashed_columns
+    UNION ALL
+    
+    SELECT
+
+    
+        ldts,
+        rsrc,
+        kundeid,
+        von,
+        bis,
+        strasse,
+        hausnummer,
+        adresszusatz,
+        plz,
+        ort,
+        land,
+        hk_kunde_h,
+        hd_kunde_wohnort_s
+
+    FROM ghost_records
+
+)
+
+SELECT * FROM columns_to_select
+  );
+[0m13:57:59.070051 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.025 seconds
+[0m13:57:59.075540 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.stg_webshop_wohnort"
+[0m13:57:59.076080 [debug] [Thread-2 (]: On model.DVA_WGG.stg_webshop_wohnort: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_wohnort"} */
+alter table "postgres"."dv"."stg_webshop_wohnort__dbt_tmp" rename to "stg_webshop_wohnort"
+[0m13:57:59.099195 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.022 seconds
+[0m13:57:59.102289 [debug] [Thread-2 (]: On model.DVA_WGG.stg_webshop_wohnort: COMMIT
+[0m13:57:59.102832 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.stg_webshop_wohnort"
+[0m13:57:59.103304 [debug] [Thread-2 (]: On model.DVA_WGG.stg_webshop_wohnort: COMMIT
+[0m13:57:59.126847 [debug] [Thread-2 (]: SQL status: COMMIT in 0.023 seconds
+[0m13:57:59.135838 [debug] [Thread-2 (]: Applying DROP to: "postgres"."dv"."stg_webshop_wohnort__dbt_backup"
+[0m13:57:59.136850 [debug] [Thread-2 (]: Using postgres connection "model.DVA_WGG.stg_webshop_wohnort"
+[0m13:57:59.137339 [debug] [Thread-2 (]: On model.DVA_WGG.stg_webshop_wohnort: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "DVA_WGG", "target_name": "dev", "node_id": "model.DVA_WGG.stg_webshop_wohnort"} */
+drop view if exists "postgres"."dv"."stg_webshop_wohnort__dbt_backup" cascade
+[0m13:57:59.159642 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.022 seconds
+[0m13:57:59.162359 [debug] [Thread-2 (]: On model.DVA_WGG.stg_webshop_wohnort: Close
+[0m13:57:59.163875 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ad18789-1e3b-4f1d-8535-90c47000778e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E7F7C50>]}
+[0m13:57:59.164863 [info ] [Thread-2 (]: 21 of 21 OK created sql view model dv.stg_webshop_wohnort ...................... [[32mCREATE VIEW[0m in 0.53s]
+[0m13:57:59.166354 [debug] [Thread-2 (]: Finished running node model.DVA_WGG.stg_webshop_wohnort
+[0m13:57:59.168986 [debug] [MainThread]: On master: COMMIT
+[0m13:57:59.169460 [debug] [MainThread]: Using postgres connection "master"
+[0m13:57:59.169844 [debug] [MainThread]: On master: COMMIT
+[0m13:57:59.170358 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:57:59.388181 [debug] [MainThread]: SQL status: COMMIT in 0.218 seconds
+[0m13:57:59.389123 [debug] [MainThread]: On master: Close
+[0m13:57:59.390305 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:57:59.390765 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m13:57:59.391126 [debug] [MainThread]: Connection 'list_postgres_dv' was properly closed.
+[0m13:57:59.391472 [debug] [MainThread]: Connection 'model.DVA_WGG.stg_webshop_kunde' was properly closed.
+[0m13:57:59.391801 [debug] [MainThread]: Connection 'model.DVA_WGG.stg_webshop_bestellung' was properly closed.
+[0m13:57:59.392126 [debug] [MainThread]: Connection 'model.DVA_WGG.stg_roadshow_rsbestellung' was properly closed.
+[0m13:57:59.392444 [debug] [MainThread]: Connection 'model.DVA_WGG.stg_webshop_wohnort' was properly closed.
+[0m13:57:59.393057 [info ] [MainThread]: 
+[0m13:57:59.394105 [info ] [MainThread]: Finished running 21 view models in 0 hours 0 minutes and 3.93 seconds (3.93s).
+[0m13:57:59.398844 [debug] [MainThread]: Command end result
+[0m13:57:59.696363 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\cleme\dev\DVA_WGG\target\manifest.json
+[0m13:57:59.703582 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\cleme\dev\DVA_WGG\target\semantic_manifest.json
+[0m13:57:59.715218 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\cleme\dev\DVA_WGG\target\run_results.json
+[0m13:57:59.715795 [info ] [MainThread]: 
+[0m13:57:59.716582 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m13:57:59.717377 [info ] [MainThread]: 
+[0m13:57:59.718263 [error] [MainThread]: [31mFailure in model base_roadshow_kunde (models\staging\roadshow\base_roadshow_kunde.sql)[0m
+[0m13:57:59.719055 [error] [MainThread]:   Database Error in model base_roadshow_kunde (models\staging\roadshow\base_roadshow_kunde.sql)
+  relation "roadshow.kunde" does not exist
+  LINE 23: from "postgres"."roadshow"."kunde"
+                ^
+  compiled code at target\run\DVA_WGG\models\staging\roadshow\base_roadshow_kunde.sql
+[0m13:57:59.719726 [info ] [MainThread]: 
+[0m13:57:59.720506 [info ] [MainThread]:   compiled code at target\compiled\DVA_WGG\models\staging\roadshow\base_roadshow_kunde.sql
+[0m13:57:59.721181 [info ] [MainThread]: 
+[0m13:57:59.721928 [error] [MainThread]: [31mFailure in model base_roadshow_vereinspartner (models\staging\roadshow\base_roadshow_vereinspartner.sql)[0m
+[0m13:57:59.722834 [error] [MainThread]:   Database Error in model base_roadshow_vereinspartner (models\staging\roadshow\base_roadshow_vereinspartner.sql)
+  relation "roadshow.vereinspartner" does not exist
+  LINE 16: from "postgres"."roadshow"."vereinspartner"
+                ^
+  compiled code at target\run\DVA_WGG\models\staging\roadshow\base_roadshow_vereinspartner.sql
+[0m13:57:59.723799 [info ] [MainThread]: 
+[0m13:57:59.724549 [info ] [MainThread]:   compiled code at target\compiled\DVA_WGG\models\staging\roadshow\base_roadshow_vereinspartner.sql
+[0m13:57:59.725175 [info ] [MainThread]: 
+[0m13:57:59.726026 [error] [MainThread]: [31mFailure in model base_roadshow_produkt (models\staging\roadshow\base_roadshow_produkt.sql)[0m
+[0m13:57:59.726860 [error] [MainThread]:   Database Error in model base_roadshow_produkt (models\staging\roadshow\base_roadshow_produkt.sql)
+  relation "roadshow.produkt" does not exist
+  LINE 18: from "postgres"."roadshow"."produkt"
+                ^
+  compiled code at target\run\DVA_WGG\models\staging\roadshow\base_roadshow_produkt.sql
+[0m13:57:59.727478 [info ] [MainThread]: 
+[0m13:57:59.728344 [info ] [MainThread]:   compiled code at target\compiled\DVA_WGG\models\staging\roadshow\base_roadshow_produkt.sql
+[0m13:57:59.729295 [info ] [MainThread]: 
+[0m13:57:59.730026 [info ] [MainThread]: Done. PASS=15 WARN=0 ERROR=3 SKIP=3 NO-OP=0 TOTAL=21
+[0m13:57:59.732032 [debug] [MainThread]: Command `dbt build` failed at 13:57:59.731850 after 7.17 seconds
+[0m13:57:59.732676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8CC38D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E3EADB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D8E3EAE70>]}
+[0m13:57:59.733240 [debug] [MainThread]: Flushing usage events
+[0m13:58:01.262057 [debug] [MainThread]: An error was encountered while trying to flush usage events

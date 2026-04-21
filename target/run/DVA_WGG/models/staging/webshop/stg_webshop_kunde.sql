@@ -149,12 +149,12 @@ hashed_columns AS (
     COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
         COALESCE((
 
-            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(hk_kunde_h AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(kundeid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
 
         ), '^^'),'||',
         COALESCE((
 
-            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(hk_vereinspartner_h AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
+            '"' || REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(TRIM(BOTH ' ' FROM CAST(vereinspartnerid AS VARCHAR)), '\\', '\\\\'), '"', '\"'), '^^', '--') || '"'
 
         ), '^^')
         ), '\n', '') 

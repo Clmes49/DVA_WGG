@@ -15,8 +15,8 @@ hashed_columns:
   
   # Link zwischen Kunde und Vereinspartner
   lk_kunde_vereinspartner:
-    - "hk_kunde_h"
-    - "hk_vereinspartner_h"
+    - "kundeid"
+    - "vereinspartnerid"
   
   # Satellites
   hd_kunde_s:
