@@ -8,7 +8,7 @@ rsrc: "!WEBSHOP"
 hashed_columns:
   # Gleicher Hub-Hash wie bei Kunde (für Zuordnung)
   hk_kunde_h:
-    - "kunde_id"
+    - "kundeid"
 
   # Multi-Active Satellite: Wohnort
   hd_kunde_wohnort_s:
