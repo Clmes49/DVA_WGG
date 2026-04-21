@@ -14,12 +14,12 @@ hashed_columns:
   hk_AllgLieferAdr_h:
     - AllgLieferAdrID
 
-  hk_rsbestellung_l:
+  hk_wsbestellung_l:
     - bestellungid
     - AllgLieferAdrID
     - kundeid
 
-  hd_rsbestellung_s:
+  hd_wsbestellung_s:
     is_hashdiff: true
     columns:
       - Bestelldatum

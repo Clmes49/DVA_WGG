@@ -157,7 +157,7 @@ hashed_columns AS (
         ), '\n', '') 
         , '\t', '') 
         , '\v', '') 
-        , '\r', '') AS VARCHAR), '^^||^^||^^'))), '00000000000000000000000000000000') AS hk_rsbestellung_l,
+        , '\r', '') AS VARCHAR), '^^||^^||^^'))), '00000000000000000000000000000000') AS hk_wsbestellung_l,
     COALESCE(LOWER(MD5(NULLIF(CAST(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CONCAT(
         COALESCE((CONCAT('"', REPLACE(REGEXP_REPLACE(REGEXP_REPLACE(CAST(bestelldatum AS VARCHAR), '\\', '\\\\'), '"', '\"'), '^^', '--'), '"')
 
@@ -171,7 +171,7 @@ hashed_columns AS (
         ), '\n', '') 
         , '\t', '') 
         , '\v', '') 
-        , '\r', '') AS VARCHAR), '^^||^^||^^'))), '00000000000000000000000000000000') AS hd_rsbestellung_s
+        , '\r', '') AS VARCHAR), '^^||^^||^^'))), '00000000000000000000000000000000') AS hd_wsbestellung_s
 
     FROM ldts_rsrc_data
   
@@ -192,8 +192,8 @@ unknown_values AS (
         ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_bestellung_h
         ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_kunde_h
         ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_AllgLieferAdr_h
-        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_rsbestellung_l
-        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hd_rsbestellung_s
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hk_wsbestellung_l
+        ,CAST('00000000000000000000000000000000' as VARCHAR(32)) as hd_wsbestellung_s
 ),
 
 
@@ -212,8 +212,8 @@ error_values AS (
         ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_bestellung_h
         ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_kunde_h
         ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_AllgLieferAdr_h
-        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_rsbestellung_l
-        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hd_rsbestellung_s
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hk_wsbestellung_l
+        ,CAST('ffffffffffffffffffffffffffffffff' as VARCHAR(32)) as hd_wsbestellung_s
 ),
 
 
@@ -238,8 +238,8 @@ columns_to_select AS (
         hk_bestellung_h,
         hk_kunde_h,
         hk_allglieferadr_h,
-        hk_rsbestellung_l,
-        hd_rsbestellung_s
+        hk_wsbestellung_l,
+        hd_wsbestellung_s
 
     FROM hashed_columns
     UNION ALL
@@ -258,8 +258,8 @@ columns_to_select AS (
         hk_bestellung_h,
         hk_kunde_h,
         hk_allglieferadr_h,
-        hk_rsbestellung_l,
-        hd_rsbestellung_s
+        hk_wsbestellung_l,
+        hd_wsbestellung_s
 
     FROM ghost_records
 
