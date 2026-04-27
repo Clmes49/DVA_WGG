@@ -5,10 +5,7 @@ sources:
     schema: roadshow
     description: "Bestellungen aus dem Roadshow"
     tables:
-      - name: kunde
-      - name: produkt  
       - name: rs_bestellung
-      - name: vereinspartner
   - name: webshop
     schema: webshop
     description: "Online Bestellungen"
