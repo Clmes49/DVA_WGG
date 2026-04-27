@@ -10,7 +10,7 @@ hashed_columns:
     - "LieferAdrID"
 
   # Link zwischen lieferadresse und kunde
-  lk_kunde_vereinspartner:
+  lk_lieferadrid_kundeid:
     - "LieferAdrID"
     - "KundeID"
   
