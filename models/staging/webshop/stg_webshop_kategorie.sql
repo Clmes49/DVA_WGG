@@ -1,7 +1,7 @@
 {{config(materialized='view')}}
 
 {%- set yaml_metadata -%}
-source_model: 'base_webshow_kategorie'
+source_model: 'base_webshop_kategorie'
 ldts: 'ldts'
 rsrc: '!WEBSHOP'
 hashed_columns: 
