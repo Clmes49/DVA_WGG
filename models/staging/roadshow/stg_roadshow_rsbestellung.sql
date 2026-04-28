@@ -5,6 +5,7 @@ source_model: 'base_roadshow_rsbestellung'
 ldts: 'ldts'
 rsrc: '!ROADSHOW'
 hashed_columns:
+  # Hubs
   hk_bestellung_h:
     - bestellungid
 
@@ -17,11 +18,18 @@ hashed_columns:
   hk_vereinspartner_h:
     - vereinspartnerid
 
-  hk_rsbestellung_l:
+  # Links
+  hk_bestellung_kunde_l:
+    - bestellungid
+    - kundeid
+
+  hk_bestellung_vereinspartner_l:
+    - bestellungid
+    - vereinspartnerid
+  
+  hk_rs_position_l:
     - bestellungid
     - produktid
-    - kundeid
-    - vereinspartnerid
 
   hd_rsbestellung_s:
     is_hashdiff: true

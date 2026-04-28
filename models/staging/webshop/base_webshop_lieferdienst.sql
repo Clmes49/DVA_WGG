@@ -1,14 +1,14 @@
 {{ config(materialized='view') }}
 
 select
-    LieferDienstID,
-    Name,
-    Telefon,
-    Fax,
-    Email,
-    Hausnummer,
-    Plz,
-    Ort,
-    Land,
-    current_timestamp as ldts
+    lieferdienstid,
+    name,
+    telefon,
+    fax,
+    email,
+    hausnummer,
+    plz,
+    ort,
+    land,
+    cast('{{var("batch_ldts")}}' as timestamptz) as ldts
 from {{ source('webshop', 'lieferdienst') }}

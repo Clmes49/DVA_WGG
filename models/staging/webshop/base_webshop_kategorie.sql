@@ -1,8 +1,8 @@
 {{ config(materialized='view') }}
 
 select
-    KatID,
-    OberKatID,
-    Name,
-    current_timestamp as ldts
+    katid,
+    oberkatID,
+    name,
+    cast('{{var("batch_ldts")}}' as timestamptz) as ldts
 from {{ source('webshop', 'kategorie') }}
