@@ -1,13 +1,13 @@
 {{ config(materialized='view') }}
 
 select
-    ProduktID,
-    KatID,
-    Bezeichnung,
-    Umfang,
-    Typ,
-    Preis,
-    Pflanzort,
-    Pflanzabstand,
-    current_timestamp as ldts
+    produktid,
+    katid,
+    bezeichnung,
+    umfang,
+    typ,
+    preis,
+    pflanzort,
+    pflanzabstand,
+    cast('{{var("batch_ldts")}}' as timestamptz) as ldts
 from {{ source('webshop', 'produkt') }}

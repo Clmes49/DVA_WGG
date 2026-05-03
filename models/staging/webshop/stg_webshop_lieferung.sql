@@ -1,36 +1,39 @@
 {{ config(materialized='view') }}
 
 {%- set yaml_metadata -%}
-source_model: 'base_webshop_bestellung'
+source_model: 'base_webshop_lieferung'
 ldts: 'ldts'
 rsrc: '!WEBSHOP'
+
 hashed_columns:
   # Hubs
   hk_bestellung_h:
     - bestellungid
 
-  hk_kunde_h:
-    - kundeid
-
   hk_lieferadresse_h:
-    - allglieferadrid
+    - lieferadrid
 
-  # Links
-  hk_bestellung_kunde_l:
-    - bestellungid
-    - kundeid
+  hk_lieferdienst_h:
+    - lieferdienstid
 
-  hk_bestellung_lieferadresse_l:
+  # Link Position
+  hk_position_l:
     - bestellungid
-    - allglieferadrid
- 
+    - posid
+
+  # Link Lieferung
+  hk_lieferung_l:
+    - bestellungid
+    - posid
+    - lieferadrid
+    - lieferdienstid
+
   # Satellite
-  hd_wsbestellung_s:
+  hd_lieferung_s:
     is_hashdiff: true
     columns:
-      - bestelldatum
-      - wunschdatum
-      - rabatt
+      - lieferdatum
+
 {%- endset -%}
 
 {{ datavault4dbt.stage(

@@ -10,16 +10,17 @@ hashed_columns:
     - "LieferAdrID"
 
   # Link zwischen lieferadresse und kunde
-  lk_lieferadrid_kundeid:
-    - "LieferAdrID"
+  lk_kunde_lieferadresse_l:
     - "KundeID"
+    - "LieferAdrID"
+    
   
   # Satellites
-  hd_kunde_s:
+  hd_lieferadresse_s:
     is_hashdiff: true
     columns:
       - "Strasse"
-      - "Hausummer"
+      - "Hausnummer"
       - "Adresszusatz"
       - "Plz"
       - "Ort"

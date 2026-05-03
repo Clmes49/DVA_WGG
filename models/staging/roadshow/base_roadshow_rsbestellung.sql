@@ -11,5 +11,5 @@ select
    menge,
    preis,
    rabatt,
-   current_timestamp as ldts
+   cast('{{var("batch_ldts")}}' as timestamptz) as ldts
 from {{source('roadshow', 'rs_bestellung')}}

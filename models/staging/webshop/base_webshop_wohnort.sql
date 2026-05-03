@@ -2,13 +2,13 @@
 
 select
     kundeid,
-    Von,
-    Bis,
-    Strasse,
-    Hausnummer,
-    Adresszusatz,
-    Plz,
-    Ort,
-    Land,
-    current_timestamp as ldts
+    von,
+    bis,
+    strasse,
+    hausnummer,
+    adresszusatz,
+    plz,
+    ort,
+    land,
+    cast('{{var("batch_ldts")}}' as timestamptz) as ldts
 from {{ source('webshop', 'wohnort') }}

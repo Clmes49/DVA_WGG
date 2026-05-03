@@ -9,5 +9,5 @@ select
     Plz,
     Ort,
     Land,
-    current_timestamp as ldts
+    cast('{{var("batch_ldts")}}' as timestamptz) as ldts
 from {{ source('webshop', 'lieferadresse') }}

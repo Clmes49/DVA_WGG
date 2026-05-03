@@ -1,24 +1,22 @@
 {{ config(materialized='view') }}
 
 {%- set yaml_metadata -%}
-source_model: "base_webshop_wohnort"
-ldts: "ldts"
-rsrc: "!WEBSHOP"
+source_model: 'base_webshop_lieferdienst'
+ldts: 'ldts'
+rsrc: '!WEBSHOP'
 
 hashed_columns:
-  # Hub Kunde
-  hk_kunde_h:
-    - kundeid
+  hk_lieferdienst_h:
+    - lieferdienstid
 
-  # Multi-Active Satellite Hashdiff
-  hd_kunde_wohnort_s:
+  hd_lieferdienst_s:
     is_hashdiff: true
     columns:
-      - von
-      - bis
-      - strasse
+      - name
+      - telefon
+      - fax
+      - email
       - hausnummer
-      - adresszusatz
       - plz
       - ort
       - land

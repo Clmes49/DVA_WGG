@@ -1,10 +1,10 @@
 {{ config(materialized='view') }}
 
 select
-    BestellungID,
-    PosID,
-    LieferAdrID,
-    LieferDienstID,
-    Lieferdatum,
-    current_timestamp as ldts
+    bestellungid,
+    posid,
+    lieferadrid,
+    lieferdienstid,
+    lieferdatum,
+    cast('{{var("batch_ldts")}}' as timestamptz) as ldts
 from {{ source('webshop', 'lieferung') }}

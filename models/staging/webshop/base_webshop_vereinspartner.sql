@@ -1,10 +1,10 @@
 {{ config(materialized='view') }}
 
 select
-    VereinspartnerID,
-    KundeIDVerein,
-    Rabatt1,
-    Rabatt2,
-    Rabatt3,
-    current_timestamp as ldts
+    vereinspartnerid,
+    kundeidverein,
+    rabatt1,
+    rabatt2,
+    rabatt3,
+    cast('{{var("batch_ldts")}}' as timestamptz) as ldts
 from {{ source('webshop', 'vereinspartner') }}
