@@ -14,12 +14,12 @@ hashed_columns:
 
   hk_position_l:
     - bestellungid
-    - posid
     - produktid
 
   hd_position_s:
     is_hashdiff: true
     columns:
+      - posid
       - spezlieferadrid
       - menge
       - preis

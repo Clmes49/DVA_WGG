@@ -7,6 +7,7 @@ business_keys:
 source_models: 
   - name: stg_webshop_produkt
   - name: stg_roadshow_rsbestellung
+  - name: stg_webshop_position
 {%- endset -%}
 
 {{ datavault4dbt.hub(
