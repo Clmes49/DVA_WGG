@@ -2,14 +2,12 @@
 
 {%- set yaml_metadata -%}
 
-hashkey: 'hk_bestellung_h'
+hashkey: 'hk_vereinspartner_h'
 business_keys: 
    - bestellungid
 source_models: 
-   - name: stg_webshop_bestellung
-   - name: stg_roadshow_rsbestellung
-   - name: stg_webshop_lieferung
-   - name: stg_webshop_position
+   - name: stg_webshop_vereinspartner
+   - name: stg_webshop_kunde
 
 {%- endset -%}
 
