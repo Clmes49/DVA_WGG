@@ -5,12 +5,14 @@ source_model: "base_webshop_lieferadresse"
 ldts: "ldts"
 rsrc: "!WEBSHOP"
 hashed_columns:
-  # Hub für lieferadresse
+  # Hub für Kunde und Lieferadresse
+  hk_kunde_h:
+    - "kundeid"
   hk_lieferadresse_h:
     - "LieferAdrID"
 
   # Link zwischen lieferadresse und kunde
-  lk_kunde_lieferadresse_l:
+  hk_kunde_lieferadresse_l:
     - "KundeID"
     - "LieferAdrID"
     

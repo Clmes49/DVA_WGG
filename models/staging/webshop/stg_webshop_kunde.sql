@@ -14,7 +14,7 @@ hashed_columns:
     - "vereinspartnerid"
   
   # Link zwischen Kunde und Vereinspartner
-  lk_kunde_vereinspartner_l:
+  hk_kunde_vereinspartner_l:
     - "kundeid"
     - "vereinspartnerid"
   
