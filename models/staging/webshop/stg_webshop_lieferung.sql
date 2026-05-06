@@ -24,7 +24,7 @@ hashed_columns:
   # Link Lieferung
   hk_lieferung_l:
     - bestellungid
-    - posid
+    # - posid muss geprüft werden
     - lieferadrid
     - lieferdienstid
 
