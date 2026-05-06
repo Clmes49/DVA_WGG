@@ -4,7 +4,7 @@
 
 hashkey: 'hk_vereinspartner_h'
 business_keys: 
-   - bestellungid
+   - vereinspartnerid
 source_models: 
    - name: stg_webshop_vereinspartner
    - name: stg_webshop_kunde

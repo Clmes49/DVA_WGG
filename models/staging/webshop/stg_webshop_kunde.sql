@@ -1,41 +1,41 @@
 {{ config(materialized='view') }}
 
 {%- set yaml_metadata -%}
-source_model: "base_webshop_kunde"
-ldts: "ldts"
-rsrc: "!WEBSHOP"
+source_model: 'base_webshop_kunde'
+ldts: 'ldts'
+rsrc: '!WEBSHOP'
 hashed_columns:
   # Hub für Kunde
   hk_kunde_h:
-    - "kundeid"
+    - kundeid
   
   # Hub für Vereinspartner
   hk_vereinspartner_h:
-    - "vereinspartnerid"
+    - vereinspartnerid
   
   # Link zwischen Kunde und Vereinspartner
   hk_kunde_vereinspartner_l:
-    - "kundeid"
-    - "vereinspartnerid"
+    - kundeid
+    - vereinspartnerid
   
   # Satellites
   hd_kunde_s:
     is_hashdiff: true
     columns:
-      - "vorname"
-      - "name"
-      - "geschlecht"
-      - "geburtsdatum"
-      - "telefon"
-      - "mobil"
-      - "email"
+      - vorname
+      - name
+      - geschlecht
+      - geburtsdatum
+      - telefon
+      - mobil
+      - email
   
   hd_kunde_zahlung_s:
     is_hashdiff: true
     columns:
-      - "kreditkarte"
-      - "gueltigbis"
-      - "kkfirma"
+      - kreditkarte
+      - gueltigbis
+      - kkfirma
 
 {%- endset -%}
 

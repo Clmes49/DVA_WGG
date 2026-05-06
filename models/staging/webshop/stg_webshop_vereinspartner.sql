@@ -1,7 +1,7 @@
 {{ config(materialized='view') }}
 
 {%- set yaml_metadata -%}
-source_model: 'base_webshop_vereinspartner'
+source_model: base_webshop_vereinspartner
 ldts: 'ldts'
 rsrc: '!WEBSHOP'
 
