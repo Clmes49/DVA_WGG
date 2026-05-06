@@ -1,7 +1,7 @@
 {{ config(materialized='view') }}
 
 select
-    bestellungid,
+    cast(bestellungid as varchar) as bestellungid,
     posid,
     lieferadrid,
     lieferdienstid,

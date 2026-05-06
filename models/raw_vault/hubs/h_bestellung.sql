@@ -1,0 +1,16 @@
+{{config(materialized='incremental')}}
+
+{%- set yaml_metadata -%}
+
+hashkey: 'hk_bestellung_h'
+business_keys: 
+   - bestellungid
+source_models: 
+   - name: stg_webshop_bestellung
+   - name: stg_roadshow_rsbestellung
+   - name: stg_webshop_lieferung
+   - name: stg_webshop_position
+
+{%- endset -%}
+
+{{datavault4dbt.hub(yaml_metadata=yaml_metadata)}}

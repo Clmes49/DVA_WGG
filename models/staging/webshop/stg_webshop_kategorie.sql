@@ -8,6 +8,8 @@ hashed_columns:
   # Hubs:
   hk_kategorie_h:
     - katid
+  hk_oberkategorie_h:
+    - oberkatid
 
   # Links
   hk_kategorie_hierarchie_l:
