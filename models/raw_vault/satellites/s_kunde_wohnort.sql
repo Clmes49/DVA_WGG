@@ -1,19 +1,22 @@
 {{ config(materialized='incremental') }}
 
 {%- set yaml_metadata -%}
+source_model: 'stg_webshop_wohnort'
+
 parent_hashkey: 'hk_kunde_h'
-multi_active_key: 'von'
+
 src_hashdiff: 'hd_kunde_wohnort_s'
+
+src_ma_key: 'von'
+
 src_payload:
-    - von
     - bis
     - strasse
     - hausnummer
     - adresszusatz
     - plz
     - ort
-    - land   
-source_model: 'stg_webshop_wohnort'
-{%- endset -%}    
+    - land
+{%- endset -%}
 
-{{ datavault4dbt.sat_v0(yaml_metadata=yaml_metadata) }}
+{{ datavault4dbt.ma_sat_v0(yaml_metadata=yaml_metadata) }}
