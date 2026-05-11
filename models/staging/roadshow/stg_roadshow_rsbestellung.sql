@@ -38,6 +38,10 @@ hashed_columns:
       - kreditkarte
       - gueltigbis
       - kkfirma
+
+  hd_rsposition_s:
+    is_hashdiff: true
+    columns:
       - menge
       - preis
       - rabatt
