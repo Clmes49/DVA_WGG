@@ -2,7 +2,7 @@
 
 select
     vereinspartnerid,
-    kundeidverein,
+    kundeidverein as kundeid,
     rabatt1,
     rabatt2,
     rabatt3,
