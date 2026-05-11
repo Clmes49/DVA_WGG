@@ -1,3 +1,6 @@
 venv/
 logs/
 target/
+dbt_internal_packages/
+.DS_Store
+.vscode/

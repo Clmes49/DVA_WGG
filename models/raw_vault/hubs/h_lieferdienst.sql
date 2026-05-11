@@ -4,7 +4,9 @@
 hashkey: 'hk_lieferdienst_h'
 business_keys:
   - lieferdienstid
-source_models: 'stg_webshop_lieferdienst'
+source_models: 
+  - name: stg_webshop_lieferdienst
+  - name: stg_webshop_lieferung
 {%- endset -%}
 
 {{ datavault4dbt.hub(

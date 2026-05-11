@@ -1,7 +1,7 @@
 {{ config(materialized='view') }}
 
 select
-    BestellungID,
+    CAST(BestellungID AS VARCHAR) AS bestellungid,
     KundeID,
     AllgLieferAdrID,
     Bestelldatum,
