@@ -14,7 +14,6 @@ hashed_columns:
   hd_kunde_wohnort_s:
     is_hashdiff: true
     columns:
-      - von
       - bis
       - strasse
       - hausnummer
