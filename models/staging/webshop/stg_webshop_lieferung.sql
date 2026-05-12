@@ -16,15 +16,10 @@ hashed_columns:
   hk_lieferdienst_h:
     - lieferdienstid
 
-  # Link Position
-  hk_position_l:
-    - bestellungid
-    - posid
-
   # Link Lieferung
   hk_lieferung_l:
     - bestellungid
-    # - posid muss geprüft werden
+    - posid 
     - lieferadrid
     - lieferdienstid
 
@@ -33,7 +28,6 @@ hashed_columns:
     is_hashdiff: true
     columns:
       - lieferdatum
-
 {%- endset -%}
 
 {{ datavault4dbt.stage(

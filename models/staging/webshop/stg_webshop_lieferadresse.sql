@@ -9,12 +9,12 @@ hashed_columns:
   hk_kunde_h:
     - "kundeid"
   hk_lieferadresse_h:
-    - "LieferAdrID"
+    - lieferadrid
 
   # Link zwischen lieferadresse und kunde
   hk_kunde_lieferadresse_l:
     - "KundeID"
-    - "LieferAdrID"
+    - lieferadrid
     
   
   # Satellites

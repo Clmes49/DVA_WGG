@@ -14,9 +14,9 @@ hashed_columns:
     - kundeid
 
   # Link
-  hk_vereinspartner_kunde_l:
-    - vereinspartnerid
-    - kundeid
+  hk_vp_ansprechpartner_l:
+  - vereinspartnerid
+  - kundeid
 
   # Satellite
   hd_vereinspartner_s:

@@ -13,7 +13,7 @@ hashed_columns:
     - kundeid
 
   hk_lieferadresse_h:
-    - allglieferadrid
+    - lieferadrid
 
   # Links
   hk_bestellung_kunde_l:
@@ -22,7 +22,7 @@ hashed_columns:
 
   hk_bestellung_lieferadresse_l:
     - bestellungid
-    - allglieferadrid
+    - lieferadrid
  
   # Satellite
   hd_wsbestellung_s:

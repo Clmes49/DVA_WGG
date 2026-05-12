@@ -3,9 +3,9 @@
 select
     CAST(BestellungID AS VARCHAR) AS bestellungid,
     KundeID,
-    AllgLieferAdrID,
+    AllgLieferAdrID as lieferadrid,
     Bestelldatum,
     Wunschdatum,
     Rabatt,
     cast('{{var("batch_ldts")}}' as timestamptz) as ldts
-from {{ source('webshop', 'bestellung') }}
+from {{ source('webshop', 'bestellung') }}t
