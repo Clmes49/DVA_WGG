@@ -31,6 +31,10 @@ hashed_columns:
     - bestellungid
     - produktid
 
+  hk_kunde_vereinspartner_l:    
+    - vereinspartnerid
+    - kundeid
+
   hd_rsbestellung_s:
     is_hashdiff: true
     columns:
