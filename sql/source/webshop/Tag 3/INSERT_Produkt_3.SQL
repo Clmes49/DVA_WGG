@@ -1,4 +1,4 @@
-SET search_path TO roadshow;
+Set search_path To WebShop;
 
 INSERT INTO Produkt (ProduktID, KatID, Bezeichnung, Umfang, Typ,Preis,Pflanzort, Pflanzabstand) VALUES	 ('1', 'GMiAMARANTH ', 'Amaranth „Mischung"', 'Einstreuer', '1',  '2.00', 'Freiland', '50 x 20 cm');
 INSERT INTO Produkt (ProduktID, KatID, Bezeichnung, Umfang, Typ,Preis,Pflanzort, Pflanzabstand) VALUES	 ('2', 'GStANDENBEERE ', 'Andenbeere „Schönbrunner Gold“', '10', '2',  '4.00', 'Freiland', '60 x 60 cm');

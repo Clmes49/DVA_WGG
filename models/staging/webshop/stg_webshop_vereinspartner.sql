@@ -14,7 +14,7 @@ hashed_columns:
     - kundeid
 
   # Link
-  hk_vp_ansprechpartner_l:
+  hk_vereinspartner_ansprechpartner_l:
   - vereinspartnerid
   - kundeid
 
