@@ -1,15 +1,21 @@
+# dbt Sources-Datei: definiert die externen Quelltabellen
+# Zugriff via {{source('source_name', 'table_name')}}
+
 version: 2
 
 sources:
-  - name: roadshow
-    schema: roadshow
-    description: "Bestellungen aus dem Roadshow"
-    tables:
+ # Quelle 1: Roadshow
+  - name: roadshow # Interner Referenzname in dbt
+    schema: roadshow # Schema-Name der Quelle in der Datenbank
+    description: "Bestellungen aus dem Roadshow" # Beschreibung der Quelle
+    tables: # Die Tabellen in der Quelle
       - name: rs_bestellung
-  - name: webshop
-    schema: webshop
-    description: "Online Bestellungen"
-    tables: 
+
+  # Quelle 2: Webshop    
+  - name: webshop # Interner Referenzname in dbt
+    schema: webshop # Schema-Name der Quelle in der Datenbank
+    description: "Online Bestellungen" # Beschreibung der Quelle
+    tables: # Die Tabellen in der Quelle
       - name: bestellung
       - name: kategorie
       - name: kunde
