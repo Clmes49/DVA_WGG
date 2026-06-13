@@ -31,6 +31,7 @@ hashed_columns:
       - preis
       - pflanzort
       - pflanzabstand
+      - katid
 
 {%- endset -%}
 
