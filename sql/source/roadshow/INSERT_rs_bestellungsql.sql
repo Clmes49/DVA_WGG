@@ -1,7 +1,7 @@
 SET search_path TO roadshow;
 
 
--- INSERT INTO RS_Bestellung (BestellungID, KundeID, VereinsPartnerID, Kaufdatum, Kreditkarte, GueltigBis, KKFirma, ProduktID, Menge, Preis, Rabatt) VALUES	 ('RS0000001', NULL, 'GlückAuf', '2022-03-05', NULL, NULL, NULL,  44,  14,  '3.80', '0.00');
+INSERT INTO RS_Bestellung (BestellungID, KundeID, VereinsPartnerID, Kaufdatum, Kreditkarte, GueltigBis, KKFirma, ProduktID, Menge, Preis, Rabatt) VALUES	 ('RS0000001', NULL, 'GlückAuf', '2022-03-05', NULL, NULL, NULL,  44,  14,  '3.80', '0.00');
 INSERT INTO RS_Bestellung (BestellungID, KundeID, VereinsPartnerID, Kaufdatum, Kreditkarte, GueltigBis, KKFirma, ProduktID, Menge, Preis, Rabatt) VALUES	 ('RS0000001', NULL, 'GlückAuf', '2022-03-05', NULL, NULL, NULL,  93,  5,  '2.10', '0.00');
 INSERT INTO RS_Bestellung (BestellungID, KundeID, VereinsPartnerID, Kaufdatum, Kreditkarte, GueltigBis, KKFirma, ProduktID, Menge, Preis, Rabatt) VALUES	 ('RS0000002', NULL, 'GlückAuf', '2022-03-05', NULL, NULL, NULL,  37,  46,  '0.30', '0.00');
 INSERT INTO RS_Bestellung (BestellungID, KundeID, VereinsPartnerID, Kaufdatum, Kreditkarte, GueltigBis, KKFirma, ProduktID, Menge, Preis, Rabatt) VALUES	 ('RS0000003', NULL, 'GlückAuf', '2022-03-05', NULL, NULL, NULL,  36,  15,  '0.30', '0.00');
