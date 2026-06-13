@@ -3,7 +3,7 @@
 {%- set yaml_metadata -%}
 parent_hashkey: 'hk_produkt_h'
 src_hashdiff: 'hd_produkt_s'
-src_payload:   -------------- <- Payload-Attribute
+src_payload:   # Payload-Attribute
     - bezeichnung
     - umfang
     - typ
