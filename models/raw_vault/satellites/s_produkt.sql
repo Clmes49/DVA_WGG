@@ -3,7 +3,7 @@
 {%- set yaml_metadata -%}
 parent_hashkey: 'hk_produkt_h'
 src_hashdiff: 'hd_produkt_s'
-src_payload:
+src_payload:   -------------- <- Payload-Attribute
     - bezeichnung
     - umfang
     - typ
@@ -14,3 +14,5 @@ source_model: 'stg_webshop_produkt'
 {%- endset -%}
 
 {{datavault4dbt.sat_v0(yaml_metadata=yaml_metadata)}}
+
+

@@ -1,28 +1,28 @@
-name: 'DVA_WGG'
-version: '1.0.0'
-config-version: 2
+name: 'DVA_WGG' # Projektname, wird in dbt intern als Namespace verwendet
+version: '1.0.0' # Versionnummer des Projekts, für Dokumentation
+config-version: 2 # dbt-Konfigurationsversion
 
-profile: 'DVA_WGG'
+profile: 'DVA_WGG' #Verbindungsprofil (liegt lokal im Rechner unter ~/.dbt/profiles.yml)
 
-model-paths: ['models']
-analysis-paths: ['analyses']
-test-paths: ['tests']
-seed-paths: ['seeds']
-macro-paths: ['macros']
-snapshot-paths: ['snapshots']
+model-paths: ['models'] # Ordner, in dem die SQL-Modelle liegen
+analysis-paths: ['analyses'] # Ordner für analytische Abfragen
+test-paths: ['tests'] # Ordner für dbt-Tests, z.B. not_null, unique etc.
+seed-paths: ['seeds'] # Ordner für statistische Referenzdaten
+macro-paths: ['macros'] # Ordner für eigene Makros
+snapshot-paths: ['snapshots'] # Ordner für dbt Snapshots
 
-clean-targets:
-  - 'target'
-  - 'dbt_packages'
+clean-targets: # Ordner, die bei dbt clean gelöscht werden
+  - 'target' # Komplierte SQL-Dateien
+  - 'dbt_packages' # installierte Pakete
 
-models:
+models: # Konfiguration: wie die Modelle im Projekt behandelt werden sollen
   DVA_WGG:
     staging:
-      +materialized: view
+      +materialized: view # Alle Staging-Modelle werden als Views materialisiert
     raw_vault:
-      +materialized: incremental
+      +materialized: incremental # Raw Vault Modelle werden inkrementell geladen
 
-vars:
-  datavault4dbt.ldts_alias: ldts
-  datavault4dbt.rsrc_alias: rsrc
-  batch_ldts: '2026-04-01 08:00:00'
+vars: # Unter vars werden globale Variablen definiert, die in allen Modellen und Makros verfügbar sind
+  datavault4dbt.ldts_alias: ldts # Alias für den Load Date Timestamp
+  datavault4dbt.rsrc_alias: rsrc # Alias für den Record Source
+  

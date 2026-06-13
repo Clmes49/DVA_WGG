@@ -7,7 +7,11 @@ business_keys:
    - kundeid
 source_models: 
    - name: stg_webshop_kunde
+   - name: stg_webshop_bestellung
+   - name: stg_roadshow_rsbestellung
+   - name: stg_webshop_lieferadresse 
    - name: stg_webshop_vereinspartner
+   - name: stg_webshop_wohnort
 
 {%- endset -%}
 
